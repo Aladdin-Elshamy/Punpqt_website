@@ -90,7 +90,7 @@ export default function PopularProducts() {
           <Image
             src={punpqt}
             alt="PUNQT"
-            className="absolute inset-0 max-w-full object-top"
+            className="absolute inset-0 max-w-full h-full  object-cover"
           />
 
           <Badge className="absolute top-4 end-4 h-10 w-18 px-2 bg-white text-black font-semibold">
@@ -131,7 +131,7 @@ export default function PopularProducts() {
           <Image
             src={notebook}
             alt={t("notebooks")}
-            className="absolute inset-0"
+            className="absolute inset-0 object-cover h-full"
           />
           <Badge className="absolute top-4 start-4 h-10 w-24 px-2 bg-[#11504B] font-semibold">
             {t("badges.bestSeller")}

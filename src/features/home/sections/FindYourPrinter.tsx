@@ -19,12 +19,12 @@ export default function FindYourPrinter() {
           {t("description")}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 mt-8">
-          <Button className="text-sm items-center font-medium h-12 w-40 rounded-2xl gap-2!">
+          <Button className="text-sm items-center font-medium h-12 w-44 rounded-2xl! gap-2!">
             <Upload /> {t("buttons.createRfq")}
           </Button>
           <Button
             variant="secondary"
-            className="text-sm items-center font-medium h-12 w-40 rounded-xl gap-2! bg-white border-2 border-[#0000000F]!"
+            className="text-sm items-center font-medium h-12 w-40 rounded-2xl! gap-2! bg-white border-2 border-[#0000000F]!"
           >
             {t("buttons.browsePrinters")}
           </Button>

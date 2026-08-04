@@ -96,12 +96,12 @@ export default function TopPrinter() {
         <div className="grid grid-cols-2 gap-4">
           <Button
             variant="secondary"
-            className="h-12 rounded-full text-base font-semibold bg-[#E8F4F4] text-[#0A5C5F] hover:bg-[#D1E8E8]"
+            className="h-12 rounded-full text-sm sm:text-base font-semibold bg-[#E8F4F4] text-[#0A5C5F] hover:bg-[#D1E8E8]"
           >
             {t("buttons.viewProfile")}
           </Button>
 
-          <Button className="h-12 rounded-full bg-teal-700 text-base hover:bg-teal-800">
+          <Button className="h-12 rounded-full bg-teal-700 text-sm sm:text-base hover:bg-teal-800">
             {t("buttons.getQuote")}
           </Button>
         </div>
