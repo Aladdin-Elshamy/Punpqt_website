@@ -1,0 +1,290 @@
+{
+  "HomePage": {
+    "title": "مرحبا"
+  },
+  "LangSwitcher":{
+    "ar": "العربية",
+    "en": "EN"
+  },
+  "Navbar": {
+    "menu": {
+      "products": "المنتجات",
+      "printers": "المطابع",
+      "customRfq": "طلب عرض سعر مخصص"
+    },
+    "auth": {
+      "login": "تسجيل الدخول",
+      "signup": "إنشاء حساب"
+    }
+  },
+  "BrowseByProducts": {
+    "title": "تصفح حسب المنتجات",
+    "description": {
+      "before": "كل ما ",
+      "highlight": "تحتاجه للطباعة"
+    },
+    "allProducts": "كل المنتجات",
+    "products": {
+      "businessCards": {
+        "title": "كروت الأعمال",
+        "description": "أكثر من 150 مطبعة"
+      }
+    }
+  },
+  "ChooseUs": {
+    "title": "لماذا يختار الآلاف PUNQT",
+    "description": "الطريقة الأذكى لإنجاز أعمال الطباعة",
+    "features": {
+      "verifiedPrinters": {
+        "title": "مطابع موثوقة فقط",
+        "description": "تتم مراجعة جميع المطابع بعناية وتقييمها من عملاء حقيقيين."
+      },
+      "fastResponses": {
+        "title": "ردود سريعة",
+        "description": "احصل على عدة عروض أسعار تنافسية خلال ساعات، وليس أيام."
+      },
+      "bestPrices": {
+        "title": "أفضل الأسعار",
+        "description": "قارن العروض ووفر في المتوسط 15٪ من تكاليف الطباعة."
+      }
+    }
+  },
+  "CoreFeature": {
+    "eyebrow": "الميزة الأساسية",
+    "title": {
+      "line1": "أرسل طلبًا واحدًا.",
+      "line2": "واحصل على عدة عروض."
+    },
+    "description": "صف ما تحتاج إلى طباعته. أرسل طلب عرض السعر إلى عدة مطابع في نفس الوقت. قارن العروض جنبًا إلى جنب واختر أفضل عرض من حيث السعر والجودة والسرعة.",
+    "buttons": {
+      "createRfq": "أنشئ طلب عرض سعر",
+      "browsePrinters": "تصفح المطابع"
+    },
+    "steps": {
+      "describe": {
+        "title": "صف مهمة الطباعة",
+        "description": "المواصفات، الكمية، الخامة، التشطيب، وتاريخ التسليم"
+      },
+      "receive": {
+        "title": "استلم عروض أسعار تنافسية",
+        "description": "حتى 10 مطابع ترد خلال ساعات"
+      },
+      "approve": {
+        "title": "اعتمد العينة واطلب",
+        "description": "راجع نموذج الإثبات الرقمي قبل بدء الإنتاج"
+      }
+    }
+  },
+  "CustomerStories": {
+    "title": "قصص العملاء",
+    "description": {
+      "line1": "آلاف الشركات تثق في",
+      "line2": "PUNQT"
+    },
+    "feedback": {
+      "first": {
+        "message": "طلبت 5,000 كارت عمل. وصلت خلال يومين — الجودة ممتازة. أفضل منصة طباعة استخدمتها.",
+        "user": {
+          "name": "أحمد حسن",
+          "department": "تك سوليوشنز"
+        }
+      },
+      "second": {
+        "message": "مقارنة عروض الأسعار وفرت علينا ساعات. وجدنا مطبعة موثوقة، واعتمدنا العينة، وتابعنا كل شيء بسهولة.",
+        "user": {
+          "name": "مريم علي",
+          "department": "براند ستوديو"
+        }
+      },
+      "third": {
+        "message": "جعلت PUNQT طلبات التغليف بالجملة بسيطة. تواصل واضح، أسعار تنافسية، وتسليم في الموعد.",
+        "user": {
+          "name": "عمر خالد",
+          "department": "ريتيل هاوس"
+        }
+      }
+    }
+  },
+  "FeaturesStatistics": {
+    "features": {
+      "verifiedPrinters": "مطابع موثوقة",
+      "ordersCompleted": "طلبات مكتملة",
+      "avgResponseTime": "متوسط وقت الرد",
+      "customerRating": "تقييم العملاء"
+    }
+  },
+  "FindYourPrinter": {
+    "badge": "مجاني للاستخدام. لا يتطلب اشتراكًا.",
+    "title": "هل أنت جاهز للعثور على مطبعتك المثالية؟",
+    "description": "أنشئ طلب عرض سعر مجانيًا، أو تصفح المنتجات الجاهزة، أو قارن بين المطابع — كل ذلك في مكان واحد.",
+    "buttons": {
+      "createRfq": "أنشئ طلب عرض سعر",
+      "browsePrinters": "تصفح المطابع"
+    }
+  },
+  "Hero": {
+    "badge": "سوق الطباعة الرائد في مصر",
+    "title": {
+      "line1": "اطبع أي شيء.",
+      "line2": "وقارن كل عرض سعر."
+    },
+    "description": "تواصل مع أكثر من 500 مطبعة مصرية موثوقة. احصل على عروض أسعار تنافسية، واعتمد العينات رقميًا، وتابع الإنتاج في الوقت الفعلي."
+  },
+  "PopularProducts": {
+    "title": "المنتجات الشائعة",
+    "description": {
+      "before": "جاهز ",
+      "highlight": "للطلب اليوم"
+    },
+    "allProducts": "كل المنتجات",
+    "badges": {
+      "bestSeller": "الأكثر مبيعًا",
+      "premium": "مميز",
+      "popular": "شائع"
+    },
+    "cards": {
+      "label": "جودة ممتازة",
+      "title": {
+        "line1": "كروت",
+        "line2": "أعمال مميزة"
+      }
+    },
+    "packaging": {
+      "label": "التغليف",
+      "title": {
+        "line1": "علب تغليف",
+        "line2": "مخصصة"
+      }
+    },
+    "flayers": "فلايرات",
+    "stickers": "ملصقات",
+    "notebooks": "دفاتر"
+  },
+  "PrintingHouse": {
+    "title": "هل أنت صاحب مطبعة؟",
+    "description": "انضم إلى أكثر من 500 مطبعة تنمي أعمالها بالفعل على PUNQT. استقبل طلبات عروض أسعار مؤهلة، وأدر العروض، وتابع الإنتاج في مكان واحد.",
+    "button": "كن مورّدًا"
+  },
+  "Search": {
+    "form": {
+      "placeholder": "ابحث عن المنتجات، المطابع، التصنيفات…",
+      "submit": "بحث"
+    },
+    "badges": {
+      "businessCards": "كروت الأعمال",
+      "flyers": "فلايرات",
+      "packaging": "التغليف",
+      "brochures": "بروشورات",
+      "customRfq": "طلب عرض سعر مخصص"
+    }
+  },
+  "TopPrinters": {
+    "title": "تصفح حسب المنتجات",
+    "description": "مطابع موثوقة",
+    "allProducts": "كل المنتجات"
+  },
+  "WhyPunpqt": {
+    "title": "لماذا PUNQT",
+    "description": "مصمم لمشتري الطباعة الجادين",
+    "steps": {
+      "verifiedPrinters": {
+        "title": "مطابع موثوقة فقط",
+        "description": "كل مطبعة تجتاز فحوصات الجودة والالتزام قبل ظهورها على المنصة."
+      },
+      "fastQuotes": {
+        "title": "استجابات سريعة للعروض",
+        "description": "استقبل عروضًا تنافسية بسرعة من مطابع جاهزة لتنفيذ طلبك."
+      },
+      "qualityControl": {
+        "title": "تحكم في الجودة",
+        "description": "اعتمد العينات وتفاصيل الإنتاج قبل انتقال طلبك للخطوة التالية."
+      },
+      "reliableDelivery": {
+        "title": "مواعيد تسليم موثوقة",
+        "description": "تابع التقدم بوضوح وتعامل مع مطابع ملتزمة بالمواعيد المتفق عليها."
+      }
+    }
+  },
+  "TopPrinter": {
+    "profile": {
+      "initial": "E",
+      "companyName": "إيليت للطباعة",
+      "location": "مدينة نصر، القاهرة"
+    },
+    "badge": "الأعلى تقييمًا",
+    "stats": {
+      "rating": "التقييم",
+      "response": "الاستجابة",
+      "onTime": "في الموعد"
+    },
+    "services": {
+      "digital": "رقمي",
+      "offset": "أوفست",
+      "uv": "UV"
+    },
+    "buttons": {
+      "viewProfile": "عرض الملف",
+      "getQuote": "احصل على عرض"
+    }
+  },
+  "Footer": {
+    "brand": {
+      "tagline": "سوق الطباعة الحديث",
+      "description": "تواصل مع شركات طباعة موثوقة في جميع أنحاء مصر."
+    },
+    "sections": {
+      "products": {
+        "title": "المنتجات",
+        "links": {
+          "businessCards": "كروت الأعمال",
+          "flyers": "فلايرات",
+          "brochures": "بروشورات",
+          "packaging": "التغليف",
+          "posters": "بوسترات",
+          "banners": "لافتات"
+        }
+      },
+      "services": {
+        "title": "الخدمات",
+        "links": {
+          "customRfq": "طلب عرض سعر مخصص",
+          "findPrinters": "ابحث عن مطابع",
+          "sampleApproval": "اعتماد العينة",
+          "orderTracking": "تتبع الطلب",
+          "bulkOrders": "طلبات بالجملة"
+        }
+      },
+      "company": {
+        "title": "الشركة",
+        "links": {
+          "about": "عن PUNQT",
+          "careers": "الوظائف",
+          "blog": "المدونة",
+          "helpCenter": "مركز المساعدة",
+          "trustSafety": "الثقة والأمان"
+        }
+      },
+      "printers": {
+        "title": "المطابع",
+        "links": {
+          "becomeVendor": "كن مورّدًا",
+          "vendorDashboard": "لوحة تحكم المورّد",
+          "pricing": "الأسعار",
+          "resources": "الموارد"
+        }
+      }
+    },
+    "socials": {
+      "twitter": "تويتر",
+      "linkedIn": "لينكدإن",
+      "instagram": "إنستغرام",
+      "facebook": "فيسبوك"
+    },
+    "legal": {
+      "copyright": "© 2026 PUNQT. جميع الحقوق محفوظة.",
+      "privacy": "الخصوصية",
+      "terms": "الشروط",
+      "cookies": "ملفات تعريف الارتباط"
+    }
+  }
+}

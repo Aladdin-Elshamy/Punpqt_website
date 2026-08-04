@@ -1,0 +1,290 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "LangSwitcher":{
+    "ar": "العربية",
+    "en": "EN"
+  },
+  "Navbar": {
+    "menu": {
+      "products": "Products",
+      "printers": "Printers",
+      "customRfq": "Custom RFQ"
+    },
+    "auth": {
+      "login": "Login Now",
+      "signup": "Sign up"
+    }
+  },
+  "BrowseByProducts": {
+    "title": "Browse by Products",
+    "description": {
+      "before": "Everything ",
+      "highlight": "you need to print"
+    },
+    "allProducts": "All products",
+    "products": {
+      "businessCards": {
+        "title": "Business Cards",
+        "description": "150+ printers"
+      }
+    }
+  },
+  "ChooseUs": {
+    "title": "Why thousands choose PUNQT",
+    "description": "The smarter way to get your printing done",
+    "features": {
+      "verifiedPrinters": {
+        "title": "Verified Printers Only",
+        "description": "All printers are thoroughly vetted and reviewed by real customers."
+      },
+      "fastResponses": {
+        "title": "Fast responses",
+        "description": "Get multiple competitive quotes within hours, not days."
+      },
+      "bestPrices": {
+        "title": "Best prices",
+        "description": "Compare offers and save an average of 15% on printing costs."
+      }
+    }
+  },
+  "CoreFeature": {
+    "eyebrow": "Core Feature",
+    "title": {
+      "line1": "Send one request.",
+      "line2": "Get multiple quotes."
+    },
+    "description": "Describe what you need to print. Send your RFQ to multiple printers at once. Compare quotes side-by-side and choose the best offer — price, quality, and speed.",
+    "buttons": {
+      "createRfq": "Create RFQ",
+      "browsePrinters": "Browse Printers"
+    },
+    "steps": {
+      "describe": {
+        "title": "Describe your print job",
+        "description": "Specs, quantity, material, finishing, delivery date"
+      },
+      "receive": {
+        "title": "Receive competitive quotes",
+        "description": "Up to 10 printers respond within hours"
+      },
+      "approve": {
+        "title": "Approve sample & order",
+        "description": "Review digital proof before production starts"
+      }
+    }
+  },
+  "CustomerStories": {
+    "title": "Customer Stories",
+    "description": {
+      "line1": "Thousands of businesses trust",
+      "line2": "PUNQT"
+    },
+    "feedback": {
+      "first": {
+        "message": "Ordered 5,000 business cards. Arrived in 2 days — quality is flawless. Best printing platform I've used.",
+        "user": {
+          "name": "Ahmed Hassan",
+          "department": "Tech Solutions Inc"
+        }
+      },
+      "second": {
+        "message": "The quote comparison saved us hours. We found a reliable printer, approved the sample, and tracked everything easily.",
+        "user": {
+          "name": "Mariam Ali",
+          "department": "Brand Studio"
+        }
+      },
+      "third": {
+        "message": "PUNQT made bulk packaging orders simple. Clear communication, competitive prices, and delivery right on schedule.",
+        "user": {
+          "name": "Omar Khaled",
+          "department": "Retail House"
+        }
+      }
+    }
+  },
+  "FeaturesStatistics": {
+    "features": {
+      "verifiedPrinters": "Verified Printers",
+      "ordersCompleted": "Orders Completed",
+      "avgResponseTime": "Avg. Response Time",
+      "customerRating": "Customer Rating"
+    }
+  },
+  "FindYourPrinter": {
+    "badge": "Free to use. No subscription required.",
+    "title": "Ready to find your perfect printer?",
+    "description": "Create a free RFQ, browse ready-made products, or compare printers — all in one place.",
+    "buttons": {
+      "createRfq": "Create RFQ",
+      "browsePrinters": "Browse Printers"
+    }
+  },
+  "Hero": {
+    "badge": "Egypt's Premier Printing Marketplace",
+    "title": {
+      "line1": "Print anything.",
+      "line2": "Compare every quote."
+    },
+    "description": "Connect with 500+ verified Egyptian printing houses. Get competitive quotes, approve samples digitally, and track production in real time."
+  },
+  "PopularProducts": {
+    "title": "Popular Products",
+    "description": {
+      "before": "Ready to ",
+      "highlight": "order today"
+    },
+    "allProducts": "All products",
+    "badges": {
+      "bestSeller": "Best Seller",
+      "premium": "Premium",
+      "popular": "Popular"
+    },
+    "cards": {
+      "label": "Premium Quality",
+      "title": {
+        "line1": "Premium",
+        "line2": "Business Cards"
+      }
+    },
+    "packaging": {
+      "label": "Packaging",
+      "title": {
+        "line1": "Custom Packaging",
+        "line2": "Boxes"
+      }
+    },
+    "flayers": "Flayers",
+    "stickers": "Stickers",
+    "notebooks": "NoteBooks"
+  },
+  "PrintingHouse": {
+    "title": "Are you a printing house?.",
+    "description": "Join 500+ printers already growing their business on PUNQT. Receive qualified RFQs, manage quotes, and track production in one place.",
+    "button": "Become a Vendor"
+  },
+  "Search": {
+    "form": {
+      "placeholder": "Search products, printers, categories…",
+      "submit": "Search"
+    },
+    "badges": {
+      "businessCards": "Business Cards",
+      "flyers": "Flyers",
+      "packaging": "Packaging",
+      "brochures": "Brochures",
+      "customRfq": "Custom RFQ"
+    }
+  },
+  "TopPrinters": {
+    "title": "Browse by Products",
+    "description": "Trusted printing houses",
+    "allProducts": "All products"
+  },
+  "WhyPunpqt": {
+    "title": "why punpqt",
+    "description": "Built for serious print buyers",
+    "steps": {
+      "verifiedPrinters": {
+        "title": "Verified Printers Only",
+        "description": "Every printer passes our quality and compliance checks before going live."
+      },
+      "fastQuotes": {
+        "title": "Fast Quote Responses",
+        "description": "Receive competitive offers quickly from printers ready to handle your job."
+      },
+      "qualityControl": {
+        "title": "Quality Control",
+        "description": "Approve samples and production details before your order moves forward."
+      },
+      "reliableDelivery": {
+        "title": "Reliable Delivery Times",
+        "description": "Track progress clearly and work with printers committed to agreed timelines."
+      }
+    }
+  },
+  "TopPrinter": {
+    "profile": {
+      "initial": "E",
+      "companyName": "Elite Printing Co.",
+      "location": "Nasr City, Cairo"
+    },
+    "badge": "Top Rated",
+    "stats": {
+      "rating": "Rating",
+      "response": "Response",
+      "onTime": "On-Time"
+    },
+    "services": {
+      "digital": "Digital",
+      "offset": "Offset",
+      "uv": "UV"
+    },
+    "buttons": {
+      "viewProfile": "View Profile",
+      "getQuote": "Get Quote"
+    }
+  },
+  "Footer": {
+    "brand": {
+      "tagline": "The modern print marketplace",
+      "description": "Connect with verified printing companies across Egypt."
+    },
+    "sections": {
+      "products": {
+        "title": "Products",
+        "links": {
+          "businessCards": "Business Cards",
+          "flyers": "Flyers",
+          "brochures": "Brochures",
+          "packaging": "Packaging",
+          "posters": "Posters",
+          "banners": "Banners"
+        }
+      },
+      "services": {
+        "title": "Services",
+        "links": {
+          "customRfq": "Custom RFQ",
+          "findPrinters": "Find Printers",
+          "sampleApproval": "Sample Approval",
+          "orderTracking": "Order Tracking",
+          "bulkOrders": "Bulk Orders"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About PUNQT",
+          "careers": "Careers",
+          "blog": "Blog",
+          "helpCenter": "Help Center",
+          "trustSafety": "Trust & Safety"
+        }
+      },
+      "printers": {
+        "title": "Printers",
+        "links": {
+          "becomeVendor": "Become a Vendor",
+          "vendorDashboard": "Vendor Dashboard",
+          "pricing": "Pricing",
+          "resources": "Resources"
+        }
+      }
+    },
+    "socials": {
+      "twitter": "Twitter",
+      "linkedIn": "LinkedIn",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "legal": {
+      "copyright": "© 2026 PUNQT. All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies"
+    }
+  }
+}
