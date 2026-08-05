@@ -130,6 +130,25 @@
     },
     "description": "تواصل مع أكثر من 500 مطبعة مصرية موثوقة. احصل على عروض أسعار تنافسية، واعتمد العينات رقميًا، وتابع الإنتاج في الوقت الفعلي."
   },
+  "ProductsHero": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "allProducts": "كل المنتجات"
+    },
+    "title": "كل منتجات الطباعة",
+    "description": "اختر تصنيفًا لتصفح المنتجات والعثور على المطبعة المناسبة لاحتياجاتك."
+  },
+  "AllProducts": {
+    "badge": "كل المنتجات",
+    "products": {
+      "businessCards": {
+        "title": "كروت الأعمال",
+        "description": "كروت أعمال عادية ومميزة ومتخصصة بتشطيبات مخصصة",
+        "printers": "أكثر من 120 مطبعة",
+        "products": "16 منتجًا"
+      }
+    }
+  },
   "PopularProducts": {
     "title": "المنتجات الشائعة",
     "description": {
@@ -158,7 +177,16 @@
     },
     "flayers": "فلايرات",
     "stickers": "ملصقات",
-    "notebooks": "دفاتر"
+    "notebooks": "دفاتر",
+    "productSection": {
+      "badge": "المنتجات الشائعة",
+      "products": {
+        "businessCards": {
+          "title": "كروت الأعمال",
+          "description": "أكثر من 150 مطبعة"
+        }
+      }
+    }
   },
   "PrintingHouse": {
     "title": "هل أنت صاحب مطبعة؟",

@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <div className="container mt-36 mx-auto px-6 md:px-8 lg:px-6">
-      <Badge className="h-8! bg-[#e8f4f4] font-semibold px-4 text-primary border-[#0D73771A]">
+      <Badge className="h-8! bg-[#e8f4f4] font-semibold px-4 border-[#0D73771A] text-[#0A5C5F]">
         <Star /> {t("badge")}
       </Badge>
       <h1 className="font-bold text-3xl sm:text-6xl mt-6">

@@ -30,6 +30,8 @@ import { LangSwitcher } from "./LangSwitcher";
 import { useLocale, useTranslations } from "next-intl";
 import Search from "@/shared/icons/Search";
 import Cart from "@/shared/icons/Cart";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface MenuItem {
   title: string;
@@ -64,11 +66,12 @@ interface Navbar1Props {
 const Navbar = ({ className }: Navbar1Props) => {
   const t = useTranslations("Navbar");
   const locale = useLocale();
+  const pathname = usePathname();
 
   const menu: MenuItem[] = [
     {
       title: t("menu.products"),
-      url: "#",
+      url: "products",
     },
     {
       title: t("menu.printers"),
@@ -94,17 +97,19 @@ const Navbar = ({ className }: Navbar1Props) => {
         <nav className="hidden items-center justify-between lg:flex">
           <div className="flex items-center gap-6">
             {/* Logo */}
-            <a href={"#"} className="flex items-center gap-2">
+            <Link href={"/"} className="flex items-center gap-2">
               <Image
                 src={logo}
                 className="max-w-28 dark:invert"
                 alt={"Punpqt"}
               />
-            </a>
+            </Link>
             <div className="ms-32 flex items-center">
               <NavigationMenu>
                 <NavigationMenuList>
-                  {menu.map((item) => renderMenuItem(item))}
+                  {menu.map((item) =>
+                    renderMenuItem(item, pathname === "/" + item.url),
+                  )}
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
@@ -135,13 +140,13 @@ const Navbar = ({ className }: Navbar1Props) => {
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href={"#"} className="flex items-center gap-2">
+            <Link href={"/"} className="flex items-center gap-2">
               <Image
                 src={logo}
                 className="max-w-24 dark:invert"
                 alt={"Punpqt"}
               />
-            </a>
+            </Link>
             <Sheet>
               <SheetTrigger>
                 <Menu className="size-4" />
@@ -163,7 +168,9 @@ const Navbar = ({ className }: Navbar1Props) => {
                 </SheetHeader>
                 <div className="flex flex-col gap-6 p-4">
                   <Accordion className="flex w-full flex-col gap-4">
-                    {menu.map((item) => renderMobileMenuItem(item))}
+                    {menu.map((item) =>
+                      renderMobileMenuItem(item, pathname === "/" + item.url),
+                    )}
                   </Accordion>
 
                   <div className="flex flex-col gap-3">
@@ -185,7 +192,7 @@ const Navbar = ({ className }: Navbar1Props) => {
   );
 };
 
-const renderMenuItem = (item: MenuItem) => {
+const renderMenuItem = (item: MenuItem, isActive: boolean) => {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
@@ -204,16 +211,15 @@ const renderMenuItem = (item: MenuItem) => {
   return (
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
+        render={<Link href={item.url}>{item.title}</Link>}
         href={item.url}
-        className="group inline-flex h-10 w-max items-center justify-center rounded-md  px-4 py-2 text-sm transition-colors hover:bg-muted hover:text-accent-foreground text-[#6B6B80] font-semibold"
-      >
-        {item.title}
-      </NavigationMenuLink>
+        className={`group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm transition-colors hover:bg-muted hover:text-accent-foreground text-[#6B6B80] font-semibold ${isActive ? "border-b-4 rounded-none border-[#00645D] text-[#00645D]" : ""}`}
+      />
     </NavigationMenuItem>
   );
 };
 
-const renderMobileMenuItem = (item: MenuItem) => {
+const renderMobileMenuItem = (item: MenuItem, isActive: boolean) => {
   if (item.items) {
     return (
       <AccordionItem key={item.title} value={item.title} className="border-b-0">
@@ -230,9 +236,9 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a key={item.title} href={item.url} className="text-md font-semibold">
+    <Link key={item.title} href={item.url} className={`text-md font-semibold ${isActive ? 'border-b-2 border-[#00645D] text-[#00645D]': ''}`}>
       {item.title}
-    </a>
+    </Link>
   );
 };
 

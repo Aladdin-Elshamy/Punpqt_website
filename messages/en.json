@@ -130,6 +130,25 @@
     },
     "description": "Connect with 500+ verified Egyptian printing houses. Get competitive quotes, approve samples digitally, and track production in real time."
   },
+  "ProductsHero": {
+    "breadcrumb": {
+      "home": "Home",
+      "allProducts": "All Products"
+    },
+    "title": "All Printing Products",
+    "description": "Choose a product to browse products and find the right printer for your needs."
+  },
+  "AllProducts": {
+    "badge": "All Products",
+    "products": {
+      "businessCards": {
+        "title": "Business Cards",
+        "description": "Standard, premium, and specialty business cards with custom finishes",
+        "printers": "120+ printers",
+        "products": "16 products"
+      }
+    }
+  },
   "PopularProducts": {
     "title": "Popular Products",
     "description": {
@@ -158,7 +177,16 @@
     },
     "flayers": "Flayers",
     "stickers": "Stickers",
-    "notebooks": "NoteBooks"
+    "notebooks": "NoteBooks",
+    "productSection": {
+      "badge": "Popular Products",
+      "products": {
+        "businessCards": {
+          "title": "Business Cards",
+          "description": "150+ printers"
+        }
+      }
+    }
   },
   "PrintingHouse": {
     "title": "Are you a printing house?.",

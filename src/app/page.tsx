@@ -1,6 +1,6 @@
 import HeroSection from "@/features/home/sections/Hero";
 import SearchSection from "@/features/home/sections/Search";
-import CirclePattern from "@/features/home/sections/CirclePattern";
+import CirclePattern from "@/shared/sections/CirclePattern";
 import FeaturesStatistics from "@/features/home/sections/FeaturesStatistics";
 import ChooseUs from "@/features/home/sections/ChooseUs";
 import PopularProducts from "@/features/home/sections/PopularProducts";
@@ -17,7 +17,7 @@ export default function HomePage() {
     <main className="relative overflow-hidden">
       <div
         className="pointer-events-none absolute ltr:left-4 rtl:right-4 sm:ltr:-left-12 sm:rtl:-right-12 -top-8 sm:top-44
-             h-120 w-2/3
+             h-82 w-2/3
              rounded-full
              bg-[#0D7377]/20
              blur-[140px]"
@@ -25,13 +25,13 @@ export default function HomePage() {
       <CirclePattern />
       <div className="relative overflow-hidden 2xl:container mx-auto">
         <HeroSection />
-        <SearchSection />
-        <FeaturesStatistics />
-        <div className="px-4 sm:px-8 md:px-12 lg:px-24 container mx-auto">
-          <ChooseUs />
-        </div>
-        <PopularProducts />
       </div>
+      <SearchSection />
+      <FeaturesStatistics />
+      <div className="px-4 sm:px-8 md:px-12 lg:px-24 container mx-auto">
+        <ChooseUs />
+      </div>
+      <PopularProducts />
       <div className="bg-[#FAFAFA] py-20">
         <BrowseByProducts />
       </div>

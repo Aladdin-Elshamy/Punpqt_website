@@ -70,7 +70,7 @@ export default function PopularProducts() {
           <Image
             src={packaging}
             alt={t("packaging.label")}
-            className="absolute ltr:-right-18 rtl:-left-18 sm:top-10 max-w-64 top-14 sm:max-w-xs rtl:scale-x-[-1]"
+            className="absolute ltr:-right-18 rtl:-left-18 sm:top-10 md:top-17 md:ltr:-right-12 md:rtl:-left-12 md:max-w-68 max-w-64 top-14 sm:max-w-xs lg:max-w-xs rtl:scale-x-[-1] lg:top-10 lg:ltr:-right-18 lg:rtl:-left-18"
           />
           <div className="absolute top-4 start-4 text-white flex justify-start flex-col">
             <p className="text-sm text-[#00645D]">{t("packaging.label")}</p>
