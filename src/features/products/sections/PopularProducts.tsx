@@ -8,7 +8,7 @@ export default function PopularProducts() {
   const t = useTranslations("PopularProducts.productSection");
 
   return (
-    <div className="container mt-23 sm:mt-0 mx-auto px-6 md:px-8 lg:px-6">
+    <div className="container sm:mt-0 mx-auto px-6 md:px-8 lg:px-6">
       <Badge className=" bg-[#e8f4f4] text-base h-12 px-4 border-[#0D73771A] text-black gap-2 font-medium [&>svg]:size-4! ">
         <TrendUp className="text-primary" /> {t("badge")}
       </Badge>

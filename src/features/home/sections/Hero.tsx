@@ -6,7 +6,7 @@ export default function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <div className="container mt-36 mx-auto px-6 md:px-8 lg:px-6">
+    <div className="container 2xl:px-0 2xl:w-full flex justify-center sm:block flex-col sm:mt-36 mx-auto md:px-8 lg:px-6 h-[calc(100vh-74px)] sm:h-auto">
       <Badge className="h-8! bg-[#e8f4f4] font-semibold px-4 border-[#0D73771A] text-[#0A5C5F]">
         <Star /> {t("badge")}
       </Badge>
