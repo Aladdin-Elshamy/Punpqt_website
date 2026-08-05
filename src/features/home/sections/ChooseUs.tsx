@@ -25,7 +25,7 @@ export default function ChooseUs() {
   ];
 
   return (
-    <section className="container mt-36 mx-auto px-7 md:px-10 lg:px-12 border-[0.99px] border-[#0000000F] bg-[#FCFCFC] rounded-2xl shadow-[0px_4px_20px_rgba(0,0,0,0.05)]">
+    <section className="container mt-36 mx-auto border-[0.99px] border-[#0000000F] bg-[#FCFCFC] rounded-2xl shadow-sm">
       <div className="py-8 px-6">
         <h2 className="text-3xl font-bold text-center mb-2">{t("title")}</h2>
         <p className="text-center font-semibold text-[#6B6B80]">

@@ -10,10 +10,12 @@ export default function Hero() {
       <Badge className="h-8! bg-[#e8f4f4] font-semibold px-4 border-[#0D73771A] text-[#0A5C5F]">
         <Star /> {t("badge")}
       </Badge>
-      <h1 className="font-bold text-3xl sm:text-6xl mt-6">
+      <h1 className="font-bold text-3xl sm:text-5xl mt-6">
         {t("title.line1")}
         <br />
-        <span className="text-primary rtl:mt-4 rtl:block">{t("title.line2")}</span>
+        <span className="text-primary rtl:mt-4 rtl:block">
+          {t("title.line2")}
+        </span>
       </h1>
       <p className="text-[#6B6B80] font-semibold max-w-lg mt-5">
         {t("description")}

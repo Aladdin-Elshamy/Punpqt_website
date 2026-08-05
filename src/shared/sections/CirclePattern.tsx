@@ -66,7 +66,7 @@ export default function CirclePattern({
   return (
     <div
       ref={container}
-      className={`lg:grid ${defaultCols || defaultRows ? "grid-cols-8 xl:grid-cols-10" : "grid-cols-8 xl:grid-cols-10"}  gap-0 absolute -top-10 ltr:right-0 rtl:left-0 z-[-9999] hidden`}
+      className={`lg:grid ${defaultCols || defaultRows ? "grid-cols-8 xl:grid-cols-10" : "grid-cols-8 xl:grid-cols-10"}  gap-0 absolute -top-46 ltr:right-0 rtl:left-0 z-[-9999] hidden`}
       style={
         mask
           ? {

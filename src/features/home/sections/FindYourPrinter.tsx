@@ -8,7 +8,7 @@ export default function FindYourPrinter() {
   const t = useTranslations("FindYourPrinter");
 
   return (
-    <section className="container mx-auto px-6 md:px-8 lg:px-6 ">
+    <section className="container px-6 md:px-8 lg:px-6 ">
       <div className="p-12 rounded-2xl border shadow-sm flex items-center flex-col justify-center text-center relative overflow-hidden">
         <div className="absolute left-1/2 top-1/2 h-[90%] w-full -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(20,184,166,0.12)_0%,rgba(59,130,246,0.08)_35%,transparent_75%)] blur-3xl -z-10" />
         <Badge className="font-semibold text-primary bg-[#E8F4F4] items-center h-8 gap-2 px-4 ">

@@ -10,8 +10,8 @@ export default function WhyPunpqt() {
   const t = useTranslations("WhyPunpqt");
 
   return (
-    <section className="container mx-auto px-6 md:px-8 lg:px-6">
-      <div className="p-12 border-[0.99px] border-[#0000000F] rounded-2xl shadow-[0px_4px_20px_rgba(0,0,0,0.05)]">
+    <section className="container px-6 md:px-8 lg:px-6">
+      <div className="p-12 border-[0.99px] border-[#0000000F] rounded-2xl shadow-sm">
         <Heading
           title={
             <span className="uppercase font-semibold tracking-widest">
@@ -19,9 +19,7 @@ export default function WhyPunpqt() {
             </span>
           }
           description={
-            <p className="text-3xl font-semibold mt-3">
-              {t("description")}
-            </p>
+            <p className="text-3xl font-semibold mt-3">{t("description")}</p>
           }
         />
         <div className="grid grid-cols-1 md:grid-cols-2 pt-4">

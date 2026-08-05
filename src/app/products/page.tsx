@@ -7,15 +7,15 @@ import { EnhancedCirclePattern } from "@/shared/sections/withCirclePattern";
 export default function ProductsPage() {
   return (
     <main className="relative overflow-hidden">
-      <div
-        className="pointer-events-none absolute ltr:left-4 rtl:right-4 sm:ltr:-left-12 sm:rtl:-right-12 -top-8 sm:top-44
-                 h-80 w-2/3
-                 rounded-full
-                 bg-[#0D7377]/20
-                 blur-[140px]"
-      />
-      <EnhancedCirclePattern mask={true} />
-      <div className="relative overflow-hidden 2xl:container mx-auto">
+      <div className="relative 2xl:container">
+         <div
+          className="pointer-events-none absolute ltr:left-4 rtl:right-4 sm:ltr:-left-12 sm:rtl:-right-12 -top-8 sm:top-8
+             h-82 w-2/3
+             rounded-full
+             bg-[#0D7377]/20
+             blur-[140px]"
+        />
+        <EnhancedCirclePattern mask={true} />
         <ProductsHero />
       </div>
       <PopularProducts />

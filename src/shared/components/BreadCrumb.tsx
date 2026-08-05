@@ -33,15 +33,13 @@ export default function BreadcrumbBasic({ links }: { links: Link[] }) {
                   </Badge>
                 </BreadcrumbPage>
               ) : (
-                <>
-                  <BreadcrumbLink href={link.url}>
-                    <Badge className="h-10! bg-[#e8f4f4] font-semibold px-4 text-[#0A5C5F] border-[#0D73771A]">
-                      {link.label}
-                    </Badge>
-                  </BreadcrumbLink>
-                  <BreadcrumbSeparator>/</BreadcrumbSeparator>
-                </>
+                <BreadcrumbLink href={link.url}>
+                  <Badge className="h-10! bg-[#e8f4f4] font-semibold px-4 text-[#0A5C5F] border-[#0D73771A]">
+                    {link.label}
+                  </Badge>
+                </BreadcrumbLink>
               )}
+              {!isLastItem && <BreadcrumbSeparator>/</BreadcrumbSeparator>}
             </BreadcrumbItem>
           );
         })}

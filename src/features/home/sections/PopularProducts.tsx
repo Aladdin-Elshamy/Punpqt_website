@@ -20,11 +20,9 @@ export default function PopularProducts() {
         <Heading
           title={t("title")}
           description={
-            <p className="text-3xl sm:text-6xl font-semibold">
+            <p className="text-3xl sm:text-4xl font-semibold">
               {t("description.before")}
-              <span className="text-primary">
-                {t("description.highlight")}
-              </span>
+              <span className="text-primary">{t("description.highlight")}</span>
             </p>
           }
         />

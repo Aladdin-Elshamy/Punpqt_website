@@ -9,16 +9,14 @@ export default function BrowseByProducts() {
   const t = useTranslations("BrowseByProducts");
 
   return (
-    <div className="container mx-auto px-6 md:px-8 lg:px-6">
+    <div className="container px-6 md:px-8 lg:px-6">
       <div className="flex items-end justify-between">
         <Heading
           title={t("title")}
           description={
-            <p className="text-3xl sm:text-6xl font-semibold">
+            <p className="text-3xl sm:text-4xl font-semibold">
               {t("description.before")}
-              <span className="text-primary">
-                {t("description.highlight")}
-              </span>
+              <span className="text-primary">{t("description.highlight")}</span>
             </p>
           }
         />
