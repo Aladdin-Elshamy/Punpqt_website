@@ -55,13 +55,11 @@ export default async function RootLayout({
       className={`${locale === "ar" ? ibm_sans.className : atyp.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <DirectionProvider direction={locale === "ar" ? "rtl" : "ltr"}>
-          <NextIntlClientProvider>
-            <Navbar1 />
-            {children}
-            <Footer />
-          </NextIntlClientProvider>
-        </DirectionProvider>
+        <NextIntlClientProvider>
+          <Navbar1 />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -136,7 +136,7 @@
       "allProducts": "All Products"
     },
     "title": "All Printing Products",
-    "description": "Choose a product to browse specifications and find the right printer for your needs."
+    "description": "Browse all available printing products and choose the one that best fits your needs."
   },
   "AllProducts": {
     "badge": "All Products",
@@ -313,6 +313,76 @@
       "privacy": "Privacy",
       "terms": "Terms",
       "cookies": "Cookies"
+    }
+  },
+  "BusinessCards": {
+    "hero": {
+      "breadcrumb": {
+        "home": "Home",
+        "allProducts": "All Products",
+        "businessCards": "Business Cards"
+      },
+      "title": "Business Cards",
+      "description": "Standard, premium, and specialty business cards",
+      "stats": {
+        "products": "{count} Products",
+        "printers": "{count} Printers"
+      },
+      "customRfq": "Custom RFQ"
+    },
+    "catalog": {
+      "tabs": {
+        "products": "Products ({count})",
+        "printers": "Printers ({count})"
+      },
+      "searchPlaceholder": "Search...",
+      "searchSubmit": "Search",
+      "selectCategory": {
+        "popular": "Most Popular",
+        "quoteRequired": "Quote required",
+        "fixedPrice": "Fixed price"
+      }
+    },
+    "filter": {
+      "title": "Filters",
+      "startingPrice": "Starting Price",
+      "location": "Location",
+      "rating": "Rating",
+      "andUp": "& up",
+      "options": {
+        "anyPrice": "Any price",
+        "underEgp200": "Under EGP 200",
+        "cairo": "Cairo",
+        "alexandria": "Alexandria"
+      }
+    },
+    "card": {
+      "startingPrice": "starting price",
+      "byVendor": "by {vendor}",
+      "defaultTitleRow": "Standard Business Cards",
+      "defaultTitleGrid": "Premium Matte Business Cards",
+      "defaultVendor": "Premium Print Hub",
+      "topRated": "Top Rated",
+      "currency": "EGP",
+      "defaultDelivery": "3-4 days"
+    },
+    "printerCard": {
+      "startingPrice": "starting price",
+      "selectPrinter": "Select Printer",
+      "requestQuotation": "Request Quotation",
+      "verifiedPrinter": "Verified Printer",
+      "fastResponse": "Fast Response",
+      "defaults": {
+        "name": "Premium Print Hub",
+        "initials": "PP",
+        "location": "Dokki, Giza",
+        "tags": {
+          "offset": "Offset",
+          "lamination": "Lamination"
+        },
+        "deliveryTime": "3-4 days",
+        "currency": "EGP"
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
   "HomePage": {
     "title": "مرحبا"
   },
-  "LangSwitcher":{
+  "LangSwitcher": {
     "ar": "العربية",
     "en": "EN"
   },
@@ -136,7 +136,7 @@
       "allProducts": "كل المنتجات"
     },
     "title": "كل منتجات الطباعة",
-    "description": "اختر منتجاً لتصفح المواصفات والعثور على المطبعة المناسبة لاحتياجاتك."
+    "description": "استعرض كل المنتجات واختر المنتج الذي يلائم احتياجتك."
   },
   "AllProducts": {
     "badge": "كل المنتجات",
@@ -313,6 +313,76 @@
       "privacy": "الخصوصية",
       "terms": "الشروط",
       "cookies": "ملفات تعريف الارتباط"
+    }
+  },
+  "BusinessCards": {
+    "hero": {
+      "breadcrumb": {
+        "home": "الرئيسية",
+        "allProducts": "كل المنتجات",
+        "businessCards": "كروت الأعمال"
+      },
+      "title": "كروت الأعمال",
+      "description": "كروت أعمال عادية ومميزة ومتخصصة",
+      "stats": {
+        "products": "{count} منتجات",
+        "printers": "{count} مطابع"
+      },
+      "customRfq": "طلب عرض سعر مخصص"
+    },
+    "catalog": {
+      "tabs": {
+        "products": "المنتجات ({count})",
+        "printers": "المطابع ({count})"
+      },
+      "searchPlaceholder": "بحث...",
+      "searchSubmit": "بحث",
+      "selectCategory": {
+        "popular": "الأكثر شعبية",
+        "quoteRequired": "طلب عرض سعر مطلوب",
+        "fixedPrice": "سعر ثابت"
+      }
+    },
+    "filter": {
+      "title": "الفلاتر",
+      "startingPrice": "السعر المبدئي",
+      "location": "الموقع",
+      "rating": "التقييم",
+      "andUp": "فأعلى",
+      "options": {
+        "anyPrice": "أي سعر",
+        "underEgp200": "أقل من 200 ج.م",
+        "cairo": "القاهرة",
+        "alexandria": "الإسكندرية"
+      }
+    },
+    "card": {
+      "startingPrice": "يبدأ من",
+      "byVendor": "بواسطة {vendor}",
+      "defaultTitleRow": "كروت أعمال قياسية",
+      "defaultTitleGrid": "كروت أعمال مط مطفية فاخرة",
+      "defaultVendor": "مركز الطباعة المميز",
+      "topRated": "الأعلى تقييمًا",
+      "currency": "ج.م",
+      "defaultDelivery": "3-4 أيام"
+    },
+    "printerCard": {
+      "startingPrice": "يبدأ من",
+      "selectPrinter": "اختر المطبعة",
+      "requestQuotation": "اطلب عرض سعر",
+      "verifiedPrinter": "مطبعة موثوقة",
+      "fastResponse": "رد سريع",
+      "defaults": {
+        "name": "مركز الطباعة المميز",
+        "initials": "PP",
+        "location": "الدقي، الجيزة",
+        "tags": {
+          "offset": "أوفست",
+          "lamination": "تغليف حراري"
+        },
+        "deliveryTime": "3-4 أيام",
+        "currency": "ج.م"
+      }
     }
   }
 }

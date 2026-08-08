@@ -8,7 +8,7 @@ export default function AllProducts() {
 
   return (
     <div className="container mt-14 mb-28 mx-auto px-6 md:px-8 lg:px-6">
-      <Badge className=" bg-[#e8f4f4] text-base h-12 px-4 border-[#0D73771A] text-black gap-2 font-medium [&>svg]:size-4! ">
+      <Badge className=" text-base h-12 px-4 border-[#0D73771A] text-black gap-2 font-medium [&>svg]:size-4! ">
         {t("badge")}
       </Badge>
       <div

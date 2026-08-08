@@ -50,7 +50,7 @@ export default function PopularProducts() {
             alt={t("cards.title.line2")}
             className="absolute inset-0 ltr:translate-x-30 rtl:-translate-x-30 xl:ltr:translate-x-55 xl:rtl:-translate-x-55 xl:translate-y-20 scale-150 translate-y-5 sm:translate-y-0 "
           />
-          <Badge className="absolute top-4 start-4 h-6 px-3 font-semibold">
+          <Badge className="absolute top-4 start-4 h-6 px-3 font-semibold bg-primary text-white">
             {t("badges.bestSeller")}
           </Badge>
           <div className="absolute bottom-4 start-4 text-white flex justify-start flex-col gap-3">
@@ -78,7 +78,7 @@ export default function PopularProducts() {
               {t("packaging.title.line2")}
             </p>
           </div>
-          <Badge className="absolute bottom-4 start-4 h-10 w-24 px-2 bg-[#11504B] font-semibold">
+          <Badge className="absolute bottom-4 start-4 h-10 w-24 px-2 bg-[#11504B] text-white font-semibold">
             {t("badges.premium")}
           </Badge>
         </div>
@@ -131,7 +131,7 @@ export default function PopularProducts() {
             alt={t("notebooks")}
             className="absolute inset-0 object-cover h-full"
           />
-          <Badge className="absolute top-4 start-4 h-10 w-24 px-2 bg-[#11504B] font-semibold">
+          <Badge className="absolute top-4 start-4 h-10 w-24 px-2 bg-[#11504B] text-white font-semibold">
             {t("badges.bestSeller")}
           </Badge>
           <div className="absolute bottom-4 start-4 text-white flex justify-start flex-col gap-3">

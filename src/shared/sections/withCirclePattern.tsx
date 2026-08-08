@@ -14,8 +14,8 @@ export default function withCirclePattern(
     return (
       <BaseComponent
         {...props}
-        defaultCols={width! >= 1280 ? 12 : 10}
-        defaultRows={width! >= 1280 ? 9 : 8}
+        defaultCols={(props?.defaultCols || (width! >= 1280 ? 12 : 10))}
+        defaultRows={(props?.defaultRows || (width! >= 1280 ? 9 : 8))}
       />
     );
   };
