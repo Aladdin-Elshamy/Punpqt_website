@@ -7,6 +7,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Badge } from "../../components/ui/badge";
+import Link from "next/link";
 
 interface Link {
   label: string;
@@ -33,11 +34,15 @@ export default function BreadcrumbBasic({ links }: { links: Link[] }) {
                   </Badge>
                 </BreadcrumbPage>
               ) : (
-                <BreadcrumbLink href={link.url}>
-                  <Badge className="h-10! font-semibold px-4 border-[#0D73771A]">
-                    {link.label}
-                  </Badge>
-                </BreadcrumbLink>
+                <BreadcrumbLink
+                  render={
+                    <Link href={link.url}>
+                      <Badge className="h-10! font-semibold px-4 border-[#0D73771A]">
+                        {link.label}
+                      </Badge>
+                    </Link>
+                  }
+                />
               )}
               {!isLastItem && <BreadcrumbSeparator >/</BreadcrumbSeparator>}
             </BreadcrumbItem>

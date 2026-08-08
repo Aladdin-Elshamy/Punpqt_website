@@ -71,7 +71,7 @@ const Navbar = ({ className }: Navbar1Props) => {
   const menu: MenuItem[] = [
     {
       title: t("menu.products"),
-      url: "products",
+      url: "/products",
     },
     {
       title: t("menu.printers"),
@@ -131,7 +131,7 @@ const Navbar = ({ className }: Navbar1Props) => {
               size="sm"
               className={"h-10 px-6 text-sm rounded-xl font-medium"}
             >
-              <a href={auth.login.url}>{auth.login.title}</a>
+              <Link href={auth.login.url}>{auth.login.title}</Link>
             </Button>
           </div>
         </nav>
