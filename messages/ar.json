@@ -315,15 +315,30 @@
       "cookies": "ملفات تعريف الارتباط"
     }
   },
-  "BusinessCards": {
+  "SpecificProduct": {
     "hero": {
       "breadcrumb": {
         "home": "الرئيسية",
-        "allProducts": "كل المنتجات",
-        "businessCards": "كروت الأعمال"
+        "allProducts": "كل المنتجات"
       },
-      "title": "كروت الأعمال",
-      "description": "كروت أعمال عادية ومميزة ومتخصصة",
+      "products": {
+        "business-cards": {
+          "title": "كروت الأعمال",
+          "description": "كروت أعمال عادية ومميزة ومتخصصة"
+        },
+        "flyers": {
+          "title": "فلايرات",
+          "description": "فلايرات عالية الجودة للعروض الترويجية والفعاليات والحملات"
+        },
+        "packaging": {
+          "title": "التغليف",
+          "description": "حلول تغليف مخصصة للمنتجات والهدايا والتجزئة"
+        },
+        "brochures": {
+          "title": "بروشورات",
+          "description": "بروشورات احترافية لملفات الشركات والقوائم والكتالوجات"
+        }
+      },
       "stats": {
         "products": "{count} منتجات",
         "printers": "{count} مطابع"

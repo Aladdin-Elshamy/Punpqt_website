@@ -27,7 +27,7 @@ export default function ViewToggleButtons({
   activeTab,
 }: ViewToggleButtonsProps) {
   const locale = useLocale();
-  const t = useTranslations("BusinessCards.filter");
+  const t = useTranslations("SpecificProduct.filter");
 
   return (
     <div className="flex items-stretch gap-2">
@@ -64,8 +64,8 @@ export default function ViewToggleButtons({
           onClick={() => onViewChange("grid")}
           variant={view === "grid" ? "default" : "secondary"}
           className={`h-15.25 sm:h-auto! w-15 rounded-xl transition-colors ${view === "grid"
-              ? "bg-black hover:bg-black/80 text-white"
-              : "bg-white border shadow-xs hover:bg-gray-50"
+            ? "bg-black hover:bg-black/80 text-white"
+            : "bg-white border shadow-xs hover:bg-gray-50"
             }`}
         >
           <Grid
@@ -79,8 +79,8 @@ export default function ViewToggleButtons({
         onClick={() => onViewChange("list")}
         variant={view === "list" ? "default" : "secondary"}
         className={`h-15.25 sm:h-auto! w-15 rounded-xl transition-colors ${view === "list"
-            ? "bg-black hover:bg-black/80 text-white"
-            : "bg-white border shadow-xs hover:bg-gray-50"
+          ? "bg-black hover:bg-black/80 text-white"
+          : "bg-white border shadow-xs hover:bg-gray-50"
           }`}
       >
         <List

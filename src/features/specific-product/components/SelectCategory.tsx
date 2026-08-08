@@ -24,7 +24,7 @@ export default function SelectCategory({
   onValueChange,
   className = "",
 }: SelectCategoryProps) {
-  const t = useTranslations("BusinessCards.catalog.selectCategory");
+  const t = useTranslations("SpecificProduct.catalog.selectCategory");
 
   const items = [
     { label: t("popular"), value: "popular" },

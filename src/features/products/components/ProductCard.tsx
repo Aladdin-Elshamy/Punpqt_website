@@ -22,15 +22,15 @@ export default function ProductCard({
         {description}
       </p>
 
-      <div className="mt-14 z-20 relative">
-        <p className="text-lg font-bold text-primary">{printers}</p>
-        <p className="mt-2 text-lg font-bold text-[#6B6B80]">{products}</p>
+      <div className="mt-14 z-20 relative font-semibold">
+        <p className=" text-primary">{printers}</p>
+        <p className="mt-2  text-[#6B6B80]">{products}</p>
       </div>
 
       <Image
         src={image}
         alt={title}
-        className="hidden @sm/product-card:block sm:block absolute md:-bottom-6 -end-12 bottom-0 h-auto w-64 sm:w-42 md:w-64 sm:-inset-e-10 md:-inset-e-12 z-10"
+        className="hidden @sm/product-card:block sm:block md:w-35 absolute md:bottom-0 md:-end-8 xl:-bottom-6 -end-12 bottom-0 h-auto w-64 sm:w-42 xl:w-54 sm:-inset-e-10 xl:-inset-e-10 z-10"
       />
     </article>
   );

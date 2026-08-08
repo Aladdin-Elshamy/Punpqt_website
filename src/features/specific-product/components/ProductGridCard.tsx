@@ -31,7 +31,7 @@ export default function ProductGridCard({
   imageUrl,
   className = "",
 }: ProductGridCardProps) {
-  const t = useTranslations("BusinessCards.card");
+  const t = useTranslations("SpecificProduct.card");
 
   const cardTitle = title || t("defaultTitleGrid");
   const cardVendor = vendor || t("defaultVendor");

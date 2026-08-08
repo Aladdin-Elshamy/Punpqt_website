@@ -315,15 +315,30 @@
       "cookies": "Cookies"
     }
   },
-  "BusinessCards": {
+  "SpecificProduct": {
     "hero": {
       "breadcrumb": {
         "home": "Home",
-        "allProducts": "All Products",
-        "businessCards": "Business Cards"
+        "allProducts": "All Products"
       },
-      "title": "Business Cards",
-      "description": "Standard, premium, and specialty business cards",
+      "products": {
+        "business-cards": {
+          "title": "Business Cards",
+          "description": "Standard, premium, and specialty business cards"
+        },
+        "flyers": {
+          "title": "Flyers",
+          "description": "High-quality flyers for promotions, events, and campaigns"
+        },
+        "packaging": {
+          "title": "Packaging",
+          "description": "Custom packaging solutions for products, gifts, and retail"
+        },
+        "brochures": {
+          "title": "Brochures",
+          "description": "Professional brochures for company profiles, menus, and catalogs"
+        }
+      },
       "stats": {
         "products": "{count} Products",
         "printers": "{count} Printers"

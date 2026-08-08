@@ -32,7 +32,7 @@ export default function ProductRowCard({
   imageUrl,
   className = "",
 }: ProductRowCardProps) {
-  const t = useTranslations("BusinessCards.card");
+  const t = useTranslations("SpecificProduct.card");
 
   const cardTitle = title || t("defaultTitleRow");
   const cardVendor = vendor || t("defaultVendor");

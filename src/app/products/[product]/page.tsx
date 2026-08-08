@@ -1,8 +1,8 @@
-import BrowseBusinessCards from "@/features/business-cards/sections/BrowseBusinessCards";
-import BusinessCardsHero from "@/features/business-cards/sections/Hero";
+import BrowseProductCards from "@/features/specific-product/sections/BrowseProductCards";
+import BusinessCardsHero from "@/features/specific-product/sections/Hero";
 import { EnhancedCirclePattern } from "@/shared/sections/withCirclePattern";
 
-export default function SpecsPage() {
+export default function ProductPage() {
   return (
     <main className="relative overflow-hidden">
       <div className="relative 2xl:container">
@@ -16,7 +16,7 @@ export default function SpecsPage() {
         <EnhancedCirclePattern defaultCols={8} defaultRows={8} mask={true} />
         <BusinessCardsHero />
       </div>
-      <BrowseBusinessCards />
+      <BrowseProductCards />
     </main>
   );
 }

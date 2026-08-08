@@ -45,7 +45,7 @@ export default function PrinterCard({
     onRequestQuote,
     className = "",
 }: PrinterCardProps) {
-    const t = useTranslations("BusinessCards.printerCard");
+    const t = useTranslations("SpecificProduct.printerCard");
     const hasPrice = startingPrice !== undefined && startingPrice !== null;
     const displayName = name || t("defaults.name");
     const displayInitials = initials || t("defaults.initials");

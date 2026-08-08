@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
 export default function SearchSpecs() {
-  const t = useTranslations("BusinessCards.catalog");
+  const t = useTranslations("SpecificProduct.catalog");
 
   return (
     <InputGroup className="xl:max-w-xs border border-[#0B646854] bg-white py-7.5 rounded-xl ">

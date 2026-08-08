@@ -34,7 +34,7 @@ export default function Filter({
   showTitle = true,
   className = "",
 }: FilterProps) {
-  const t = useTranslations("BusinessCards.filter");
+  const t = useTranslations("SpecificProduct.filter");
 
   const DEFAULT_PRICES = [t("options.anyPrice"), t("options.underEgp200")];
   const DEFAULT_LOCATIONS = [t("options.cairo"), t("options.alexandria")];
@@ -85,9 +85,8 @@ export default function Filter({
           <li
             key={price}
             onClick={() => handlePriceClick(price)}
-            className={`hover:underline cursor-pointer transition-colors ${
-              activePrice === price ? "text-primary font-bold underline" : ""
-            }`}
+            className={`hover:underline cursor-pointer transition-colors ${activePrice === price ? "text-primary font-bold underline" : ""
+              }`}
           >
             {price}
           </li>
@@ -100,9 +99,8 @@ export default function Filter({
           <li
             key={loc}
             onClick={() => handleLocationClick(loc)}
-            className={`hover:underline cursor-pointer transition-colors ${
-              activeLocation === loc ? "text-primary font-bold underline" : ""
-            }`}
+            className={`hover:underline cursor-pointer transition-colors ${activeLocation === loc ? "text-primary font-bold underline" : ""
+              }`}
           >
             {loc}
           </li>
@@ -115,11 +113,10 @@ export default function Filter({
           <li
             key={stars}
             onClick={() => handleRatingClick(stars)}
-            className={`w-fit cursor-pointer flex items-center gap-2 ${
-              activeRating === stars
+            className={`w-fit cursor-pointer flex items-center gap-2 ${activeRating === stars
                 ? "border-b-2 border-primary font-bold"
                 : "hover:border-b-2 border-black"
-            }`}
+              }`}
           >
             <div className="flex items-center gap-0.5">
               {Array.from({ length: stars }).map((_, i) => (
