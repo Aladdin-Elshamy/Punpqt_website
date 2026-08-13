@@ -31,14 +31,15 @@ export default function ProductCatalogView({
     <Tabs defaultValue={"products"} value={activeTab} onValueChange={setActiveTab} className="flex-1 space-y-6">
       {/* Top Header Controls Row */}
       <div className="flex items-start xl:items-center justify-between gap-4 flex-col xl:flex-row">
-        <TabsLine
+        {/* <TabsLine
           tabs={[
             { label: t("tabs.products", { count: 6 }), value: "products" },
             { label: t("tabs.printers", { count: 3 }), value: "printers" },
           ]}
-        />
+        /> */}
 
-        <div className="flex flex-1justify w-full xl:grow-0 xl:w-auto order-1 xl:order-2 items-stretch xl:flex-row flex-wrap gap-2">
+        <div className="flex
+         ms-0 w-full xl:ms-auto xl:w-auto order-1 xl:order-2 items-stretch xl:flex-row flex-wrap gap-2">
           <SearchSpecs />
 
           <SelectCategory />

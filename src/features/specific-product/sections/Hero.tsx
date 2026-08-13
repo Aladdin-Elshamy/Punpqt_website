@@ -50,10 +50,10 @@ export default function ProductsHero() {
       <Banner>
         <div className="flex-1">
           <h1 className="text-xl font-semibold">
-            {t(`products.${productKey}.title`)}
+            {t(`products.title`)}
           </h1>
           <p className="mt-1 text-muted-foreground text-balance max-w-md text-sm font-semibold">
-            {t(`products.${productKey}.description`)}
+            {t(`products.description`)}
           </p>
           <div className="flex items-center gap-4 font-semibold text-sm mt-4">
             <span className="text-primary">

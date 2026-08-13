@@ -322,6 +322,8 @@
         "allProducts": "All Products"
       },
       "products": {
+        "title": "Choose a Specification",
+        "description": "Each spec shows how many printers offer it and the starting price",
         "business-cards": {
           "title": "Business Cards",
           "description": "Standard, premium, and specialty business cards"
