@@ -1,3 +1,4 @@
+import Decide from "@/features/printers/sections/Decide";
 import PrintersGrid from "@/features/printers/sections/PrintersGrid";
 import PrintersHero from "@/features/printers/sections/PrintersHero";
 import Search from "@/features/printers/sections/Search";
@@ -19,6 +20,7 @@ export default function PrintersPage() {
             </div>
             <Search />
             <PrintersGrid />
+            <Decide />
         </main>
     );
 }
