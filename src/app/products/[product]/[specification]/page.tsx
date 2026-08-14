@@ -1,5 +1,5 @@
-import BrowseProductCards from "@/features/specific-product/sections/BrowseProductCards";
 import Gallery from "@/features/specification/sections/Gallery";
+import ProductDetailsTabs from "@/features/specification/sections/ProductDetailsTabs";
 import SpecificationPanel from "@/features/specification/sections/SpecificationPanel";
 import BreadcrumbBasic from "@/shared/components/BreadCrumb";
 
@@ -40,11 +40,11 @@ export default function ProductPage() {
                     />
                 </div>
             </div>
-            <section className="container mx-auto mt-11 grid gap-8 px-6 pb-16 md:px-8 lg:grid-cols-[minmax(0,1fr)_550px] lg:px-6 2xl:px-0">
+            <section className="container mx-auto mt-11 grid grid-cols-1 gap-8 px-6 pb-16 md:px-8 lg:grid-cols-[minmax(0,1fr)_450px] lg:px-6 xl:grid-cols-[minmax(0,1fr)_550px] 2xl:px-0">
                 <Gallery />
                 <SpecificationPanel />
             </section>
-            <BrowseProductCards />
+            <ProductDetailsTabs />
         </main>
     );
 }

@@ -5,6 +5,8 @@ import Star2 from "@/shared/icons/Star2";
 import { BoxIcon } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 
 export interface ProductGridCardProps {
   title?: string;
@@ -32,7 +34,7 @@ export default function ProductGridCard({
   className = "",
 }: ProductGridCardProps) {
   const t = useTranslations("SpecificProduct.card");
-
+  const { product } = useParams()
   const cardTitle = title || t("defaultTitleGrid");
   const cardVendor = vendor || t("defaultVendor");
   const cardDelivery = deliveryTime || t("defaultDelivery");
@@ -40,8 +42,8 @@ export default function ProductGridCard({
   const cardBadge = badge || t("topRated");
 
   return (
-    <div
-      className={`bg-white border border-[#E5E7EB] rounded-3xl overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-200 flex flex-col w-full ${className}`}
+    <Link href={`${product}/${cardTitle}`}
+      className={`bg-white border hover:scale-103 border-[#E5E7EB] rounded-3xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col w-full ${className}`}
     >
       {/* Image / Icon Container */}
       <div className="relative w-full h-48 sm:h-52 bg-[#F4F4F6] flex items-center justify-center p-4">
@@ -89,6 +91,6 @@ export default function ProductGridCard({
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

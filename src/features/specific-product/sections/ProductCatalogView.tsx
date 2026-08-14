@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
-import { TabsLine } from "../components/TabsLine";
+import { TabsLine } from "../../../shared/components/TabsLine";
 import SearchSpecs from "../components/Search";
 import ViewToggleButtons, { ViewMode } from "../components/ViewToggleButtons";
 import ProductList from "../components/ProductList";
