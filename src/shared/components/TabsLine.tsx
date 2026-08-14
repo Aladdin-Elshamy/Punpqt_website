@@ -1,4 +1,4 @@
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export function TabsLine({ tabs, className }: {
     tabs: { value: string, label: string }[]

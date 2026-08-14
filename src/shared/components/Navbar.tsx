@@ -75,7 +75,7 @@ const Navbar = ({ className }: Navbar1Props) => {
     },
     {
       title: t("menu.printers"),
-      url: "#",
+      url: "/printers",
     },
     {
       title: t("menu.customRfq"),

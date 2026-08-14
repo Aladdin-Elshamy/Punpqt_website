@@ -1,8 +1,6 @@
 import {
     Tabs,
     TabsContent,
-    TabsList,
-    TabsTrigger,
 } from "@/components/ui/tabs";
 import ProductDescription from "./ProductDescription";
 import ProductReviews from "./ProductReviews";

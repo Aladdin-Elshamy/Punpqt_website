@@ -4,7 +4,6 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import Navbar1 from "@/shared/components/Navbar";
-import { DirectionProvider } from "@base-ui/react";
 import localFont from "next/font/local";
 import Footer from "@/features/home/components/Footer";
 

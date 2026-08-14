@@ -66,7 +66,7 @@ export default function TopPrinter() {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-2xl bg-muted p-4 text-center"
+              className="rounded-2xl bg-[#F4F4F6] p-4 text-center"
             >
               <p className="text-xl font-semibold text-teal-700">
                 {stat.value}

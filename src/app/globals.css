@@ -161,6 +161,11 @@
 
 }
 
+@utility trim {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 1rem;

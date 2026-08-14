@@ -1,4 +1,3 @@
-import BreadcrumbBasic from "@/shared/components/BreadCrumb";
 import { BoxIcon } from "lucide-react";
 import Swiper from "./Swiper";
 

@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FileText, ShoppingCart } from "lucide-react";
 import DeliveryNotice from "../components/DeliveryNotice";
-import DesignUploadChoice from "../components/DesignUploadChoice";
 import OptionGroup from "../components/OptionGroup";
 import PriceSummaryCard from "../components/PriceSummaryCard";
 import ProductHeader from "../components/ProductHeader";
@@ -79,7 +78,7 @@ export default function SpecificationPanel() {
   const [printColor, setPrintColor] = useState("full-color-both-sides");
   const [finishing, setFinishing] = useState("none");
   const [quantity, setQuantity] = useState("500");
-  const [designUpload, setDesignUpload] = useState("printer-design");
+  // const [designUpload, setDesignUpload] = useState("printer-design");
 
   return (
     <aside className="w-full rounded-3xl lg:sticky lg:top-28">
@@ -129,7 +128,7 @@ export default function SpecificationPanel() {
           optionClassName="min-h-10 rounded-full"
         />
 
-        <DesignUploadChoice value={designUpload} onChange={setDesignUpload} />
+        {/* <DesignUploadChoice value={designUpload} onChange={setDesignUpload} /> */}
         <DeliveryNotice />
 
         <div className="space-y-3">

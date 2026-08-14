@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BadgeCheck, ThumbsUp } from "lucide-react";
+import { ThumbsUp } from "lucide-react";
 import StarRating from "./StarRating";
 import Check from "@/shared/icons/Check";
 

@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
-import { TabsLine } from "../../../shared/components/TabsLine";
 import SearchSpecs from "../components/Search";
 import ViewToggleButtons, { ViewMode } from "../components/ViewToggleButtons";
 import ProductList from "../components/ProductList";
@@ -17,7 +16,6 @@ export interface ProductCatalogViewProps {
 export default function ProductCatalogView({
   products = [1, 2, 3, 4, 5, 6],
 }: ProductCatalogViewProps) {
-  const t = useTranslations("SpecificProduct.catalog");
   const [view, setView] = useState<ViewMode>("grid");
   const [activeTab, setActiveTab] = useState<"products" | "printers">("products");
 
