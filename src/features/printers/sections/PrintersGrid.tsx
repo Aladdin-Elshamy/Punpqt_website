@@ -76,18 +76,8 @@ const printers = [
 
 export default function PrintersGrid() {
     return (
-        <section className="container mx-auto px-6 py-12 md:px-8 lg:px-6 2xl:px-0">
-            <div className="mb-7">
-                <h2 className="text-2xl font-bold text-black md:text-3xl">
-                    Verified Printing Partners
-                </h2>
-                <p className="mt-2 text-sm font-medium text-muted-foreground md:text-base">
-                    Compare trusted printers and choose the right partner for your next
-                    project.
-                </p>
-            </div>
-
-            <div className="grid grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-16">
+        <section className="container mx-auto px-6 pb-12 md:px-8 lg:px-6 2xl:px-0">
+            <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 sm:mt-16">
                 {printers.map((printer) => (
                     <PrinterProfileCard
                         key={printer.id}
