@@ -37,7 +37,7 @@ export default function ProductCatalogView({
         /> */}
 
         <div className="flex
-         ms-0 w-full xl:ms-auto xl:w-auto order-1 xl:order-2 items-stretch xl:flex-row flex-wrap gap-2">
+         ms-0 w-full xl:ms-auto order-1 xl:order-2 items-stretch xl:flex-row flex-wrap gap-2">
           <SearchSpecs />
 
           <SelectCategory />

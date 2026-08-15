@@ -13,7 +13,7 @@ export default function SearchSpecs() {
   const t = useTranslations("SpecificProduct.catalog");
 
   return (
-    <InputGroup className="xl:max-w-xs border border-[#0B646854] bg-white py-7.5 rounded-xl ">
+    <InputGroup className="xl:flex-2 border border-[#0B646854] bg-white py-7.5 rounded-xl ">
       <InputGroupInput
         className="sm:text-lg! text-xs placeholder:text-base"
         placeholder={t("searchPlaceholder")}

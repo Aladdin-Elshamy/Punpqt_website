@@ -40,7 +40,7 @@ export default function SelectCategory({
       items={items}
     >
       <SelectTrigger
-        className={`flex-1 w-40 xl:max-w-50 bg-white font-medium text-base px-3! py-4! h-15.25! rounded-xl ${className}`}
+        className={`flex-1 w-40 bg-white font-medium text-base px-3! py-4! h-15.25! rounded-xl ${className}`}
       >
         <SelectValue />
       </SelectTrigger>

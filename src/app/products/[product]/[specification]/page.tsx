@@ -16,8 +16,8 @@ export default function ProductPage() {
                 />
                 {/* <EnhancedCirclePattern defaultCols={8} defaultRows={8} mask={true} /> */}
             </div>
-            <div className="container 2xl:px-0 2xl:w-full flex-col mt-36 mx-auto md:px-8 lg:px-6">
-                <div className="flex items-center  gap-2.5">
+            <div className="container mt-36 mx-auto md:px-8 lg:px-6">
+                <div className="flex items-center gap-2.5">
                     <BreadcrumbBasic
                         links={[
                             {
