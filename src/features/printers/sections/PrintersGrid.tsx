@@ -76,7 +76,7 @@ const printers = [
 
 export default function PrintersGrid() {
     return (
-        <section className="container mx-auto px-6 pb-12 md:px-8 lg:px-6 2xl:px-0">
+        <section className="container mx-auto px-6 pb-12 md:px-8 lg:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6.5 mt-4 sm:mt-16">
                 {printers.map((printer) => (
                     <PrinterProfileCard
