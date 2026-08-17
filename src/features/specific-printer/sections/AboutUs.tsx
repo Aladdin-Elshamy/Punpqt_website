@@ -119,7 +119,7 @@ export default function AboutUs() {
                   key={certification.title}
                   {...certification}
                   icon={Award}
-                  highlighted={index === 1}
+                  highlighted={true}
                 />
               ))}
             </div>
