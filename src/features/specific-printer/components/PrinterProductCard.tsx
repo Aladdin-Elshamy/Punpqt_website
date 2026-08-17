@@ -57,7 +57,7 @@ export default function PrinterProductCard({
                     </div>
                 </dl>
 
-                <Button className="mt-14 h-10 w-full rounded-xl text-sm">
+                <Button className="mt-14 h-11 w-full rounded-2xl font-medium text-sm">
                     View Product
                 </Button>
             </CardContent>
