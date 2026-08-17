@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { ListFilter, Star } from "lucide-react";
-import RatingBar from "../components/RatingBar";
-import ReviewItem, { type ReviewItemData } from "../components/ReviewItem";
+import RatingBar from "@/shared/components/RatingBar";
+import ReviewItem, { type ReviewItemData } from "@/shared/components/ReviewItem";
 
 const ratingDistribution = [
   { stars: 5, percentage: 75 },
@@ -73,16 +73,16 @@ export default function ProductReviews() {
       </Card>
 
       <div className="mt-7 flex flex-wrap items-center gap-2">
-        <Button size="sm" className="rounded-full px-4">
+        <Button size="sm" className="rounded-xl h-9 px-4 font-semibold">
           All Reviews
         </Button>
-        <Button size="sm" variant="secondary" className="rounded-full px-4">
+        <Button size="sm" variant="secondary" className="rounded-xl h-9 px-4 font-semibold">
           5 Stars
         </Button>
-        <Button size="sm" variant="secondary" className="rounded-full px-4">
+        <Button size="sm" variant="secondary" className="rounded-xl h-9 px-4 font-semibold">
           4 Stars
         </Button>
-        <Button size="sm" variant="secondary" className="rounded-full px-4">
+        <Button size="sm" variant="secondary" className="rounded-xl h-9 px-4 font-semibold">
           <ListFilter className="size-3.5" />
           More Filters
         </Button>

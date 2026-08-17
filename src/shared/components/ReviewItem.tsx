@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ThumbsUp } from "lucide-react";
-import StarRating from "./StarRating";
+import StarRating from "../../features/specification/components/StarRating";
 import Check from "@/shared/icons/Check";
 
 export type ReviewItemData = {
@@ -49,7 +49,7 @@ export default function ReviewItem({
                 <div className="mt-3 flex flex-wrap items-center gap-3">
                     <Badge
                         variant="secondary"
-                        className="rounded-full px-3 h-6! font-semibold text-muted-foreground"
+                        className="rounded-full px-3 h-auto! sm:h-6! font-semibold text-muted-foreground whitespace-pre-wrap"
                     >
                         {specification}
                     </Badge>
