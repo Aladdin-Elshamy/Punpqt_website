@@ -118,13 +118,13 @@ const Navbar = ({ className }: Navbar1Props) => {
             <Button size="xs" variant={"ghost"}>
               <Search className="text-[#6B6B80] w-5! h-5!" />
             </Button>
-            <Button size="xs" variant={"ghost"} className={"relative"}>
-              <Cart className="text-[#6B6B80] w-5! h-5!" />
+            <Button render={<Link href="/shopping-cart"><Cart className="text-[#6B6B80] w-5! h-5!" />
               <div className="absolute ps-[0.5px] pb-[0.5px] bg-white -top-1 end-1 text-white ">
-                <span className="w-4 bg-primary flex items-center justify-center rounded-xl">
+                <span className="w-4 bg-primary flex items-center justify-center rounded-xl trim">
                   0
                 </span>
-              </div>
+              </div></Link>} size="xs" variant={"ghost"} className={"relative"}>
+
             </Button>
             <LangSwitcher />
             <Button
@@ -147,44 +147,58 @@ const Navbar = ({ className }: Navbar1Props) => {
                 alt={"Punpqt"}
               />
             </Link>
-            <Sheet>
-              <SheetTrigger>
-                <Menu className="size-4" />
-              </SheetTrigger>
-              <SheetContent
-                side={locale === "ar" ? "left" : "right"}
-                className="overflow-y-auto"
-              >
-                <SheetHeader>
-                  <SheetTitle>
-                    <a href={"#"} className="flex items-center gap-2">
-                      <Image
-                        src={logo}
-                        className="max-w-24 dark:invert"
-                        alt={"Punpqt"}
-                      />
-                    </a>
-                  </SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col gap-6 p-4">
-                  <Accordion className="flex w-full flex-col gap-4">
-                    {menu.map((item) =>
-                      renderMobileMenuItem(item, pathname === "/" + item.url),
-                    )}
-                  </Accordion>
+            <div className="flex items-center gap-4">
+              <Button
+                variant="ghost"
+                size="icon-sm"
+                aria-label={`Shopping Cart`}
+                className="shrink-0 text-muted-foreground hover:text-destructive relative"
+                render={<Link href="/shopping-cart"><Cart className="text-[#6B6B80] w-5! h-5!" />
+                  <div className="absolute ps-[0.5px] pb-[0.5px] bg-white -top-1 -end-0.5 text-white ">
+                    <span className="w-4 bg-primary flex items-center justify-center rounded-xl trim text-xs">
+                      0
+                    </span>
+                  </div></Link>}
+              />
+              <Sheet>
+                <SheetTrigger>
+                  <Menu className="size-4" />
+                </SheetTrigger>
+                <SheetContent
+                  side={locale === "ar" ? "left" : "right"}
+                  className="overflow-y-auto"
+                >
+                  <SheetHeader>
+                    <SheetTitle>
+                      <a href={"#"} className="flex items-center gap-2">
+                        <Image
+                          src={logo}
+                          className="max-w-24 dark:invert"
+                          alt={"Punpqt"}
+                        />
+                      </a>
+                    </SheetTitle>
+                  </SheetHeader>
+                  <div className="flex flex-col gap-6 p-4">
+                    <Accordion className="flex w-full flex-col gap-4">
+                      {menu.map((item) =>
+                        renderMobileMenuItem(item, pathname === item.url),
+                      )}
+                    </Accordion>
 
-                  <div className="flex flex-col gap-3">
-                    <LangSwitcher />
-                    <Button variant="outline">
-                      <a href={auth.login.url}>{auth.login.title}</a>
-                    </Button>
-                    <Button>
-                      <a href={auth.signup.url}>{auth.signup.title}</a>
-                    </Button>
+                    <div className="flex flex-col gap-3">
+                      <LangSwitcher />
+                      <Button variant="outline">
+                        <a href={auth.login.url}>{auth.login.title}</a>
+                      </Button>
+                      <Button>
+                        <a href={auth.signup.url}>{auth.signup.title}</a>
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </SheetContent>
-            </Sheet>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </div>
@@ -236,7 +250,7 @@ const renderMobileMenuItem = (item: MenuItem, isActive: boolean) => {
   }
 
   return (
-    <Link key={item.title} href={item.url} className={`text-md font-semibold ${isActive ? 'border-b-2 border-[#00645D] text-[#00645D]': ''}`}>
+    <Link key={item.title} href={item.url} className={`text-md font-semibold ${isActive ? 'border-b-2 border-[#00645D] text-[#00645D]' : ''}`}>
       {item.title}
     </Link>
   );

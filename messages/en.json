@@ -10,7 +10,8 @@
     "menu": {
       "products": "Products",
       "printers": "Printers",
-      "customRfq": "Custom RFQ"
+      "customRfq": "Custom RFQ",
+      "shoppingCart": "Shopping Cart"
     },
     "auth": {
       "login": "Login Now",

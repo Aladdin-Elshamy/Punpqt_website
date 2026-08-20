@@ -13,7 +13,7 @@ import {
 
 export default function ProfileHeader() {
     return (
-        <section className="container 2xl:px-0 2xl:w-full flex justify-center sm:block flex-col sm:mt-36 mx-auto md:px-8 lg:px-6 h-[calc(100vh-74px)] sm:h-auto">
+        <section className="container 2xl:px-0 2xl:w-full mt-36 mx-auto md:px-8 lg:px-6">
             <BreadcrumbBasic
                 links={[
                     {

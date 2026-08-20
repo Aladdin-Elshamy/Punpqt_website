@@ -10,7 +10,8 @@
     "menu": {
       "products": "المنتجات",
       "printers": "المطابع",
-      "customRfq": "طلب عرض سعر مخصص"
+      "customRfq": "طلب عرض سعر مخصص",
+      "shoppingCart": "سلة المشتريات"
     },
     "auth": {
       "login": "تسجيل الدخول",

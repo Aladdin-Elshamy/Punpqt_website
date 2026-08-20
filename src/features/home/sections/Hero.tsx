@@ -6,11 +6,11 @@ export default function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <div className="container 2xl:px-0 2xl:w-full flex justify-center sm:block flex-col sm:mt-36 mx-auto md:px-8 lg:px-6 h-[calc(100vh-74px)] sm:h-auto">
+    <div className="container 2xl:px-0 2xl:w-full mt-36 mx-auto md:px-8 lg:px-6">
       <Badge className="h-8! font-semibold px-4 border-[#0D73771A] ">
         <Star /> {t("badge")}
       </Badge>
-      <h1 className="font-bold text-3xl sm:text-5xl mt-6">
+      <h1 className="font-bold text-3xl sm:text-4xl mt-6">
         {t("title.line1")}
         <br />
         <span className="text-primary rtl:mt-4 rtl:block">
