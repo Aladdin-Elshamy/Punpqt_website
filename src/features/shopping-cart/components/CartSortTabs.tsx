@@ -1,16 +1,10 @@
 "use client";
 
+import { CART_SORT_OPTIONS } from "@/features/shopping-cart/shopping-cart.data";
 import { cn } from "@/lib/utils";
-import { Zap } from "lucide-react";
 import { useState } from "react";
 
-const sortOptions = [
-  { value: "urgency", label: "⚡ By Urgency" },
-  { value: "price", label: "By Price" },
-  { value: "date", label: "Added Order" },
-] as const;
-
-type SortOption = (typeof sortOptions)[number]["value"];
+type SortOption = (typeof CART_SORT_OPTIONS)[number]["value"];
 
 export default function CartSortTabs() {
   const [activeSort, setActiveSort] = useState<SortOption>("urgency");
@@ -20,7 +14,7 @@ export default function CartSortTabs() {
       className="inline-flex rounded-full bg-muted/80 p-1"
       aria-label="Cart sorting"
     >
-      {sortOptions.map((option) => {
+      {CART_SORT_OPTIONS.map((option) => {
         const isActive = activeSort === option.value;
 
         return (
