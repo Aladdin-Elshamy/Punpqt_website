@@ -33,7 +33,7 @@ export default function CustomerStories() {
   ];
 
   return (
-    <section className="container py-20 mx-auto px-6 md:px-8 lg:px-6 my-16">
+    <section className="container py-20 mx-auto px-0 my-16">
       <Heading
         className="text-center"
         title={

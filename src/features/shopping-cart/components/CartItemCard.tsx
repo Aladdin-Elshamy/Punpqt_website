@@ -31,7 +31,7 @@ export default function CartItemCard({
   const radioGroupId = useId();
 
   return (
-    <Card className="gap-0 rounded-2xl border-border/80 py-0 shadow-sm relative z-10 bg-white">
+    <Card className="gap-0 rounded-2xl border ring-0 border-border/80 py-0 shadow-sm relative z-10 bg-white">
       <CardContent className="p-4 sm:p-5">
         <div className="flex items-center justify-between gap-4">
           <Badge

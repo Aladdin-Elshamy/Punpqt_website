@@ -8,7 +8,7 @@ export default function Feature({
   icon: React.ReactNode;
 }) {
   return (
-    <div className="bg-white text-center flex flex-col items-center justify-center">
+    <div className="text-center flex flex-col items-center justify-center">
       <div className="text-2xl mx-auto rounded-2xl border-[#0000000F] shadow-xs p-4 border-2">
         {icon}
       </div>

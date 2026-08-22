@@ -10,7 +10,7 @@ export default function WhyPunpqt() {
   const t = useTranslations("WhyPunpqt");
 
   return (
-    <section className="container px-6 md:px-8 lg:px-6">
+    <section className="container px-0">
       <div className="p-12 border-[0.99px] border-[#0000000F] rounded-2xl shadow-sm">
         <Heading
           title={

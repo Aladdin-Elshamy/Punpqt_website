@@ -28,7 +28,7 @@ export default function HomePage() {
       </div>
       <SearchSection />
       <FeaturesStatistics />
-      <div className="px-4 sm:px-8 md:px-12 xl:px-24 container">
+      <div className="px-4 sm:px-8 md:px-6 xl:px-8 container">
         <ChooseUs />
       </div>
       <PopularProducts />
@@ -37,21 +37,21 @@ export default function HomePage() {
       </div>
       <TopPrinters />
       <div className="bg-[#FAFAFA]">
-        <div className="sm:px-8 md:px-12 xl:px-24 container">
+        <div className="sm:px-8 md:px-6 xl:px-8 container">
           <CoreFeature />
         </div>
       </div>
-      <div className="px-4 sm:px-8 md:px-12 xl:px-24 container">
+      <div className="px-4 sm:px-8 md:px-6 xl:px-8 container">
         <CustomerStories />
       </div>
       <div className="bg-[#FAFAFA] py-16">
-        <div className="px-4 sm:px-8 md:px-12 xl:px-24 container">
+        <div className="px-4 sm:px-8 md:px-6 xl:px-8 container">
           <WhyPunpqt />
           <PrintingHouse />
         </div>
       </div>
       <div className="py-40">
-        <div className="sm:px-8 md:px-12 xl:px-24 container">
+        <div className="sm:px-8 md:px-6 xl:px-8 container">
           <FindYourPrinter />
         </div>
       </div>

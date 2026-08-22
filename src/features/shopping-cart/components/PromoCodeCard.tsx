@@ -10,7 +10,7 @@ export default function PromoCodeCard() {
   const [promoCode, setPromoCode] = useState("");
 
   return (
-    <Card className="gap-0 rounded-2xl border-border/80 py-0 shadow-sm">
+    <Card className="gap-0 rounded-2xl border ring-0 border-border/80 py-0 shadow-sm">
       <CardContent className="p-4">
         <div className="flex items-center gap-2">
           <Ticket className="size-4 text-primary" />

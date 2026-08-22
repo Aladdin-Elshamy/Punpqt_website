@@ -10,7 +10,7 @@ export default function CoreFeature() {
   const t = useTranslations("CoreFeature");
 
   return (
-    <section className="container py-20 mx-auto px-6 md:px-8 lg:px-6">
+    <section className="container px-0 py-20 mx-auto">
       <div className="bg-primary p-12 rounded-2xl relative overflow-hidden @container/core-feature">
         <div className="hidden @xl/core-feature:block rounded-full w-60 h-60 absolute bg-[#17797c] ltr:-right-10 rtl:-left-10 -top-10 z-10"></div>
         <div className="hidden @xl/core-feature:block rounded-full w-45 h-45 absolute bg-[#17797c] ltr:right-12 rtl:left-10 -bottom-15"></div>
