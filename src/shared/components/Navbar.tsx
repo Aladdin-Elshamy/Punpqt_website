@@ -79,7 +79,7 @@ const Navbar = ({ className }: Navbar1Props) => {
     },
     {
       title: t("menu.customRfq"),
-      url: "#",
+      url: "/custom-rfq",
     },
   ];
 

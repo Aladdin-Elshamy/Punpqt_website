@@ -1,7 +1,7 @@
 import businessCardsImage from "@/assets/images/business-card.png";
 import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../../../shared/components/ProductCard";
 
 export default function AllProducts() {
   const t = useTranslations("AllProducts");

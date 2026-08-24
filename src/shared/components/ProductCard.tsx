@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Image, { type StaticImageData } from "next/image";
 
 type ProductCardProps = {
@@ -5,7 +6,8 @@ type ProductCardProps = {
   title: string;
   description: string;
   printers: string;
-  products: string;
+  products?: string;
+  className?: string;
 };
 
 export default function ProductCard({
@@ -14,17 +16,23 @@ export default function ProductCard({
   description,
   printers,
   products,
+  className,
 }: ProductCardProps) {
   return (
-    <article className="relative overflow-hidden rounded-2xl border border-black/6 bg-white p-6 shadow-sm @container/product-card">
+    <article
+      className={cn(
+        "relative overflow-hidden rounded-3xl border border-black/6 bg-white p-6 shadow-sm @container/product-card",
+        className,
+      )}
+    >
       <h3 className="text-lg font-semibold text-black">{title}</h3>
-      <p className="mt-1 text-base leading-snug font-medium text-[#55577A]">
+      <p className="mt-1 text-sm leading-snug font-medium text-[#55577A]">
         {description}
       </p>
 
       <div className="mt-14 z-20 relative font-semibold">
         <p className=" text-primary">{printers}</p>
-        <p className="mt-2  text-[#6B6B80]">{products}</p>
+        {products ? <p className="mt-2  text-[#6B6B80]">{products}</p> : null}
       </div>
 
       <Image

@@ -402,5 +402,145 @@
         "currency": "EGP"
       }
     }
+  },
+  "CustomRFQ": {
+    "badge": "Custom Print Request (RFQ)",
+    "title": "What do you need printed?",
+    "description": "Complete this form and receive competing quotes from verified printers.",
+    "steps": {
+      "productType": "Product Type",
+      "specifications": "Specifications",
+      "delivery": "Delivery",
+      "chooseVendors": "Choose Vendors",
+      "reviewSubmit": "Review & Submit",
+      "confirmation": "Confirmation"
+    },
+    "productType": {
+      "title": "Select Product Type",
+      "description": "What do you need printed?",
+      "products": {
+        "businessCards": {
+          "title": "Business Cards",
+          "description": "Standard, premium, and specialty business cards with custom finishes",
+          "printers": "120+ printers"
+        },
+        "flyers": {
+          "title": "Flyers & Leaflets",
+          "description": "A4, A5, A6 flyers in single or double-sided. Ideal for promotions.",
+          "printers": "120+ printers"
+        },
+        "brochures": {
+          "title": "Brochures",
+          "description": "Tri-fold, bi-fold, and Z-fold brochures for marketing materials",
+          "printers": "120+ printers"
+        },
+        "posters": {
+          "title": "Posters",
+          "description": "A1, A2, A3 posters for events, retail, and indoor/outdoor use",
+          "printers": "120+ printers"
+        },
+        "stickers": {
+          "title": "Stickers",
+          "description": "Vinyl, paper, and waterproof stickers in any shape and size",
+          "printers": "120+ printers"
+        },
+        "banners": {
+          "title": "Banners",
+          "description": "Pull-up banners, mesh banners, and PVC banners for events",
+          "printers": "120+ printers"
+        },
+        "tShirts": {
+          "title": "T-Shirts",
+          "description": "Custom printed t-shirts with DTG, screen, or transfer printing",
+          "printers": "120+ printers"
+        },
+        "books": {
+          "title": "Books",
+          "description": "Perfect bound, saddle-stitched, and spiral-bound books",
+          "printers": "75+ printers"
+        }
+      }
+    },
+    "navigation": {
+      "back": "Back",
+      "continue": "Continue",
+      "stepOf": "Step {current} of {total}"
+    },
+    "specifications": {
+      "title": "Product Specifications",
+      "description": "Tell us the details of your print request.",
+      "required": "Required",
+      "optional": "Optional",
+      "quantity": "Quantity",
+      "quantityPlaceholder": "Enter quantity",
+      "material": "Material / Paper",
+      "materialPlaceholder": "Select material",
+      "materials": {
+        "coated": "Coated paper",
+        "uncoated": "Uncoated paper",
+        "kraft": "Kraft paper",
+        "recycled": "Recycled paper",
+        "vinyl": "Vinyl"
+      },
+      "width": "Width",
+      "height": "Height",
+      "dimensionPlaceholder": "Enter size",
+      "unit": "Unit",
+      "units": {
+        "millimeters": "mm",
+        "centimeters": "cm",
+        "inches": "in"
+      },
+      "printColors": "Print Colors",
+      "printColorsPlaceholder": "Select colors",
+      "printColorOptions": {
+        "fullColor": "Full color (CMYK)",
+        "blackAndWhite": "Black & white",
+        "pantone": "Pantone colors"
+      },
+      "printSides": "Print Sides",
+      "printSidesPlaceholder": "Select sides",
+      "printSideOptions": {
+        "single": "Single-sided",
+        "double": "Double-sided"
+      },
+      "finishing": "Finishing Options",
+      "finishingDescription": "Select all that apply",
+      "finishingOptions": {
+        "glossLamination": "Gloss Lamination",
+        "mattLamination": "Matt Lamination",
+        "spotUv": "Spot UV",
+        "foilStamping": "Foil Stamping",
+        "embossing": "Embossing",
+        "dieCut": "Die-Cut",
+        "softTouch": "Soft Touch",
+        "binding": "Binding"
+      },
+      "additionalNotes": "Additional Notes",
+      "notesPlaceholder": "Share any special instructions, color references, or other requirements..."
+    },
+    "delivery": {
+      "title": "Delivery Information",
+      "description": "Choose where and when you need your order delivered.",
+      "required": "Required",
+      "savedAddresses": "Saved addresses",
+      "addresses": {
+        "home": {
+          "label": "Home",
+          "details": "12 Tahrir Street, Dokki, Giza"
+        },
+        "work": {
+          "label": "Work",
+          "details": "Smart Village, 6th of October, Giza"
+        }
+      },
+      "addNewAddress": "Add New Address",
+      "chooseSavedAddress": "Choose a saved address",
+      "city": "City",
+      "cityPlaceholder": "Enter city",
+      "fullAddress": "Full Address",
+      "addressPlaceholder": "Enter your full delivery address",
+      "requiredBy": "Required By"
+    }
   }
 }
