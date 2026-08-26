@@ -2,7 +2,7 @@
   "HomePage": {
     "title": "Hello world!"
   },
-  "LangSwitcher":{
+  "LangSwitcher": {
     "ar": "العربية",
     "en": "EN"
   },
@@ -464,7 +464,9 @@
     "navigation": {
       "back": "Back",
       "continue": "Continue",
-      "stepOf": "Step {current} of {total}"
+      "stepOf": "Step {current} of {total}",
+      "submitRequest": "Submit Request",
+      "submissionComplete": "Your request has been submitted successfully."
     },
     "specifications": {
       "title": "Product Specifications",
@@ -541,6 +543,68 @@
       "fullAddress": "Full Address",
       "addressPlaceholder": "Enter your full delivery address",
       "requiredBy": "Required By"
+    },
+    "chooseVendors": {
+      "title": "Choose Vendors",
+      "description": "Choose how you would like to send your request for quotation.",
+      "recommended": "Recommended",
+      "topRated": "Top Rated",
+      "broadcast": {
+        "title": "Broadcast to All Matching Printers",
+        "description": "Send your request to all verified printers that match your requirements and receive more competitive quotes."
+      },
+      "specific": {
+        "title": "Choose Specific Printers",
+        "description": "Select up to 5 printers you would like to receive quotes from."
+      },
+      "selectPrinters": "Select Printers",
+      "selectedCount": "{count} selected",
+      "selectionHint": "Select between 1 and 5 printers.",
+      "vendors": {
+        "elite": {
+          "initials": "EP",
+          "name": "Elite Printing",
+          "rating": "4.9",
+          "reviews": "128 reviews"
+        },
+        "premium": {
+          "initials": "PP",
+          "name": "Premium Print Hub",
+          "rating": "4.8",
+          "reviews": "96 reviews"
+        },
+        "quick": {
+          "initials": "QP",
+          "name": "Quick Print Co.",
+          "rating": "4.7",
+          "reviews": "84 reviews"
+        },
+        "quality": {
+          "initials": "QP",
+          "name": "Quality Printing House",
+          "rating": "4.6",
+          "reviews": "72 reviews"
+        }
+      }
+    },
+    "reviewSubmit": {
+      "title": "Review & Submit",
+      "description": "Review your request details before sending it to printers.",
+      "notSpecified": "Not specified",
+      "productType": "Product Type",
+      "quantity": "Quantity",
+      "pieces": "{count} pieces",
+      "material": "Material",
+      "size": "Size",
+      "printColors": "Print Colors",
+      "finishing": "Finishing",
+      "deliveryAddress": "Delivery Address",
+      "deliveryCity": "Delivery Location",
+      "deadline": "Required By",
+      "flexible": "Flexible",
+      "vendorMode": "Vendor Selection",
+      "allMatchingPrinters": "All matching printers",
+      "specificPrinters": "{count} specific printers"
     }
   }
 }

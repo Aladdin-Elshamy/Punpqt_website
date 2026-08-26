@@ -4,7 +4,6 @@ export const CUSTOM_RFQ_STEP_KEYS = [
   "delivery",
   "chooseVendors",
   "reviewSubmit",
-  "confirmation",
 ] as const;
 
 export const CUSTOM_RFQ_TOTAL_STEPS = CUSTOM_RFQ_STEP_KEYS.length;
