@@ -20,7 +20,7 @@ export default function CustomRFQProgress({
         />
         <div className="mx-auto max-w-4xl overflow-x-auto px-1 pb-2">
           <ol
-            className="flex w-full items-start"
+            className="flex w-full justify-center sm:items-start flex-wrap gap-4 sm:gap-0 sm:flex-nowrap"
             aria-label="Request for quote progress"
           >
             {steps.map((step, index) => {
@@ -31,9 +31,9 @@ export default function CustomRFQProgress({
               return (
                 <li
                   key={step}
-                  className="flex min-w-0 flex-1 items-start last:flex-none"
+                  className="flex basis-24 sm:basis-auto justify-center sm:min-w-0 sm:flex-1 items-start last:flex-none gap-4 sm:gap-0"
                 >
-                  <div className="flex min-w-24 flex-col items-center gap-2 text-center">
+                  <div className="flex basis-14 sm:basis-auto sm:min-w-24 flex-col items-center gap-2 text-center">
                     <div
                       className={cn(
                         "flex size-8 items-center justify-center rounded-full border text-xs font-semibold",
@@ -51,17 +51,18 @@ export default function CustomRFQProgress({
                         <span className="trim">{stepNumber}</span>
                       )}
                     </div>
+
                     <span
                       className={cn(
-                        "whitespace-nowrap text-xs font-medium",
-                        isActive ? "text-primary" : "text-foreground",
+                        "sm:whitespace-nowrap text-xs font-medium",
+                        isActive ? "text-primary" : "text-foreground hidden sm:block",
                       )}
                     >
                       {step}
                     </span>
                   </div>
                   {index < steps.length - 1 ? (
-                    <span className="mt-3 h-0.5 min-w-4 flex-1 rounded-full bg-border" />
+                    <span className="mt-3 h-0.5 sm:min-w-4 flex-1 rounded-full bg-border" />
                   ) : null}
                 </li>
               );
