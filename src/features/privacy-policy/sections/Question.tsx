@@ -25,7 +25,7 @@ export default function Question() {
       </p>
       <Link
         href="/get-in-touch"
-        className="mt-6 inline-flex h-12 items-center justify-center rounded-3xl bg-primary px-6 text-base font-semibold text-primary-foreground transition-colors hover:bg-primary/80"
+        className="mt-6 inline-flex h-12 items-center justify-center rounded-2xl bg-primary px-6 text-base font-semibold text-primary-foreground transition-colors hover:bg-primary/80"
       >
         Contact Us
       </Link>
