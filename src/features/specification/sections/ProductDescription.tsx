@@ -91,7 +91,7 @@ export default function ProductDescription() {
 
       <section>
         <h2 className="text-xl font-semibold text-black">You Might Also Like</h2>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {recommendations.map((product) => (
             <ProductGridCard
               key={product.title}

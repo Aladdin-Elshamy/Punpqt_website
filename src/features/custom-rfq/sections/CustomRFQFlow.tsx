@@ -32,7 +32,7 @@ export default function CustomRFQFlow({
   stepOfLabel,
 }: Props) {
   const t = useTranslations("CustomRFQ.navigation");
-  const [activeStep, setActiveStep] = useState(5);
+  const [activeStep, setActiveStep] = useState(1);
   const [draft, setDraft] = useState<CustomRFQDraft>(initialCustomRFQDraft);
   const [isDeliveryValid, setIsDeliveryValid] = useState(true);
   const [isVendorSelectionValid, setIsVendorSelectionValid] = useState(false);

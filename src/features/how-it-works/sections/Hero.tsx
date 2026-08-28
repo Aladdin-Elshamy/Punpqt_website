@@ -19,7 +19,7 @@ export default function Hero() {
         your spec, choose a printer, approve a sample, and receive your order —
         all in one place, with payment protection built in.
       </p>
-      <div className="flex gap-4 flex-col sm:flex-row mt-14">
+      <div className="flex gap-4 flex-col sm:flex-row mt-14 relative z-10">
         <Button className={"h-12 px-6 rounded-3xl font-semibold tracking-wide"}>
           <span className="trim">Start Ordering</span>
           <ArrowRight />

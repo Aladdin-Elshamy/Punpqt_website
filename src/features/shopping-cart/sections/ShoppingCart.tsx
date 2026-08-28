@@ -67,6 +67,7 @@ export default function ShoppingCart() {
           <Button
             variant="outline"
             className="mt-5 h-12 w-full rounded-2xl border-border/80 bg-background text-sm font-semibold text-muted-foreground hover:text-foreground"
+            nativeButton={false}
             render={<Link href="/products">+ Continue Shopping</Link>}
           />
         </div>

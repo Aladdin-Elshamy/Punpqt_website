@@ -30,8 +30,9 @@ export default function Question() {
           Contact Us
         </Link>
         <Button
+          nativeButton={false}
           variant={"secondary"}
-           className={" border-black/6! h-12 px-6 rounded-2xl font-semibold"}
+          className={" border-black/6! h-12 px-6 rounded-2xl font-semibold"}
           render={<Link href={"/privacy-policy"}>Privacy Policy</Link>}
         />
       </div>

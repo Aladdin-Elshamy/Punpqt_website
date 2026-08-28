@@ -68,7 +68,7 @@ export default function ProductGridCard({
       {/* Details Container */}
       <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 gap-2">
         <div>
-          <h3 className="font-semibold text-slate-900 text-base sm:text-lg leading-snug line-clamp-1">
+          <h3 className="font-semibold text-black text-base leading-snug line-clamp-1">
             {cardTitle}
           </h3>
           <p className="text-xs sm:text-sm text-muted-foreground font-medium mt-1">
@@ -83,7 +83,7 @@ export default function ProductGridCard({
         </div>
 
         <div className="flex items-center justify-between pt-1 mt-auto">
-          <span className="text-lg sm:text-xl font-semibold text-[#0B6468]">
+          <span className="text-base font-semibold text-[#0B6468]">
             {cardCurrency} {price}
           </span>
           <span className="text-xs sm:text-sm font-semibold text-muted-foreground">

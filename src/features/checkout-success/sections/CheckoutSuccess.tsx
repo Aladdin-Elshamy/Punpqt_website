@@ -15,7 +15,7 @@ export default function CheckoutSuccess() {
           </div>
 
           <h1 className="mt-7 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            You're all set!
+            {`You're all set!`}
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl text-base leading-7 font-semibold text-muted-foreground sm:text-lg">
@@ -42,6 +42,7 @@ export default function CheckoutSuccess() {
           <Button
             variant="outline"
             className="h-12 rounded-2xl border-border/80 bg-background text-base font-medium text-foreground"
+            nativeButton={false}
             render={<Link href="/">Back to Home</Link>}
           />
         </div>

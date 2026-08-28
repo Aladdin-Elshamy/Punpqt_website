@@ -20,7 +20,7 @@ export default function Submitted() {
             Your request has been sent to 1 selected printer.
           </p>
           <p className="mt-3 text-sm font-semibold text-muted-foreground sm:text-base">
-            You'll receive quotes within a few hours. We'll notify you by email as offers arrive.
+            {`You'll receive quotes within a few hours. We'll notify you by email as offers arrive.`}
           </p>
         </div>
 
@@ -35,6 +35,7 @@ export default function Submitted() {
           <Button
             variant="outline"
             className="h-12 rounded-2xl border-border/80 bg-background text-base font-medium text-foreground"
+            nativeButton={false}
             render={<Link href="/">Back to Marketplace</Link>}
           />
         </div>

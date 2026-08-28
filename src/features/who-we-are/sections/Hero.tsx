@@ -20,7 +20,7 @@ export default function Hero() {
         PUNQT connects businesses and individuals with verified printing houses
         across Egypt — making custom print ordering as simple as e-commerce.
       </p>
-      <div className="flex gap-4 flex-col sm:flex-row mt-14">
+      <div className="flex gap-4 flex-col sm:flex-row mt-14 relative z-10">
         <Button className={"h-12 px-6 rounded-3xl font-semibold tracking-wide"}>
           <span className="trim">Browse Products</span>
           <ArrowRight />

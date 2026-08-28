@@ -118,7 +118,7 @@ const Navbar = ({ className }: Navbar1Props) => {
             <Button size="xs" variant={"ghost"}>
               <Search className="text-[#6B6B80] w-5! h-5!" />
             </Button>
-            <Button render={<Link href="/shopping-cart"><Cart className="text-[#6B6B80] w-5! h-5!" />
+            <Button nativeButton={false} render={<Link href="/shopping-cart"><Cart className="text-[#6B6B80] w-5! h-5!" />
               <div className="absolute ps-[0.5px] pb-[0.5px] bg-white -top-1 end-1 text-white ">
                 <span className="w-4 bg-primary flex items-center justify-center rounded-xl trim">
                   0
@@ -153,6 +153,7 @@ const Navbar = ({ className }: Navbar1Props) => {
                 size="icon-sm"
                 aria-label={`Shopping Cart`}
                 className="shrink-0 text-muted-foreground hover:text-destructive relative"
+                nativeButton={false}
                 render={<Link href="/shopping-cart"><Cart className="text-[#6B6B80] w-5! h-5!" />
                   <div className="absolute ps-[0.5px] pb-[0.5px] bg-white -top-1 -end-0.5 text-white ">
                     <span className="w-4 bg-primary flex items-center justify-center rounded-xl trim text-xs">
