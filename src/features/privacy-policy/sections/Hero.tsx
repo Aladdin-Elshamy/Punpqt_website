@@ -37,7 +37,7 @@ export default function Hero() {
       <Badge className="h-8! border-[#0D73771A] px-4 font-semibold">
         <Shield /> Legal
       </Badge>
-      <h1 className="mt-6 text-3xl font-bold sm:text-4xl">Get in touch</h1>
+      <h1 className="mt-6 text-3xl font-bold sm:text-4xl text-primary">Privacy Policy</h1>
       <p className="mt-5 max-w-lg font-semibold text-muted-foreground">
         This policy explains what information PUNQT collects, how we use it, and
         your rights regarding your personal data. We are committed to protecting
