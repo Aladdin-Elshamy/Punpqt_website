@@ -1,27 +1,31 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import BreadcrumbBasic from "@/shared/components/BreadCrumb";
 import Check from "@/shared/icons/Check";
 import QLogo from "@/shared/icons/QLogo";
 import {
-    BadgeCheck,
     Clock3,
     MapPin,
     MessageSquare,
     Star,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ProfileHeader() {
+    const t = useTranslations("SpecificPrinter");
+
     return (
         <section className="container 2xl:px-0 2xl:w-full mt-36 mx-auto md:px-8 lg:px-6">
             <BreadcrumbBasic
                 links={[
                     {
-                        label: "Home",
+                        label: t("breadcrumb.home"),
                         url: "/",
                     },
                     {
-                        label: "Printers",
+                        label: t("breadcrumb.printers"),
                         url: "/printers",
                     },
                     {
@@ -48,7 +52,7 @@ export default function ProfileHeader() {
                                 className="h-8 rounded-full px-3 text-sm text-primary [&>svg]:size-4! bg-[#00645D]/20"
                             >
                                 <Check />
-                                <span className="trim">Verified</span>
+                                <span className="trim">{t("badge")}</span>
                             </Badge>
                         </div>
 
@@ -71,7 +75,7 @@ export default function ProfileHeader() {
 
                             <span className="flex items-center gap-2">
                                 <Clock3 className="size-4 shrink-0 text-primary" />
-                                Saturday - Thursday 9:00 AM - 6:00 PM
+                                {t("workingHours")}
                             </span>
                         </div>
                     </div>
@@ -80,17 +84,17 @@ export default function ProfileHeader() {
                 <div className="grid w-full  gap-3 sm:grid-cols-2 lg:w-72 lg:grid-cols-1">
                     <Button className="h-12 rounded-2xl text-sm">
                         <MessageSquare className="size-4" />
-                        Send Message
+                        {t("sendMessage")}
                     </Button>
 
                     <Button
                         variant="outline"
                         className="h-12 rounded-2xl border-primary text-sm text-primary hover:bg-primary/5 hover:text-primary"
                     >
-                        Request Quote
+                        {t("requestQuote")}
                     </Button>
                 </div>
             </div>
         </section>
     );
-}
+}

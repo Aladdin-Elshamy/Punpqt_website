@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import ArrowRight from "@/shared/icons/ArrowRight";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Decide() {
   const t = useTranslations("Decide");
@@ -22,10 +23,12 @@ export default function Decide() {
             className={
               "text-base ms-auto items-center text-white font-semibold h-12 ltr:w-40 rounded-xl gap-2! rtl:w-48"
             }
-          >
-            <span className="trim">Submit RFQ</span>
-            <ArrowRight className=" stroke-3! rtl:-scale-x-100" />
-          </Button>
+            render={<Link href="/custom-rfq">
+              <span className="trim">Submit RFQ</span>
+              <ArrowRight className=" stroke-3! rtl:-scale-x-100" />
+            </Link>}
+            nativeButton={false}
+          />
         </div>
 
       </div>

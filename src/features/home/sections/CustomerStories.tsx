@@ -8,26 +8,26 @@ export default function CustomerStories() {
   const feedback = [
     {
       rating: 5,
-      message: t("feedback.first.message"),
+      message: "hpasduivha",
       user: {
-        name: t("feedback.first.user.name"),
-        department: t("feedback.first.user.department"),
+        name: "ahmed",
+        department: "tech",
       },
     },
     {
-      rating: 3,
-      message: t("feedback.second.message"),
+      rating: 5,
+      message: "hpasduivha",
       user: {
-        name: t("feedback.second.user.name"),
-        department: t("feedback.second.user.department"),
+        name: "ahmed",
+        department: "tech",
       },
     },
     {
-      rating: 2,
-      message: t("feedback.third.message"),
+      rating: 5,
+      message: "hpasduivha",
       user: {
-        name: t("feedback.third.user.name"),
-        department: t("feedback.third.user.department"),
+        name: "ahmed",
+        department: "tech",
       },
     },
   ];

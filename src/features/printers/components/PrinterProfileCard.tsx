@@ -15,6 +15,7 @@ import {
   Zap,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export interface PrinterProfileCardProps {
@@ -34,7 +35,6 @@ export interface PrinterProfileCardProps {
   responseTime: string;
   viewProfileLabel?: string;
   messageLabel?: string;
-  onViewProfile?: () => void;
   onMessage?: () => void;
   onFavoriteChange?: (isFavorite: boolean) => void;
   className?: string;
@@ -57,7 +57,6 @@ export default function PrinterProfileCard({
   responseTime,
   viewProfileLabel = "View Profile",
   messageLabel = "Message printer",
-  onViewProfile,
   onMessage,
   onFavoriteChange,
   className,
@@ -191,11 +190,12 @@ export default function PrinterProfileCard({
           <div className="grid grid-cols-[minmax(0,1fr)_52px] gap-3">
             <Button
               type="button"
-              onClick={onViewProfile}
+              render={<Link href="/custom-rfq">
+                <span className="trim">{viewProfileLabel}</span>
+              </Link>}
+              nativeButton={false}
               className="h-13 rounded-3xl text-base font-medium"
-            >
-              {viewProfileLabel}
-            </Button>
+            />
 
             <Button
               type="button"

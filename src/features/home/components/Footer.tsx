@@ -14,41 +14,41 @@ const footerSections = [
   {
     titleKey: "sections.products.title",
     links: [
-      "sections.products.links.businessCards",
-      "sections.products.links.flyers",
-      "sections.products.links.brochures",
-      "sections.products.links.packaging",
-      "sections.products.links.posters",
-      "sections.products.links.banners",
+      { key: "sections.products.links.businessCards", href: "/products/business-cards" },
+      { key: "sections.products.links.flyers", href: "/products/flyers" },
+      { key: "sections.products.links.brochures", href: "/products/brochures" },
+      { key: "sections.products.links.packaging", href: "/products/packaging" },
+      { key: "sections.products.links.posters", href: "/products/posters" },
+      { key: "sections.products.links.banners", href: "/products/banners" },
     ],
   },
   {
     titleKey: "sections.services.title",
     links: [
-      "sections.services.links.customRfq",
-      "sections.services.links.findPrinters",
-      "sections.services.links.sampleApproval",
-      "sections.services.links.orderTracking",
-      "sections.services.links.bulkOrders",
+      { key: "sections.services.links.customRfq", href: "/custom-rfq" },
+      { key: "sections.services.links.findPrinters", href: "/printers" },
+      { key: "sections.services.links.sampleApproval", href: "#" },
+      { key: "sections.services.links.orderTracking", href: "#" },
+      { key: "sections.services.links.bulkOrders", href: "#" },
     ],
   },
   {
     titleKey: "sections.company.title",
     links: [
-      "sections.company.links.about",
-      "sections.company.links.careers",
-      "sections.company.links.blog",
-      "sections.company.links.helpCenter",
-      "sections.company.links.trustSafety",
+      { key: "sections.company.links.about", href: "/who-we-are" },
+      { key: "sections.company.links.careers", href: "/careers" },
+      { key: "sections.company.links.blog", href: "/blog" },
+      { key: "sections.company.links.helpCenter", href: "/help-center" },
+      { key: "sections.company.links.trustSafety", href: "/trust-safety" },
     ],
   },
   {
     titleKey: "sections.printers.title",
     links: [
-      "sections.printers.links.becomeVendor",
-      "sections.printers.links.vendorDashboard",
-      "sections.printers.links.pricing",
-      "sections.printers.links.resources",
+      { key: "sections.printers.links.becomeVendor", href: "#" },
+      { key: "sections.printers.links.vendorDashboard", href: "#" },
+      { key: "sections.printers.links.pricing", href: "#" },
+      { key: "sections.printers.links.resources", href: "#" },
     ],
   },
 ];
@@ -79,11 +79,11 @@ const socials = [
 const legalLinks = [
   {
     labelKey: "legal.privacy",
-    href: "#",
+    href: "/privacy-policy",
   },
   {
     labelKey: "legal.terms",
-    href: "#",
+    href: "/terms-conditions",
   },
   {
     labelKey: "legal.cookies",
@@ -144,12 +144,12 @@ export default function Footer() {
 
               <ul className="space-y-3">
                 {section.links.map((linkKey) => (
-                  <li key={linkKey}>
+                  <li key={linkKey.key}>
                     <Link
-                      href="#"
+                      href={linkKey.href}
                       className="text-sm text-white/40 font-medium transition-colors hover:text-white"
                     >
-                      {t(linkKey)}
+                      {t(linkKey.key)}
                     </Link>
                   </li>
                 ))}

@@ -10,8 +10,13 @@ import { CHECKOUT_PRODUCTS } from "@/features/checkout/checkout.data";
 import type { CheckoutProduct } from "@/features/checkout/checkout.types";
 import BreadcrumbBasic from "@/shared/components/BreadCrumb";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Checkout() {
+  const tHome = useTranslations("ProductsHero.breadcrumb");
+  const tNav = useTranslations("Navbar.menu");
+  const tCheckout = useTranslations("Checkout");
+
   const [activeStep, setActiveStep] = useState<CheckoutStep>("review");
   const [products, setProducts] =
     useState<CheckoutProduct[]>(CHECKOUT_PRODUCTS);
@@ -32,9 +37,9 @@ export default function Checkout() {
     <section className="container 2xl:px-0 2xl:w-full mt-36 mx-auto mb-16 md:px-8 lg:mb-32 lg:px-6">
       <BreadcrumbBasic
         links={[
-          { label: "Home", url: "/" },
-          { label: "Shopping Cart", url: "/shopping-cart" },
-          { label: "Checkout", url: "/shopping-cart/checkout" },
+          { label: tHome("home"), url: "/" },
+          { label: tNav("shoppingCart"), url: "/shopping-cart" },
+          { label: tCheckout("title"), url: "/shopping-cart/checkout" },
         ]}
       />
 
@@ -66,4 +71,4 @@ export default function Checkout() {
       </div>
     </section>
   );
-}
+}

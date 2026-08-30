@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Banner({ children }: { children: React.ReactNode }) {
   const t = useTranslations("SpecificProduct.hero");
@@ -9,9 +10,10 @@ export default function Banner({ children }: { children: React.ReactNode }) {
   return (
     <div className="bg-white p-6 rounded-2xl flex flex-col sm:flex-row gap-4 border relative z-10 mt-3">
       {children}
-      <Button className={"rounded-2xl mt-auto h-10 px-5"}>
-        {t("customRfq")}
-      </Button>
+      <Button className={"rounded-2xl mt-auto h-10 px-5"}
+        render={<Link href="/custom-rfq">{t("customRfq")}</Link>}
+        nativeButton={false}
+      />
     </div>
   );
 }

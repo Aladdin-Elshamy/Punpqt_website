@@ -5,6 +5,7 @@ import File from "@/shared/icons/File";
 import People from "@/shared/icons/People";
 import Check from "@/shared/icons/Check";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function CoreFeature() {
   const t = useTranslations("CoreFeature");
@@ -31,18 +32,24 @@ export default function CoreFeature() {
             className={
               "text-base items-center text-primary font-semibold h-12 ltr:w-40 rounded-xl gap-2! rtl:w-48"
             }
-          >
-            {t("buttons.createRfq")}{" "}
-            <ArrowRight className="text-[#0D7377] stroke-3! rtl:-scale-x-100" />
-          </Button>
+          
+            render={<Link href={"/custom-rfq"}>
+              {t("buttons.createRfq")}
+              <ArrowRight className="rtl:scale-x-[-1] ms-2" />
+            </Link>}
+            nativeButton={false}
+          />
           <Button
             variant={"default"}
             className={
               "text-base items-center font-semibold h-12 w-40 rounded-xl gap-2! bg-[#31888b] text-white hover:bg-[#118589]"
             }
-          >
-            {t("buttons.browsePrinters")}
-          </Button>
+            render={<Link href={"/printers"}>
+              {t("buttons.browsePrinters")}
+            </Link>}
+            nativeButton={false}
+          />
+
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">

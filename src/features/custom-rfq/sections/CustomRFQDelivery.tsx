@@ -8,7 +8,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import {
-  deliveryAddressIds,
+  CUSTOM_RFQ_SAVED_ADDRESSES,
+} from "@/features/custom-rfq/custom-rfq.data";
+import {
   type CustomRFQDraft,
   type DeliveryAddressId,
 } from "@/features/custom-rfq/custom-rfq.types";
@@ -73,17 +75,17 @@ export default function CustomRFQDelivery({
         ) : (
           <div className="mt-8">
             <div role="radiogroup" aria-label={t("savedAddresses")} className="grid gap-3">
-              {deliveryAddressIds.map((addressId) => {
-                const isSelected = draft.deliveryAddressId === addressId;
+              {CUSTOM_RFQ_SAVED_ADDRESSES.map((savedAddress) => {
+                const isSelected = draft.deliveryAddressId === savedAddress.id;
 
                 return (
-                  <button key={addressId} type="button" role="radio" aria-checked={isSelected} onClick={() => selectSavedAddress(addressId)} className={cn("flex w-full items-start gap-3 rounded-3xl border px-4 py-4 text-start outline-none transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 sm:px-5", isSelected ? "border-primary bg-[#E7F1F2]" : "border-[#D7D7DC] bg-background hover:border-primary/40 hover:bg-muted/30")}>
+                  <button key={savedAddress.id} type="button" role="radio" aria-checked={isSelected} onClick={() => selectSavedAddress(savedAddress.id as DeliveryAddressId)} className={cn("flex w-full items-start gap-3 rounded-3xl border px-4 py-4 text-start outline-none transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 sm:px-5", isSelected ? "border-primary bg-[#E7F1F2]" : "border-[#D7D7DC] bg-background hover:border-primary/40 hover:bg-muted/30")}>
                     <span className={cn("mt-1 flex size-4 shrink-0 items-center justify-center rounded-full border", isSelected ? "border-primary" : "border-[#77798D]")} aria-hidden="true">
                       {isSelected ? <span className="size-2.75 rounded-full bg-primary" /> : null}
                     </span>
                     <span>
-                      <span className="block text-base font-semibold text-foreground">{t(`addresses.${addressId}.label`)}</span>
-                      <span className="mt-2 block text-sm font-medium text-[#55577A]">{t(`addresses.${addressId}.details`)}</span>
+                      <span className="block text-base font-semibold text-foreground">{savedAddress.label}</span>
+                      <span className="mt-2 block text-sm font-medium text-[#55577A]">{savedAddress.details}</span>
                     </span>
                   </button>
                 );

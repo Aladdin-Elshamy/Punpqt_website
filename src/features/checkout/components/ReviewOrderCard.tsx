@@ -1,9 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PRODUCT_UPLOAD_DETAILS } from "../checkout.data";
 import type { CheckoutProduct } from "../checkout.types";
 import ReviewOrderItem from "./ReviewOrderItem";
 import { ArrowRight, Upload } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface ReviewOrderCardProps {
   products: CheckoutProduct[];
@@ -14,11 +17,13 @@ export default function ReviewOrderCard({
   products,
   onContinue,
 }: ReviewOrderCardProps) {
+  const t = useTranslations("Checkout.review");
+
   return (
     <Card className="relative z-10 gap-0 rounded-3xl border border-border/80 py-0 shadow-sm ring-0">
       <CardContent className="p-6 sm:p-7">
         <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-          Review Order
+          {t("title")}
         </h1>
 
         <div className="mt-8">
@@ -61,10 +66,10 @@ export default function ReviewOrderCard({
           onClick={onContinue}
           className="mt-7 h-12 w-full rounded-xl text-sm font-medium"
         >
-          Continue to Upload Files
-          <ArrowRight className="size-4" />
+          {t("continueToUpload")}
+          <ArrowRight className="size-4 rtl:rotate-180" />
         </Button>
       </CardContent>
     </Card>
   );
-}
+}

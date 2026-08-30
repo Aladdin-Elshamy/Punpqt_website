@@ -73,7 +73,7 @@ export default function Filter({
 
   return (
     <div
-      className={`p-0 xl:p-4 bg-white font-semibold rounded-2xl border min-w-64 ${className}`}
+      className={`p-0 lg:p-4 bg-white font-semibold rounded-2xl border min-w-64 ${className}`}
     >
       {showTitle && (
         <h2 className="text-xl flex items-center gap-2">

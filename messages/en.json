@@ -24,13 +24,7 @@
       "before": "Everything ",
       "highlight": "you need to print"
     },
-    "allProducts": "All products",
-    "products": {
-      "businessCards": {
-        "title": "Business Cards",
-        "description": "150+ printers"
-      }
-    }
+    "allProducts": "All products"
   },
   "ChooseUs": {
     "title": "Why thousands choose PUNQT",
@@ -81,29 +75,6 @@
     "description": {
       "line1": "Thousands of businesses trust",
       "line2": "PUNQT"
-    },
-    "feedback": {
-      "first": {
-        "message": "Ordered 5,000 business cards. Arrived in 2 days — quality is flawless. Best printing platform I've used.",
-        "user": {
-          "name": "Ahmed Hassan",
-          "department": "Tech Solutions Inc"
-        }
-      },
-      "second": {
-        "message": "The quote comparison saved us hours. We found a reliable printer, approved the sample, and tracked everything easily.",
-        "user": {
-          "name": "Mariam Ali",
-          "department": "Brand Studio"
-        }
-      },
-      "third": {
-        "message": "PUNQT made bulk packaging orders simple. Clear communication, competitive prices, and delivery right on schedule.",
-        "user": {
-          "name": "Omar Khaled",
-          "department": "Retail House"
-        }
-      }
     }
   },
   "FeaturesStatistics": {
@@ -140,15 +111,7 @@
     "description": "Browse all available printing products and choose the one that best fits your needs."
   },
   "AllProducts": {
-    "badge": "All Products",
-    "products": {
-      "businessCards": {
-        "title": "Business Cards",
-        "description": "Standard, premium, and specialty business cards with custom finishes",
-        "printers": "120+ printers",
-        "products": "16 products"
-      }
-    }
+    "badge": "All Products"
   },
   "PopularProducts": {
     "title": "Popular Products",
@@ -162,31 +125,8 @@
       "premium": "Premium",
       "popular": "Popular"
     },
-    "cards": {
-      "label": "Premium Quality",
-      "title": {
-        "line1": "Premium",
-        "line2": "Business Cards"
-      }
-    },
-    "packaging": {
-      "label": "Packaging",
-      "title": {
-        "line1": "Custom Packaging",
-        "line2": "Boxes"
-      }
-    },
-    "flayers": "Flayers",
-    "stickers": "Stickers",
-    "notebooks": "NoteBooks",
     "productSection": {
-      "badge": "Popular Products",
-      "products": {
-        "businessCards": {
-          "title": "Business Cards",
-          "description": "150+ printers"
-        }
-      }
+      "badge": "Popular Products"
     }
   },
   "PrintingHouse": {
@@ -213,7 +153,7 @@
     "allProducts": "All products"
   },
   "WhyPunpqt": {
-    "title": "why punpqt",
+    "title": "Why PUNQT",
     "description": "Built for serious print buyers",
     "steps": {
       "verifiedPrinters": {
@@ -235,21 +175,11 @@
     }
   },
   "TopPrinter": {
-    "profile": {
-      "initial": "E",
-      "companyName": "Elite Printing Co.",
-      "location": "Nasr City, Cairo"
-    },
     "badge": "Top Rated",
     "stats": {
       "rating": "Rating",
       "response": "Response",
       "onTime": "On-Time"
-    },
-    "services": {
-      "digital": "Digital",
-      "offset": "Offset",
-      "uv": "UV"
     },
     "buttons": {
       "viewProfile": "View Profile",
@@ -322,26 +252,6 @@
         "home": "Home",
         "allProducts": "All Products"
       },
-      "products": {
-        "title": "Choose a Specification",
-        "description": "Each spec shows how many printers offer it and the starting price",
-        "business-cards": {
-          "title": "Business Cards",
-          "description": "Standard, premium, and specialty business cards"
-        },
-        "flyers": {
-          "title": "Flyers",
-          "description": "High-quality flyers for promotions, events, and campaigns"
-        },
-        "packaging": {
-          "title": "Packaging",
-          "description": "Custom packaging solutions for products, gifts, and retail"
-        },
-        "brochures": {
-          "title": "Brochures",
-          "description": "Professional brochures for company profiles, menus, and catalogs"
-        }
-      },
       "stats": {
         "products": "{count} Products",
         "printers": "{count} Printers"
@@ -377,30 +287,15 @@
     "card": {
       "startingPrice": "starting price",
       "byVendor": "by {vendor}",
-      "defaultTitleRow": "Standard Business Cards",
-      "defaultTitleGrid": "Premium Matte Business Cards",
-      "defaultVendor": "Premium Print Hub",
       "topRated": "Top Rated",
-      "currency": "EGP",
-      "defaultDelivery": "3-4 days"
+      "currency": "EGP"
     },
     "printerCard": {
       "startingPrice": "starting price",
       "selectPrinter": "Select Printer",
       "requestQuotation": "Request Quotation",
       "verifiedPrinter": "Verified Printer",
-      "fastResponse": "Fast Response",
-      "defaults": {
-        "name": "Premium Print Hub",
-        "initials": "PP",
-        "location": "Dokki, Giza",
-        "tags": {
-          "offset": "Offset",
-          "lamination": "Lamination"
-        },
-        "deliveryTime": "3-4 days",
-        "currency": "EGP"
-      }
+      "fastResponse": "Fast Response"
     }
   },
   "CustomRFQ": {
@@ -417,49 +312,7 @@
     },
     "productType": {
       "title": "Select Product Type",
-      "description": "What do you need printed?",
-      "products": {
-        "businessCards": {
-          "title": "Business Cards",
-          "description": "Standard, premium, and specialty business cards with custom finishes",
-          "printers": "120+ printers"
-        },
-        "flyers": {
-          "title": "Flyers & Leaflets",
-          "description": "A4, A5, A6 flyers in single or double-sided. Ideal for promotions.",
-          "printers": "120+ printers"
-        },
-        "brochures": {
-          "title": "Brochures",
-          "description": "Tri-fold, bi-fold, and Z-fold brochures for marketing materials",
-          "printers": "120+ printers"
-        },
-        "posters": {
-          "title": "Posters",
-          "description": "A1, A2, A3 posters for events, retail, and indoor/outdoor use",
-          "printers": "120+ printers"
-        },
-        "stickers": {
-          "title": "Stickers",
-          "description": "Vinyl, paper, and waterproof stickers in any shape and size",
-          "printers": "120+ printers"
-        },
-        "banners": {
-          "title": "Banners",
-          "description": "Pull-up banners, mesh banners, and PVC banners for events",
-          "printers": "120+ printers"
-        },
-        "tShirts": {
-          "title": "T-Shirts",
-          "description": "Custom printed t-shirts with DTG, screen, or transfer printing",
-          "printers": "120+ printers"
-        },
-        "books": {
-          "title": "Books",
-          "description": "Perfect bound, saddle-stitched, and spiral-bound books",
-          "printers": "75+ printers"
-        }
-      }
+      "description": "What do you need printed?"
     },
     "navigation": {
       "back": "Back",
@@ -526,16 +379,6 @@
       "description": "Choose where and when you need your order delivered.",
       "required": "Required",
       "savedAddresses": "Saved addresses",
-      "addresses": {
-        "home": {
-          "label": "Home",
-          "details": "12 Tahrir Street, Dokki, Giza"
-        },
-        "work": {
-          "label": "Work",
-          "details": "Smart Village, 6th of October, Giza"
-        }
-      },
       "addNewAddress": "Add New Address",
       "chooseSavedAddress": "Choose a saved address",
       "city": "City",
@@ -559,33 +402,7 @@
       },
       "selectPrinters": "Select Printers",
       "selectedCount": "{count} selected",
-      "selectionHint": "Select between 1 and 5 printers.",
-      "vendors": {
-        "elite": {
-          "initials": "EP",
-          "name": "Elite Printing",
-          "rating": "4.9",
-          "reviews": "128 reviews"
-        },
-        "premium": {
-          "initials": "PP",
-          "name": "Premium Print Hub",
-          "rating": "4.8",
-          "reviews": "96 reviews"
-        },
-        "quick": {
-          "initials": "QP",
-          "name": "Quick Print Co.",
-          "rating": "4.7",
-          "reviews": "84 reviews"
-        },
-        "quality": {
-          "initials": "QP",
-          "name": "Quality Printing House",
-          "rating": "4.6",
-          "reviews": "72 reviews"
-        }
-      }
+      "selectionHint": "Select between 1 and 5 printers."
     },
     "reviewSubmit": {
       "title": "Review & Submit",
@@ -606,5 +423,178 @@
       "allMatchingPrinters": "All matching printers",
       "specificPrinters": "{count} specific printers"
     }
+  },
+  "WhoWeAre": {
+    "hero": {
+      "badge": "Egypt's Premier Printing Marketplace",
+      "titleLine1": "The modern marketplace,",
+      "titleLine2": "for print in egypt",
+      "description": "PUNQT connects businesses and individuals with verified printing houses across Egypt — making custom print ordering as simple as e-commerce.",
+      "browseProducts": "Browse Products",
+      "getInTouch": "Get in touch"
+    },
+    "printSmarter": {
+      "title": "Ready to print smarter?",
+      "description": "Join thousands of businesses ordering print through PUNQT.",
+      "createAccount": "Create an account",
+      "contactUs": "Contact us"
+    },
+    "whatWeStandFor": {
+      "title": "What we stand for",
+      "subtitle": "The principles that guide every decision we make",
+      "trust": {
+        "title": "Trust & Transparency",
+        "description": "Every payment is held in escrow and released only after you confirm delivery. No surprises, no hidden fees."
+      },
+      "quality": {
+        "title": "Verified Quality",
+        "description": "Every printer on PUNQT is manually vetted and rated. You see real reviews from real customers before you commit."
+      },
+      "speed": {
+        "title": "Speed & Simplicity",
+        "description": "Configure your spec, choose a printer, and order — all in minutes. No phone calls, no back-and-forth emails."
+      },
+      "local": {
+        "title": "Supporting Local Business",
+        "description": "We connect Egyptian businesses with Egyptian printers. Every order supports the local printing industry."
+      }
+    },
+    "whyWeBuilt": {
+      "title": "Why we built PUNQT",
+      "paragraph1": "Getting print work done in Egypt meant phone calls, WhatsApp negotiations, and hoping the quality matched the sample. There was no standard process, no price transparency, and no way to compare printers.",
+      "paragraph2": "We built PUNQT to change that. A single platform where you configure your spec, browse verified printers, get competing quotes, approve samples digitally, and pay securely — all in one place.",
+      "paragraph3": "For printers, it means a steady stream of qualified orders, digital workflow management, and a reputation system that rewards quality.",
+      "milestones": {
+        "founded": "Founded in Cairo",
+        "escrow": "Escrow protection built-in",
+        "printers": "150+ Printers onboarded in year 1",
+        "fees": "EGP 0 Hidden fees for customers"
+      }
+    },
+    "meetTheTeam": {
+      "title": "Meet the team",
+      "subtitle": "The people building Egypt's print marketplace"
+    }
+  },
+  "TermsConditions": {
+    "hero": {
+      "badge": "Legal",
+      "title": "Terms and Conditions",
+      "description": "These terms govern your use of the PUNQT platform as a customer or vendor. Please read them carefully before using the platform.",
+      "lastUpdated": "Last updated: July 1, 2026 · Effective date: July 1, 2026"
+    }
+  },
+  "PrivacyPolicy": {
+    "hero": {
+      "badge": "Legal",
+      "title": "Privacy Policy",
+      "description": "This policy outlines how your personal information is collected, used, and protected when using the PUNQT platform.",
+      "lastUpdated": "Last updated: July 1, 2026 · Effective date: July 1, 2026"
+    }
+  },
+  "HowItWorks": {
+    "hero": {
+      "badge": "Egypt's Premier Printing Marketplace",
+      "titleLine1": "Print Ordering,",
+      "titleLine2": "Simplified",
+      "description": "PUNQT connects you with verified printing houses across Egypt. Configure your spec, choose a printer, approve a sample, and receive your order — all in one place, with payment protection built in.",
+      "startOrdering": "Start Ordering",
+      "submitRfq": "Submit an RFQ"
+    }
+  },
+  "GetInTouch": {
+    "hero": {
+      "badge": "Contact Us",
+      "title": "Get in Touch",
+      "description": "Have questions? We are here to help. Reach out to our team and we'll get back to you as soon as possible."
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "We'll get back to you within one business day.",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "topic": "Topic",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Send Message",
+      "topics": {
+        "general": "General Inquiry",
+        "order": "Order Support",
+        "vendor": "Become a Vendor",
+        "other": "Other"
+      }
+    },
+    "faq": {
+      "title": "Common Questions"
+    }
+  },
+  "Submitted": {
+    "title": "RFQ Submitted!",
+    "description": "Your request has been sent to selected printers.",
+    "notice": "You'll receive quotes within a few hours. We'll notify you by email as offers arrive.",
+    "viewRequests": "View My Requests",
+    "backMarketplace": "Back to Marketplace",
+    "nextSteps": {
+      "title": "Next Steps"
+    }
+  },
+  "Checkout": {
+    "title": "Checkout",
+    "stepper": {
+      "review": "Review Order",
+      "upload": "Upload Design Files"
+    },
+    "review": {
+      "title": "Review Your Order",
+      "continueToUpload": "Continue to Upload Files"
+    },
+    "upload": {
+      "title": "Upload Design Files",
+      "description": "Upload your print-ready design files for each item.",
+      "skipAndOrder": "Skip for Now & Place Order",
+      "proceedToPayment": "Proceed to Payment"
+    },
+    "summary": {
+      "title": "Order Summary"
+    }
+  },
+  "CheckoutSuccess": {
+    "title": "You're all set!",
+    "description": "Your payment is secured in escrow and design files have been sent to your printers.",
+    "notice": "Order confirmation and tracking details sent to your email.",
+    "trackOrders": "Track Orders",
+    "backHome": "Back to Home"
+  },
+  "ShoppingCart": {
+    "title": "Your Cart ({count})",
+    "continueShopping": "+ Continue Shopping",
+    "orderSummary": "Order Summary",
+    "proceedToCheckout": "Proceed to Checkout",
+    "promoCode": {
+      "placeholder": "Enter promo code",
+      "apply": "Apply"
+    }
+  },
+  "SpecificPrinter": {
+    "breadcrumb": {
+      "home": "Home",
+      "printers": "Printers"
+    },
+    "badge": "Verified",
+    "workingHours": "Saturday - Thursday 9:00 AM - 6:00 PM",
+    "sendMessage": "Send Message",
+    "requestQuote": "Request Quote"
+  },
+  "Specification": {
+    "options": {
+      "size": "Size",
+      "paper": "Paper / Material",
+      "printColor": "Print Color",
+      "finishing": "Finishing",
+      "quantity": "Quantity"
+    },
+    "addToCart": "Add to Cart",
+    "needCustomSpecs": "Need Custom Specs? Submit RFQ"
   }
 }

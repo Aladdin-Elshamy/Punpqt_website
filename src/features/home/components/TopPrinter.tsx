@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+import ArrowRight from "@/shared/icons/ArrowRight";
+import Link from "next/link";
 
 export default function TopPrinter() {
   const t = useTranslations("TopPrinter");
@@ -39,16 +41,16 @@ export default function TopPrinter() {
                 background: "linear-gradient(135deg, #0D7377 0%, #14919B 100%)",
               }}
             >
-              {t("profile.initial")}
+              SS
             </div>
 
             <div>
               <h3 className="font-semibold text-lg">
-                {t("profile.companyName")}
+                sdfsdf
               </h3>
 
               <p className="text-sm font-semibold text-[#6B6B80]">
-                {t("profile.location")}
+                sdfsdfsdf
               </p>
             </div>
           </div>
@@ -97,9 +99,12 @@ export default function TopPrinter() {
           <Button
             variant="secondary"
             className="h-12 rounded-full text-sm sm:text-base font-semibold bg-[#E8F4F4] text-[#0A5C5F] hover:bg-[#D1E8E8]"
-          >
-            {t("buttons.viewProfile")}
-          </Button>
+            render={<Link href={"/printers/1"}>
+              {t("buttons.viewProfile")}
+            </Link>}
+            nativeButton={false}
+          />
+
 
           <Button className="h-12 rounded-full bg-teal-700 text-sm sm:text-base hover:bg-teal-800">
             {t("buttons.getQuote")}

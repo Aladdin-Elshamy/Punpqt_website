@@ -26,26 +26,26 @@ export default function PopularProducts() {
       >
         <PopularProduct
           image={businessCardsImage}
-          title={t("products.businessCards.title")}
-          description={t("products.businessCards.description")}
+          title={"Business Cards"}
+          description={"Standard sizes, premium paper, and finishes."}
           link="/products/business-cards"
         />
         <PopularProduct
           image={flyersImage}
           title={"Flyers"}
-          description={t("products.businessCards.description")}
+          description={"Various sizes, paper types, and finishes."}
           link="/products/flyers"
         />
         <PopularProduct
           image={brochuresImage}
           title={"Brochures"}
-          description={t("products.businessCards.description")}
+          description={"Standard sizes, premium paper, and finishes."}
           link="/products/brochures"
         />
         <PopularProduct
           image={boxesImage}
           title={"Packaging"}
-          description={t("products.businessCards.description")}
+          description={"Custom sizes, materials, and finishes."}
           link="/products/packaging"
         />
       </div>

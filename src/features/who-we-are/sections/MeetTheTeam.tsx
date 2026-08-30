@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import MeetTheTeamCard from "../components/MeetTheTeamCard";
 
 const teamMembers = [
@@ -28,12 +31,14 @@ const teamMembers = [
 ];
 
 export default function MeetTheTeam() {
+  const t = useTranslations("WhoWeAre.meetTheTeam");
+
   return (
     <section className="container mt-16 sm:mt-36 px-6 pb-16 md:px-8 sm:pb-24 lg:px-6 lg:pb-32">
       <div className="mx-auto max-w-2xl text-center font-semibold">
-        <h2 className="text-2xl sm:text-3xl">Meet the team</h2>
+        <h2 className="text-2xl sm:text-3xl">{t("title")}</h2>
         <p className="mt-3 text-muted-foreground">
-          The people building Egypt&apos;s print marketplace
+          {t("subtitle")}
         </p>
       </div>
 
@@ -51,3 +56,4 @@ export default function MeetTheTeam() {
     </section>
   );
 }
+

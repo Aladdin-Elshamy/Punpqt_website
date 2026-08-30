@@ -139,26 +139,15 @@
 }
 
 .circle {
-
-  border-radius: 50%;
-  aspect-ratio: 1;
-  border: 1px solid var(--primary);
-
-  position: relative;
-  overflow: hidden;
+  background-color: transparent;
+  opacity: 0.3;
+  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.circle::before {
-  content: "";
-
-  position: absolute;
-  inset: 4px;
-  border-radius: inherit;
-  background: var(--primary);
-
-  transform: scale(0);
-  opacity: 0;
-
+.circle:hover {
+  background-color: #0D7377;
+  opacity: 1;
+  transition: background-color 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 @utility trim {

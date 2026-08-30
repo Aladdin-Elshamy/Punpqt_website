@@ -11,7 +11,7 @@ export default function Search() {
   const t = useTranslations("Search.form");
 
   return (
-    <InputGroup className="max-w-2xl border-[0.99px] border-[#0000000F] bg-white py-8 rounded-4xl px-2 shadow-[0px_4px_20px_rgba(0,0,0,0.05)]">
+    <InputGroup className="max-w-2xl border-[0.99px] border-[#0000000F] bg-white py-8 rounded-4xl px-2 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] relative z-20">
       <InputGroupInput
         className="sm:text-lg! text-sm"
         placeholder={t("placeholder")}

@@ -7,6 +7,7 @@ import DeliveryNotice from "../components/DeliveryNotice";
 import OptionGroup from "../components/OptionGroup";
 import PriceSummaryCard from "../components/PriceSummaryCard";
 import ProductHeader from "../components/ProductHeader";
+import { useTranslations } from "next-intl";
 
 const sizeOptions = [
   { label: "Standard 9x5cm", value: "standard-9x5" },
@@ -73,12 +74,12 @@ const quantityOptions = [
 ];
 
 export default function SpecificationPanel() {
+  const t = useTranslations("Specification");
   const [size, setSize] = useState("standard-9x5");
   const [paper, setPaper] = useState("coated-350gsm");
   const [printColor, setPrintColor] = useState("full-color-both-sides");
   const [finishing, setFinishing] = useState("none");
   const [quantity, setQuantity] = useState("500");
-  // const [designUpload, setDesignUpload] = useState("printer-design");
 
   return (
     <aside className="w-full rounded-3xl lg:sticky lg:top-28">
@@ -87,14 +88,14 @@ export default function SpecificationPanel() {
         <PriceSummaryCard />
 
         <OptionGroup
-          title="Size"
+          title={t("options.size")}
           options={sizeOptions}
           value={size}
           onChange={setSize}
         />
 
         <OptionGroup
-          title="Paper / Material"
+          title={t("options.paper")}
           options={paperOptions}
           value={paper}
           onChange={setPaper}
@@ -103,7 +104,7 @@ export default function SpecificationPanel() {
         />
 
         <OptionGroup
-          title="Print Color"
+          title={t("options.printColor")}
           options={printColorOptions}
           value={printColor}
           onChange={setPrintColor}
@@ -111,7 +112,7 @@ export default function SpecificationPanel() {
         />
 
         <OptionGroup
-          title="Finishing"
+          title={t("options.finishing")}
           options={finishingOptions}
           value={finishing}
           onChange={setFinishing}
@@ -120,7 +121,7 @@ export default function SpecificationPanel() {
         />
 
         <OptionGroup
-          title="Quantity"
+          title={t("options.quantity")}
           options={quantityOptions}
           value={quantity}
           onChange={setQuantity}
@@ -128,23 +129,22 @@ export default function SpecificationPanel() {
           optionClassName="min-h-10 rounded-full"
         />
 
-        {/* <DesignUploadChoice value={designUpload} onChange={setDesignUpload} /> */}
         <DeliveryNotice />
 
         <div className="space-y-3">
           <Button className="h-13 w-full rounded-xl text-sm font-semibold">
             <ShoppingCart className="size-4" />
-            Add to Cart — EGP 180
+            {t("addToCart")} — EGP 180
           </Button>
           <Button
             variant="outline"
             className="h-12 w-full rounded-xl bg-white text-sm font-semibold"
           >
             <FileText className="size-4" />
-            Need Custom Specs? Submit RFQ
+            {t("needCustomSpecs")}
           </Button>
         </div>
       </div>
     </aside>
   );
-}
+}

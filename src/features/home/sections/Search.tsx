@@ -14,9 +14,9 @@ export default function Search() {
   ];
 
   return (
-    <div className="container px-6 md:px-8 lg:px-6 mt-16 sm:mt-36">
+    <div className="container px-6 md:px-8 lg:px-6 mt-16 sm:mt-36 ">
       <SearchComponent />
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-6 flex flex-wrap gap-3 relative z-20">
         {categoryBadges.map((badge) => (
           <Badge
             key={badge}

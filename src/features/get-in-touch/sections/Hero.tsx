@@ -1,5 +1,8 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import ContactInfoCard from "../components/ContactInfoCard";
 import Star from "@/shared/icons/Star";
@@ -32,15 +35,16 @@ const contactDetails = [
 ];
 
 export default function Hero() {
+  const t = useTranslations("GetInTouch.hero");
+
   return (
     <div className="container mx-auto mt-36 pb-16 md:px-8 lg:px-6 sm:pb-36 2xl:w-full 2xl:px-0">
       <Badge className="h-8! border-[#0D73771A] px-4 font-semibold">
-        <Star /> Egypt&apos;s Premier Printing Marketplace
+        <Star /> {t("badge")}
       </Badge>
-      <h1 className="mt-6 text-3xl font-bold sm:text-4xl">Get in touch</h1>
+      <h1 className="mt-6 text-3xl font-bold sm:text-4xl">{t("title")}</h1>
       <p className="mt-5 max-w-lg font-semibold text-muted-foreground">
-        Have a question, need help with an order, or want to join PUNQT as a
-        printer? We&apos;re here to help.
+        {t("description")}
       </p>
 
       <div className="mt-16 grid gap-4 sm:grid-cols-2 xl:grid-cols-4 z-10 relative">
@@ -57,3 +61,4 @@ export default function Hero() {
     </div>
   );
 }
+

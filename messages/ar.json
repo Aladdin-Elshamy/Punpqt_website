@@ -24,13 +24,7 @@
       "before": "كل ما ",
       "highlight": "تحتاجه للطباعة"
     },
-    "allProducts": "كل المنتجات",
-    "products": {
-      "businessCards": {
-        "title": "كروت الأعمال",
-        "description": "أكثر من 150 مطبعة"
-      }
-    }
+    "allProducts": "كل المنتجات"
   },
   "ChooseUs": {
     "title": "لماذا يختار الآلاف PUNQT",
@@ -81,29 +75,6 @@
     "description": {
       "line1": "آلاف الشركات تثق في",
       "line2": "PUNQT"
-    },
-    "feedback": {
-      "first": {
-        "message": "طلبت 5,000 كارت عمل. وصلت خلال يومين — الجودة ممتازة. أفضل منصة طباعة استخدمتها.",
-        "user": {
-          "name": "أحمد حسن",
-          "department": "تك سوليوشنز"
-        }
-      },
-      "second": {
-        "message": "مقارنة عروض الأسعار وفرت علينا ساعات. وجدنا مطبعة موثوقة، واعتمدنا العينة، وتابعنا كل شيء بسهولة.",
-        "user": {
-          "name": "مريم علي",
-          "department": "براند ستوديو"
-        }
-      },
-      "third": {
-        "message": "جعلت PUNQT طلبات التغليف بالجملة بسيطة. تواصل واضح، أسعار تنافسية، وتسليم في الموعد.",
-        "user": {
-          "name": "عمر خالد",
-          "department": "ريتيل هاوس"
-        }
-      }
     }
   },
   "FeaturesStatistics": {
@@ -140,15 +111,7 @@
     "description": "استعرض كل المنتجات واختر المنتج الذي يلائم احتياجتك."
   },
   "AllProducts": {
-    "badge": "كل المنتجات",
-    "products": {
-      "businessCards": {
-        "title": "كروت الأعمال",
-        "description": "كروت أعمال عادية ومميزة ومتخصصة بتشطيبات مخصصة",
-        "printers": "أكثر من 120 مطبعة",
-        "products": "16 منتجًا"
-      }
-    }
+    "badge": "كل المنتجات"
   },
   "PopularProducts": {
     "title": "المنتجات الشائعة",
@@ -162,31 +125,8 @@
       "premium": "مميز",
       "popular": "شائع"
     },
-    "cards": {
-      "label": "جودة ممتازة",
-      "title": {
-        "line1": "كروت",
-        "line2": "أعمال مميزة"
-      }
-    },
-    "packaging": {
-      "label": "التغليف",
-      "title": {
-        "line1": "علب تغليف",
-        "line2": "مخصصة"
-      }
-    },
-    "flayers": "فلايرات",
-    "stickers": "ملصقات",
-    "notebooks": "دفاتر",
     "productSection": {
-      "badge": "المنتجات الشائعة",
-      "products": {
-        "businessCards": {
-          "title": "كروت الأعمال",
-          "description": "أكثر من 150 مطبعة"
-        }
-      }
+      "badge": "المنتجات الشائعة"
     }
   },
   "PrintingHouse": {
@@ -235,21 +175,11 @@
     }
   },
   "TopPrinter": {
-    "profile": {
-      "initial": "E",
-      "companyName": "إيليت للطباعة",
-      "location": "مدينة نصر، القاهرة"
-    },
     "badge": "الأعلى تقييمًا",
     "stats": {
       "rating": "التقييم",
       "response": "الاستجابة",
       "onTime": "في الموعد"
-    },
-    "services": {
-      "digital": "رقمي",
-      "offset": "أوفست",
-      "uv": "UV"
     },
     "buttons": {
       "viewProfile": "عرض الملف",
@@ -322,26 +252,6 @@
         "home": "الرئيسية",
         "allProducts": "كل المنتجات"
       },
-      "products": {
-        "title": "اختر مواصفات",
-        "description": "كل مواصفة تعرض عدد المطابع التي تقدمها والسعر المبدئي",
-        "business-cards": {
-          "title": "كروت الأعمال",
-          "description": "كروت أعمال عادية ومميزة ومتخصصة"
-        },
-        "flyers": {
-          "title": "فلايرات",
-          "description": "فلايرات عالية الجودة للعروض الترويجية والفعاليات والحملات"
-        },
-        "packaging": {
-          "title": "التغليف",
-          "description": "حلول تغليف مخصصة للمنتجات والهدايا والتجزئة"
-        },
-        "brochures": {
-          "title": "بروشورات",
-          "description": "بروشورات احترافية لملفات الشركات والقوائم والكتالوجات"
-        }
-      },
       "stats": {
         "products": "{count} منتجات",
         "printers": "{count} مطابع"
@@ -377,30 +287,15 @@
     "card": {
       "startingPrice": "يبدأ من",
       "byVendor": "بواسطة {vendor}",
-      "defaultTitleRow": "كروت أعمال قياسية",
-      "defaultTitleGrid": "كروت أعمال مط مطفية فاخرة",
-      "defaultVendor": "مركز الطباعة المميز",
       "topRated": "الأعلى تقييمًا",
-      "currency": "ج.م",
-      "defaultDelivery": "3-4 أيام"
+      "currency": "ج.م"
     },
     "printerCard": {
       "startingPrice": "يبدأ من",
       "selectPrinter": "اختر المطبعة",
       "requestQuotation": "اطلب عرض سعر",
       "verifiedPrinter": "مطبعة موثوقة",
-      "fastResponse": "رد سريع",
-      "defaults": {
-        "name": "مركز الطباعة المميز",
-        "initials": "PP",
-        "location": "الدقي، الجيزة",
-        "tags": {
-          "offset": "أوفست",
-          "lamination": "تغليف حراري"
-        },
-        "deliveryTime": "3-4 أيام",
-        "currency": "ج.م"
-      }
+      "fastResponse": "رد سريع"
     }
   },
   "CustomRFQ": {
@@ -408,58 +303,16 @@
     "title": "ماذا تريد طباعته؟",
     "description": "أكمل هذا النموذج لتتلقى عروض أسعار تنافسية من مطابع موثوقة.",
     "steps": {
-      "productType": "Product Type",
-      "specifications": "Specifications",
-      "delivery": "Delivery",
-      "chooseVendors": "Choose Vendors",
-      "reviewSubmit": "Review & Submit",
-      "confirmation": "Confirmation"
+      "productType": "نوع المنتج",
+      "specifications": "المواصفات",
+      "delivery": "التسليم",
+      "chooseVendors": "اختيار الموردين",
+      "reviewSubmit": "المراجعة والإرسال",
+      "confirmation": "التأكيد"
     },
     "productType": {
-      "title": "Select Product Type",
-      "description": "What do you need printed?",
-      "products": {
-        "businessCards": {
-          "title": "Business Cards",
-          "description": "Standard, premium, and specialty business cards with custom finishes",
-          "printers": "120+ printers"
-        },
-        "flyers": {
-          "title": "Flyers & Leaflets",
-          "description": "A4, A5, A6 flyers in single or double-sided. Ideal for promotions.",
-          "printers": "120+ printers"
-        },
-        "brochures": {
-          "title": "Brochures",
-          "description": "Tri-fold, bi-fold, and Z-fold brochures for marketing materials",
-          "printers": "120+ printers"
-        },
-        "posters": {
-          "title": "Posters",
-          "description": "A1, A2, A3 posters for events, retail, and indoor/outdoor use",
-          "printers": "120+ printers"
-        },
-        "stickers": {
-          "title": "Stickers",
-          "description": "Vinyl, paper, and waterproof stickers in any shape and size",
-          "printers": "120+ printers"
-        },
-        "banners": {
-          "title": "Banners",
-          "description": "Pull-up banners, mesh banners, and PVC banners for events",
-          "printers": "120+ printers"
-        },
-        "tShirts": {
-          "title": "T-Shirts",
-          "description": "Custom printed t-shirts with DTG, screen, or transfer printing",
-          "printers": "120+ printers"
-        },
-        "books": {
-          "title": "Books",
-          "description": "Perfect bound, saddle-stitched, and spiral-bound books",
-          "printers": "75+ printers"
-        }
-      }
+      "title": "اختر نوع المنتج",
+      "description": "ما الذي تريد طباعته؟"
     },
     "navigation": {
       "back": "رجوع",
@@ -469,123 +322,87 @@
       "submissionComplete": "تم إرسال طلبك بنجاح."
     },
     "specifications": {
-      "title": "Product Specifications",
-      "description": "Tell us the details of your print request.",
-      "required": "Required",
-      "optional": "Optional",
-      "quantity": "Quantity",
-      "quantityPlaceholder": "Enter quantity",
-      "material": "Material / Paper",
-      "materialPlaceholder": "Select material",
+      "title": "مواصفات المنتج",
+      "description": "أخبرنا بتفاصيل طلب الطباعة الخاص بك.",
+      "required": "مطلوب",
+      "optional": "اختياري",
+      "quantity": "الكمية",
+      "quantityPlaceholder": "أدخل الكمية",
+      "material": "الخامة / الورق",
+      "materialPlaceholder": "اختر الخامة",
       "materials": {
-        "coated": "Coated paper",
-        "uncoated": "Uncoated paper",
-        "kraft": "Kraft paper",
-        "recycled": "Recycled paper",
-        "vinyl": "Vinyl"
+        "coated": "ورق كوشيه",
+        "uncoated": "ورق عادي",
+        "kraft": "ورق كرافت",
+        "recycled": "ورق معاد تدويره",
+        "vinyl": "فينيل"
       },
-      "width": "Width",
-      "height": "Height",
-      "dimensionPlaceholder": "Enter size",
-      "unit": "Unit",
+      "width": "العرض",
+      "height": "الارتفاع",
+      "dimensionPlaceholder": "أدخل المقاس",
+      "unit": "الوحدة",
       "units": {
-        "millimeters": "mm",
-        "centimeters": "cm",
-        "inches": "in"
+        "millimeters": "مم",
+        "centimeters": "سم",
+        "inches": "بوصة"
       },
-      "printColors": "Print Colors",
-      "printColorsPlaceholder": "Select colors",
+      "printColors": "ألوان الطباعة",
+      "printColorsPlaceholder": "اختر الألوان",
       "printColorOptions": {
-        "fullColor": "Full color (CMYK)",
-        "blackAndWhite": "Black & white",
-        "pantone": "Pantone colors"
+        "fullColor": "ألوان كاملة (CMYK)",
+        "blackAndWhite": "أبيض وأسود",
+        "pantone": "ألوان بانتون"
       },
-      "printSides": "Print Sides",
-      "printSidesPlaceholder": "Select sides",
+      "printSides": "وجه الطباعة",
+      "printSidesPlaceholder": "اختر الوجه",
       "printSideOptions": {
-        "single": "Single-sided",
-        "double": "Double-sided"
+        "single": "وجه واحد",
+        "double": "وجهان"
       },
-      "finishing": "Finishing Options",
-      "finishingDescription": "Select all that apply",
+      "finishing": "خيارات التشطيب",
+      "finishingDescription": "اختر كل ما ينطبق",
       "finishingOptions": {
-        "glossLamination": "Gloss Lamination",
-        "mattLamination": "Matt Lamination",
-        "spotUv": "Spot UV",
-        "foilStamping": "Foil Stamping",
-        "embossing": "Embossing",
-        "dieCut": "Die-Cut",
-        "softTouch": "Soft Touch",
-        "binding": "Binding"
+        "glossLamination": "سلوفان لامع",
+        "mattLamination": "سلوفان مط",
+        "spotUv": "يو في موضعية (Spot UV)",
+        "foilStamping": "بصمة حرارية (Foil)",
+        "embossing": "بروز (كوفراج)",
+        "dieCut": "قص مخصص (Die-Cut)",
+        "softTouch": "سلوفان مخملي (Soft Touch)",
+        "binding": "تجليد"
       },
-      "additionalNotes": "Additional Notes",
-      "notesPlaceholder": "Share any special instructions, color references, or other requirements..."
+      "additionalNotes": "ملاحظات إضافية",
+      "notesPlaceholder": "أضف أي تعليمات خاصة، مرجع للألوان، أو متطلبات أخرى..."
     },
     "delivery": {
-      "title": "Delivery Information",
-      "description": "Choose where and when you need your order delivered.",
-      "required": "Required",
-      "savedAddresses": "Saved addresses",
-      "addresses": {
-        "home": {
-          "label": "Home",
-          "details": "12 Tahrir Street, Dokki, Giza"
-        },
-        "work": {
-          "label": "Work",
-          "details": "Smart Village, 6th of October, Giza"
-        }
-      },
-      "addNewAddress": "Add New Address",
-      "chooseSavedAddress": "Choose a saved address",
-      "city": "City",
-      "cityPlaceholder": "Enter city",
-      "fullAddress": "Full Address",
-      "addressPlaceholder": "Enter your full delivery address",
-      "requiredBy": "Required By"
+      "title": "معلومات التسليم",
+      "description": "حدد مكان وموعد تسليم طلبك.",
+      "required": "مطلوب",
+      "savedAddresses": "العناوين المحفوظة",
+      "addNewAddress": "إضافة عنوان جديد",
+      "chooseSavedAddress": "اختر عنواناً محفوظاً",
+      "city": "المدينة",
+      "cityPlaceholder": "أدخل المدينة",
+      "fullAddress": "العنوان بالكامل",
+      "addressPlaceholder": "أدخل عنوان التسليم بالتفصيل",
+      "requiredBy": "مطلوب بحلول"
     },
     "chooseVendors": {
-      "title": "Choose Vendors",
-      "description": "Choose how you would like to send your request for quotation.",
-      "recommended": "Recommended",
-      "topRated": "Top Rated",
+      "title": "اختيار المطابع",
+      "description": "اختر كيفية إرسال طلب عرض السعر.",
+      "recommended": "موصى به",
+      "topRated": "الأعلى تقييمًا",
       "broadcast": {
-        "title": "Broadcast to All Matching Printers",
-        "description": "Send your request to all verified printers that match your requirements and receive more competitive quotes."
+        "title": "إرسال إلى جميع المطابع المطابقة",
+        "description": "أرسل طلبك إلى جميع المطابع الموثوقة التي تطابق متطلباتك للحصول على عروض أكثر تنافسية."
       },
       "specific": {
-        "title": "Choose Specific Printers",
-        "description": "Select up to 5 printers you would like to receive quotes from."
+        "title": "اختيار مطابع محددة",
+        "description": "اختر حتى 5 مطابع ترغب في استلام عروض أسعار منها."
       },
-      "selectPrinters": "Select Printers",
-      "selectedCount": "{count} selected",
-      "selectionHint": "Select between 1 and 5 printers.",
-      "vendors": {
-        "elite": {
-          "initials": "EP",
-          "name": "Elite Printing",
-          "rating": "4.9",
-          "reviews": "128 reviews"
-        },
-        "premium": {
-          "initials": "PP",
-          "name": "Premium Print Hub",
-          "rating": "4.8",
-          "reviews": "96 reviews"
-        },
-        "quick": {
-          "initials": "QP",
-          "name": "Quick Print Co.",
-          "rating": "4.7",
-          "reviews": "84 reviews"
-        },
-        "quality": {
-          "initials": "QP",
-          "name": "Quality Printing House",
-          "rating": "4.6",
-          "reviews": "72 reviews"
-        }
-      }
+      "selectPrinters": "اختر المطابع",
+      "selectedCount": "تم تحديد {count}",
+      "selectionHint": "اختر ما بين 1 و 5 مطابع."
     },
     "reviewSubmit": {
       "title": "مراجعة وإرسال",
@@ -606,5 +423,178 @@
       "allMatchingPrinters": "جميع المطابع المطابقة",
       "specificPrinters": "{count} مطابع محددة"
     }
+  },
+  "WhoWeAre": {
+    "hero": {
+      "badge": "سوق الطباعة الرائد في مصر",
+      "titleLine1": "السوق الحديث،",
+      "titleLine2": "للطباعة في مصر",
+      "description": "تصل منصة PUNQT بين الشركات والأفراد وبين المطابع المعتمدة في جميع أنحاء مصر — لتجعل طلب الطباعة المخصص سهلاً مثل التسوق الإلكتروني.",
+      "browseProducts": "تصفح المنتجات",
+      "getInTouch": "تواصل معنا"
+    },
+    "printSmarter": {
+      "title": "جاهز للطباعة بشكل أذكى؟",
+      "description": "انضم إلى آلاف الشركات التي تطلب الطباعة عبر PUNQT.",
+      "createAccount": "إنشاء حساب",
+      "contactUs": "اتصل بنا"
+    },
+    "whatWeStandFor": {
+      "title": "ما نلتزم به",
+      "subtitle": "المبادئ التي توجه كل قرار نتخذه",
+      "trust": {
+        "title": "الثقة والشفافية",
+        "description": "يتم حفظ كل مدفوعاتك بأمان ولا تُصرف إلا بعد تأكيد التسليم. لا مفاجآت، ولا رسوم خفية."
+      },
+      "quality": {
+        "title": "جودة معتمدة",
+        "description": "يتم فحص وتقييم كل مطبعة على PUNQT يدويًا. ترى تقييمات حقيقية من عملاء حقيقيين قبل الالتزام."
+      },
+      "speed": {
+        "title": "السرعة والبساطة",
+        "description": "حدد مواصفاتك، اختر المطبعة، واطلب — كل ذلك في دقائق. بدون مكالمات هاتفية أو رسائل متبادلة."
+      },
+      "local": {
+        "title": "دعم الأعمال المحلية",
+        "description": "نربط الشركات المصرية بالمطابع المصرية. كل طلب يدعم صناعة الطباعة المحلية."
+      }
+    },
+    "whyWeBuilt": {
+      "title": "لماذا أنشأنا PUNQT",
+      "paragraph1": "كان تنفيذ أعمال الطباعة في مصر يعني المكالمات الهاتفية، والمفاوضات عبر الواتساب، والرجاء بأن تطابق الجودة العينة. لم تكن هناك عملية موحدة، ولا شفافية في الأسعار، ولا طريقة للمقارنة بين المطابع.",
+      "paragraph2": "قمنا ببناء PUNQT لتغيير ذلك. منصة واحدة حيث تحدد مواصفاتك، وتتصفح المطابع المعتمدة، وتحصل على عروض تنافسية، وتعتمد العينات رقميًا، وتدفع بأمان — كل ذلك في مكان واحد.",
+      "paragraph3": "بالنسبة للمطابع، يعبر هذا عن تدفق مستمر من الطلبات المؤهلة، وإدارة مسار العمل رقميًا، ونظام سمعة يكافئ الجودة.",
+      "milestones": {
+        "founded": "تأسست في القاهرة",
+        "escrow": "حماية الدفع متضمنة من اليوم الأول",
+        "printers": "+150 مطبعة انضمت في السنة الأولى",
+        "fees": "0 ج.م رسوم خفية للعملاء"
+      }
+    },
+    "meetTheTeam": {
+      "title": "فريق العمل",
+      "subtitle": "الأشخاص الذين يبنون سوق الطباعة في مصر"
+    }
+  },
+  "TermsConditions": {
+    "hero": {
+      "badge": "قانوني",
+      "title": "الشروط والأحكام",
+      "description": "تحكم هذه الشروط استخدامك لمنصة PUNQT كعميل أو مورّد. يرجى قراءتها بعناية قبل استخدام المنصة.",
+      "lastUpdated": "آخر تحديث: 1 يوليو 2026 · تاريخ النفاذ: 1 يوليو 2026"
+    }
+  },
+  "PrivacyPolicy": {
+    "hero": {
+      "badge": "قانوني",
+      "title": "سياسة الخصوصية",
+      "description": "توضح هذه السياسة كيفية جمع معلوماتك الشخصية واستخدامها وحمايتها عند استخدام منصة PUNQT.",
+      "lastUpdated": "آخر تحديث: 1 يوليو 2026 · تاريخ النفاذ: 1 يوليو 2026"
+    }
+  },
+  "HowItWorks": {
+    "hero": {
+      "badge": "سوق الطباعة الرائد في مصر",
+      "titleLine1": "طلب الطباعة،",
+      "titleLine2": "أصبح أسهل",
+      "description": "تصلك PUNQT بالمطابع المعتمدة في جميع أنحاء مصر. حدد مواصفاتك، اختر مطبعة، اعتمد العينة، واستلم طلبك — كل ذلك في مكان واحد، مع حماية المدفوعات.",
+      "startOrdering": "ابدأ الطلب",
+      "submitRfq": "أرسل طلب عرض سعر"
+    }
+  },
+  "GetInTouch": {
+    "hero": {
+      "badge": "تواصل معنا",
+      "title": "تواصل معنا",
+      "description": "هل لديك أسئلة؟ نحن هنا للمساعدة. تواصل مع فريقنا وسنرد عليك بأسرع وقت."
+    },
+    "form": {
+      "title": "أرسل لنا رسالة",
+      "subtitle": "سنرد عليك خلال يوم عمل واحد.",
+      "fullName": "الاسم بالكامل",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "topic": "الموضوع",
+      "message": "الرسالة",
+      "messagePlaceholder": "أخبرنا كيف يمكننا مساعدتك...",
+      "submit": "إرسال الرسالة",
+      "topics": {
+        "general": "استفسار عام",
+        "order": "دعم الطلبات",
+        "vendor": "الانضمام كمورّد",
+        "other": "أخرى"
+      }
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة"
+    }
+  },
+  "Submitted": {
+    "title": "تم إرسال طلب عرض السعر!",
+    "description": "تم إرسال طلبك إلى المطابع المحددة.",
+    "notice": "ستتلقى عروض الأسعار خلال ساعات قليلة. سنخطرك عبر البريد الإلكتروني فور وصول العروض.",
+    "viewRequests": "عرض طلباتي",
+    "backMarketplace": "العودة للسوق",
+    "nextSteps": {
+      "title": "الخطوات القادمة"
+    }
+  },
+  "Checkout": {
+    "title": "إتمام الطلب",
+    "stepper": {
+      "review": "مراجعة الطلب",
+      "upload": "رفع ملفات التصميم"
+    },
+    "review": {
+      "title": "مراجعة طلبك",
+      "continueToUpload": "المتابعة لرفع الملفات"
+    },
+    "upload": {
+      "title": "رفع ملفات التصميم",
+      "description": "قم برفع ملفات الطباعة الخاصة بك لكل منتج في الطلب.",
+      "skipAndOrder": "تخطي الآن وإتمام الطلب",
+      "proceedToPayment": "المتابعة للدفع"
+    },
+    "summary": {
+      "title": "ملخص الطلب"
+    }
+  },
+  "CheckoutSuccess": {
+    "title": "تم إكمال طلبك بنجاح!",
+    "description": "تم تأمين دفعك بأمان وتم إرسال ملفات التصميم إلى المطابع.",
+    "notice": "تم إرسال تأكيد الطلب وتفاصيل التتبع إلى بريدك الإلكتروني.",
+    "trackOrders": "تتبع الطلبات",
+    "backHome": "العودة للرئيسية"
+  },
+  "ShoppingCart": {
+    "title": "سلة المشتريات ({count})",
+    "continueShopping": "+ متابعة التسوق",
+    "orderSummary": "ملخص الطلب",
+    "proceedToCheckout": "المتابعة لإتمام الطلب",
+    "promoCode": {
+      "placeholder": "أدخل كود الخصم",
+      "apply": "تطبيق"
+    }
+  },
+  "SpecificPrinter": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "printers": "المطابع"
+    },
+    "badge": "موثوقة",
+    "workingHours": "السبت - الخميس 9:00 صباحًا - 6:00 مساءً",
+    "sendMessage": "إرسال رسالة",
+    "requestQuote": "طلب عرض سعر"
+  },
+  "Specification": {
+    "options": {
+      "size": "المقاس",
+      "paper": "الخامة / الورق",
+      "printColor": "ألوان الطباعة",
+      "finishing": "التشطيب",
+      "quantity": "الكمية"
+    },
+    "addToCart": "إضافة إلى السلة",
+    "needCustomSpecs": "هل تحتاج مواصفات مخصصة؟ أرسل طلب عرض سعر"
   }
 }

@@ -13,8 +13,12 @@ import PromoCodeCard from "@/features/shopping-cart/components/PromoCodeCard";
 import BreadcrumbBasic from "@/shared/components/BreadCrumb";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ShoppingCart() {
+  const t = useTranslations("ShoppingCart");
+  const tNav = useTranslations("Navbar.menu");
+  const tHome = useTranslations("ProductsHero.breadcrumb");
   const [items, setItems] = useState<CartItem[]>(CART_ITEMS);
 
   const updateDesignOption = (itemId: number, designOption: CartDesignOption) => {
@@ -31,20 +35,18 @@ export default function ShoppingCart() {
     );
   };
 
-  const itemCountLabel = `${items.length} ${items.length === 1 ? "item" : "items"}`;
-
   return (
     <section className="container mx-auto mt-36 mb-16 2xl:w-full 2xl:px-0 md:px-8 lg:mb-32 lg:px-6">
       <BreadcrumbBasic
         links={[
-          { label: "Home", url: "/" },
-          { label: "Shopping Cart", url: "/shopping-cart" },
+          { label: tHome("home"), url: "/" },
+          { label: tNav("shoppingCart"), url: "/shopping-cart" },
         ]}
       />
 
       <div className="mt-8 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
         <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          Your Cart ({itemCountLabel})
+          {t("title", { count: items.length })}
         </h1>
         <CartSortTabs />
       </div>
@@ -68,7 +70,7 @@ export default function ShoppingCart() {
             variant="outline"
             className="mt-5 h-12 w-full rounded-2xl border-border/80 bg-background text-sm font-semibold text-muted-foreground hover:text-foreground"
             nativeButton={false}
-            render={<Link href="/products">+ Continue Shopping</Link>}
+            render={<Link href="/products">{t("continueShopping")}</Link>}
           />
         </div>
 
@@ -79,4 +81,4 @@ export default function ShoppingCart() {
       </div>
     </section>
   );
-}
+}

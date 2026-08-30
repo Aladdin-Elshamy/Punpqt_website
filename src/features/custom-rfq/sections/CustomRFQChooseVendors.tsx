@@ -9,6 +9,7 @@ import {
   type VendorId,
   type VendorSelectionMode,
 } from "@/features/custom-rfq/custom-rfq.types";
+import { CUSTOM_RFQ_VENDORS } from "@/features/custom-rfq/custom-rfq.data";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -18,8 +19,6 @@ type Props = {
   onSelectedChange: (vendors: VendorId[]) => void;
   onValidityChange: (valid: boolean) => void;
 };
-
-const vendors: VendorId[] = ["elite", "premium", "quality", "quick"];
 
 export default function CustomRFQChooseVendors({
   mode,
@@ -69,8 +68,8 @@ export default function CustomRFQChooseVendors({
             {selected.length > 0 ? `(${t("selectedCount", { count: selected.length })})` : null}
           </h3>
           <div className="mt-4 grid gap-3">
-            {vendors.map((vendor) => (
-              <VendorRow key={vendor} vendor={vendor} active={selected.includes(vendor)} onClick={() => toggleVendor(vendor)} />
+            {CUSTOM_RFQ_VENDORS.map((vendorItem) => (
+              <VendorRow key={vendorItem.id} vendorItem={vendorItem} active={selected.includes(vendorItem.id as VendorId)} onClick={() => toggleVendor(vendorItem.id as VendorId)} />
             ))}
           </div>
         </div>
@@ -99,22 +98,22 @@ function SelectionOption({ active, onClick, icon, title, description, badge }: S
   );
 }
 
-type VendorRowProps = { vendor: VendorId; active: boolean; onClick: () => void };
+type VendorRowProps = { vendorItem: (typeof CUSTOM_RFQ_VENDORS)[number]; active: boolean; onClick: () => void };
 
-function VendorRow({ vendor, active, onClick }: VendorRowProps) {
+function VendorRow({ vendorItem, active, onClick }: VendorRowProps) {
   const t = useTranslations("CustomRFQ.chooseVendors");
 
   return (
     <button type="button" role="checkbox" aria-checked={active} onClick={onClick} className={cn("flex min-h-24 w-full flex-wrap items-start gap-4 rounded-3xl border px-5 py-4 text-start outline-none transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 sm:items-center", active ? "border-2 border-primary bg-[#EEF7F7]" : "border-[#E7E7E9] bg-background hover:border-primary/40")}>
       <div className="flex items-start gap-4 sm:items-center">
         <span className={cn("flex size-6 shrink-0 items-center justify-center rounded-full border", active ? "border-primary bg-primary text-primary-foreground" : "border-[#E7E7E9] bg-background")} aria-hidden="true">{active ? <Check className="size-3.5" strokeWidth={3} /> : null}</span>
-        <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#0D0D19] text-sm font-bold text-white">{t(`vendors.${vendor}.initials`)}</span>
+        <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#0D0D19] text-sm font-bold text-white">{vendorItem.initials}</span>
         <span>
-          <span className="flex flex-wrap items-center gap-2"><span className="font-semibold text-black">{t(`vendors.${vendor}.name`)}</span>{vendor === "elite" ? <Badge className="font-semibold">{t("topRated")}</Badge> : null}</span>
-          <span className="mt-1 block text-sm font-semibold text-muted-foreground">Nasr City, Cairo</span>
+          <span className="flex flex-wrap items-center gap-2"><span className="font-semibold text-black">{vendorItem.name}</span>{vendorItem.isTopRated ? <Badge className="font-semibold">{t("topRated")}</Badge> : null}</span>
+          <span className="mt-1 block text-sm font-semibold text-muted-foreground">{vendorItem.location}</span>
         </span>
       </div>
-      <span className="ms-auto shrink-0 text-end"><span className="flex items-center justify-end gap-1 font-semibold text-black"><Star className="size-4 fill-[#FFB800] text-[#FFB800]" aria-hidden="true" />{t(`vendors.${vendor}.rating`)}</span><span className="mt-1 block text-sm font-medium text-muted-foreground">{t(`vendors.${vendor}.reviews`)}</span></span>
+      <span className="ms-auto shrink-0 text-end"><span className="flex items-center justify-end gap-1 font-semibold text-black"><Star className="size-4 fill-[#FFB800] text-[#FFB800]" aria-hidden="true" />{vendorItem.rating}</span><span className="mt-1 block text-sm font-medium text-muted-foreground">{vendorItem.reviews} reviews</span></span>
     </button>
   );
 }

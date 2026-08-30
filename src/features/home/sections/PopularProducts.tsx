@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import ArrowRight from "@/shared/icons/ArrowRight";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function PopularProducts() {
   const t = useTranslations("PopularProducts");
@@ -28,11 +29,13 @@ export default function PopularProducts() {
         />
         <Button
           variant="link"
-          className="mt-4 text-sm font-semibold text-[#6B6B80] items-center gap-0"
-        >
-          {t("allProducts")}
-          <ArrowRight className="rtl:scale-x-[-1] ms-2" />
-        </Button>
+          className="mt-4 text-sm font-semibold text-primary items-center gap-0"
+          render={<Link href={"/products"}>
+            {t("allProducts")}
+            <ArrowRight className="rtl:scale-x-[-1] ms-2" />
+          </Link>}
+          nativeButton={false}
+        />
       </div>
 
       <div

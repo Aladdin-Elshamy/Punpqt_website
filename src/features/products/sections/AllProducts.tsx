@@ -1,7 +1,8 @@
 import businessCardsImage from "@/assets/images/business-card.png";
 import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
-import ProductCard from "../../../shared/components/ProductCard";
+import ProductCard from "@/shared/components/ProductCard";
+import Link from "next/link";
 
 export default function AllProducts() {
   const t = useTranslations("AllProducts");
@@ -20,41 +21,51 @@ export default function AllProducts() {
         gap-4
          mt-5"
       >
-        <ProductCard
-          image={businessCardsImage}
-          title={t("products.businessCards.title")}
-          description={t("products.businessCards.description")}
-          printers={t("products.businessCards.printers")}
-          products={t("products.businessCards.products")}
-        />
-        <ProductCard
-          image={businessCardsImage}
-          title={t("products.businessCards.title")}
-          description={t("products.businessCards.description")}
-          printers={t("products.businessCards.printers")}
-          products={t("products.businessCards.products")}
-        />
-        <ProductCard
-          image={businessCardsImage}
-          title={t("products.businessCards.title")}
-          description={t("products.businessCards.description")}
-          printers={t("products.businessCards.printers")}
-          products={t("products.businessCards.products")}
-        />
-        <ProductCard
-          image={businessCardsImage}
-          title={t("products.businessCards.title")}
-          description={t("products.businessCards.description")}
-          printers={t("products.businessCards.printers")}
-          products={t("products.businessCards.products")}
-        />
-        <ProductCard
-          image={businessCardsImage}
-          title={t("products.businessCards.title")}
-          description={t("products.businessCards.description")}
-          printers={t("products.businessCards.printers")}
-          products={t("products.businessCards.products")}
-        />
+        <Link href="/products/business-cards">
+          <ProductCard
+            image={businessCardsImage}
+            title={"Business Cards"}
+            description={"Standard sizes, premium paper, and finishes."}
+            printers={"6+ printers"}
+            products={"120+ products"}
+          />
+        </Link>
+        <Link href="/products/business-cards">
+          <ProductCard
+            image={businessCardsImage}
+            title={"Flyers"}
+            description={"Various sizes, paper types, and finishes."}
+            printers={"6+ printers"}
+            products={"120+ products"}
+          />
+        </Link>
+        <Link href="/products/business-cards">
+          <ProductCard
+            image={businessCardsImage}
+            title={"Brochures"}
+            description={"Standard sizes, premium paper, and finishes."}
+            printers={"6+ printers"}
+            products={"120+ products"}
+          />
+        </Link>
+        <Link href="/products/business-cards">
+          <ProductCard
+            image={businessCardsImage}
+            title={"Packaging"}
+            description={"Custom sizes, materials, and finishes."}
+            printers={"6+ printers"}
+            products={"120+ products"}
+          />
+        </Link>
+        <Link href="/products/business-cards">
+          <ProductCard
+            image={businessCardsImage}
+            title={"Posters"}
+            description={"Standard sizes, premium paper, and finishes."}
+            printers={"6+ printers"}
+            products={"120+ products"}
+          />
+        </Link>
       </div>
     </div>
   );

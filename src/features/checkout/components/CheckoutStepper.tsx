@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import Check from "@/shared/icons/Check";
+import { useTranslations } from "next-intl";
 
 export type CheckoutStep = "review" | "upload";
 
@@ -9,12 +10,14 @@ interface CheckoutStepperProps {
     activeStep: CheckoutStep;
 }
 
-const steps: { id: CheckoutStep; label: string }[] = [
-    { id: "review", label: "Review Order" },
-    { id: "upload", label: "Upload Files" },
-];
-
 export default function CheckoutStepper({ activeStep }: CheckoutStepperProps) {
+    const t = useTranslations("Checkout.stepper");
+
+    const steps: { id: CheckoutStep; label: string }[] = [
+        { id: "review", label: t("review") },
+        { id: "upload", label: t("upload") },
+    ];
+
     const activeIndex = steps.findIndex((step) => step.id === activeStep);
 
     return (
@@ -67,4 +70,4 @@ export default function CheckoutStepper({ activeStep }: CheckoutStepperProps) {
             })}
         </ol>
     );
-}
+}
