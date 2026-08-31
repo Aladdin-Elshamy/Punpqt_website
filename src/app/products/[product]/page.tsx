@@ -1,8 +1,24 @@
+﻿import { parseCatalogSearchParams } from "@/features/specific-product/functions/catalog-state";
+import { CatalogSearchParams } from "@/features/specific-product/models/types";
 import BrowseProductCards from "@/features/specific-product/sections/BrowseProductCards";
 import BusinessCardsHero from "@/features/specific-product/sections/Hero";
+
 import { EnhancedCirclePattern } from "@/shared/sections/withCirclePattern";
 
-export default function ProductPage() {
+interface ProductPageProps {
+  params: Promise<{ product: string }>;
+  searchParams: Promise<CatalogSearchParams>;
+}
+
+export default async function ProductPage({
+  params,
+  searchParams,
+}: ProductPageProps) {
+  const [{ product }, catalogState] = await Promise.all([
+    params,
+    searchParams.then(parseCatalogSearchParams),
+  ]);
+
   return (
     <main className="relative overflow-hidden">
       <div className="relative 2xl:container">
@@ -16,7 +32,7 @@ export default function ProductPage() {
         <EnhancedCirclePattern defaultCols={8} defaultRows={8} mask={true} />
         <BusinessCardsHero />
       </div>
-      <BrowseProductCards />
+      <BrowseProductCards catalogState={catalogState} productSlug={product} />
     </main>
   );
 }

@@ -1,9 +1,7 @@
-"use client";
-
-import Star2 from "@/shared/icons/Star2";
+﻿import Star2 from "@/shared/icons/Star2";
 import { BoxIcon } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 export interface ProductRowCardProps {
   title?: string;
@@ -19,7 +17,7 @@ export interface ProductRowCardProps {
   className?: string;
 }
 
-export default function ProductRowCard({
+export default async function ProductRowCard({
   title,
   vendor,
   rating = 4.8,
@@ -32,7 +30,7 @@ export default function ProductRowCard({
   imageUrl,
   className = "",
 }: ProductRowCardProps) {
-  const t = useTranslations("SpecificProduct.card");
+  const t = await getTranslations("SpecificProduct.card");
 
   const cardTitle = title || t("defaultTitleRow");
   const cardVendor = vendor || t("defaultVendor");
@@ -40,7 +38,7 @@ export default function ProductRowCard({
   const cardCurrency = currency || t("currency");
   const cardPriceLabel = priceLabel || t("startingPrice");
 
-  const formattedVendor = cardVendor.toLowerCase().startsWith("by ") || cardVendor.startsWith("بواسطة ")
+  const formattedVendor = cardVendor.toLowerCase().startsWith("by ") || cardVendor.startsWith("Ø¨ÙˆØ§Ø³Ø·Ø© ")
     ? cardVendor
     : t("byVendor", { vendor: cardVendor });
 
@@ -79,9 +77,9 @@ export default function ProductRowCard({
             <span className="text-slate-500 font-normal">
               ({typeof reviewsCount === "number" ? reviewsCount.toLocaleString() : reviewsCount})
             </span>
-            <span className="text-slate-400 font-normal">·</span>
+            <span className="text-slate-400 font-normal">Â·</span>
             <span className="text-slate-900">{minQuantity}</span>
-            <span className="text-slate-400 font-normal">·</span>
+            <span className="text-slate-400 font-normal">Â·</span>
             <span className="text-slate-900">{cardDelivery}</span>
           </div>
         </div>
@@ -99,3 +97,4 @@ export default function ProductRowCard({
     </div>
   );
 }
+

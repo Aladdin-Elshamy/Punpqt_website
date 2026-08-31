@@ -1,71 +1,36 @@
-"use client";
-
-import { useState } from "react";
-import { Tabs, TabsContent } from "@/components/ui/tabs";
 import SearchSpecs from "../components/Search";
-import ViewToggleButtons, { ViewMode } from "../components/ViewToggleButtons";
 import ProductList from "../components/ProductList";
 import PrinterCard from "../components/PrinterCard";
-import SelectCategory from "../components/SelectCategory";
+import CatalogViewClient from "./CatalogViewClient";
+import type { CatalogState } from "../models/types";
 
 export interface ProductCatalogViewProps {
-  products?: Array<any>;
+  catalogState: CatalogState;
+  productSlug: string;
+  products?: Array<unknown>;
 }
 
-export default function ProductCatalogView({
+export default async function ProductCatalogView({
+  catalogState,
+  productSlug,
   products = [1, 2, 3, 4, 5, 6],
 }: ProductCatalogViewProps) {
-  const [view, setView] = useState<ViewMode>("grid");
-  const [activeTab, setActiveTab] = useState<"products" | "printers">(
-    "products",
-  );
-  const handleChangeTab = (tab: "products" | "printers") => {
-    setActiveTab(tab);
-    if (activeTab === "printers") {
-      setView("list");
-    }
-  };
-
   return (
-    <Tabs
-      defaultValue={"products"}
-      value={activeTab}
-      onValueChange={handleChangeTab}
-      className="flex-1 space-y-6"
-    >
-      {/* Top Header Controls Row */}
-      <div className="flex items-start xl:items-center justify-between gap-4 flex-col xl:flex-row">
-        {/* <TabsLine
-          tabs={[
-            { label: t("tabs.products", { count: 6 }), value: "products" },
-            { label: t("tabs.printers", { count: 3 }), value: "printers" },
-          ]}
-        /> */}
-
-        <div className="flex ms-0 w-full xl:ms-auto order-1 xl:order-2 items-stretch xl:flex-row flex-wrap gap-2">
-          <SearchSpecs />
-
-          <SelectCategory />
-
-          <ViewToggleButtons
-            view={view}
-            onViewChange={setView}
-            activeTab={activeTab}
-          />
-        </div>
-      </div>
-
-      {/* Product List Content */}
-      <TabsContent value={"products"}>
-        <ProductList view={view} products={products} />
-      </TabsContent>
-
-      <TabsContent value={"printers"}>
+    <CatalogViewClient
+      catalogState={catalogState}
+      searchNode={<SearchSpecs catalogState={catalogState} />}
+      productsGridNode={
+        <ProductList view="grid" productSlug={productSlug} products={products} />
+      }
+      productsListNode={
+        <ProductList view="list" productSlug={productSlug} products={products} />
+      }
+      printersNode={
         <div className="space-y-4">
-          <PrinterCard startingPrice={250} />
-          <PrinterCard startingPrice={undefined} />
+          <PrinterCard startingPrice={250} productSlug={productSlug} />
+          <PrinterCard productSlug={productSlug} />
         </div>
-      </TabsContent>
-    </Tabs>
+      }
+    />
   );
 }

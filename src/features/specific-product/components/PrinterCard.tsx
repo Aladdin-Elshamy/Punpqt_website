@@ -1,9 +1,10 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import Link from "next/link";
 import Star2 from "@/shared/icons/Star2";
 import Check from "@/shared/icons/Check";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 export interface PrinterCardProps {
     id?: string;
@@ -21,12 +22,12 @@ export interface PrinterCardProps {
     currency?: string;
     priceLabel?: string;
     buttonText?: string;
-    onSelect?: () => void;
-    onRequestQuote?: () => void;
+    actionHref?: string;
+    productSlug?: string;
     className?: string;
 }
 
-export default function PrinterCard({
+export default async function PrinterCard({
     name,
     logoUrl,
     initials,
@@ -41,11 +42,11 @@ export default function PrinterCard({
     currency,
     priceLabel,
     buttonText,
-    onSelect,
-    onRequestQuote,
+    actionHref,
+    productSlug,
     className = "",
 }: PrinterCardProps) {
-    const t = useTranslations("SpecificProduct.printerCard");
+    const t = await getTranslations("SpecificProduct.printerCard");
     const hasPrice = startingPrice !== undefined && startingPrice !== null;
     const displayName = name || t("defaults.name");
     const displayInitials = initials || t("defaults.initials");
@@ -56,17 +57,7 @@ export default function PrinterCard({
     const actionText =
         buttonText || (hasPrice ? t("selectPrinter") : t("requestQuotation"));
     const displayPriceLabel = priceLabel || t("startingPrice");
-    const handleAction = () => {
-        if (hasPrice && onSelect) {
-            onSelect();
-        } else if (!hasPrice && onRequestQuote) {
-            onRequestQuote();
-        } else if (onSelect) {
-            onSelect();
-        } else if (onRequestQuote) {
-            onRequestQuote();
-        }
-    };
+    const resolvedActionHref = actionHref || `/products/${productSlug || ""}/printers`;
 
     return (
         <div
@@ -138,7 +129,7 @@ export default function PrinterCard({
                                 : reviewsCount}
                             )
                         </span>
-                        <span className="text-slate-400 font-normal mx-0.5">·</span>
+                        <span className="text-slate-400 font-normal mx-0.5">Â·</span>
                         <span className="text-slate-900">{displayDeliveryTime}</span>
                     </div>
                 </div>
@@ -162,7 +153,8 @@ export default function PrinterCard({
                 )}
 
                 <Button
-                    onClick={handleAction}
+                    nativeButton={false}
+                    render={<Link href={resolvedActionHref} />}
                     variant={"outline"}
                     className="w-full sm:w-auto h-9 px-3.5"
                 >
@@ -172,3 +164,7 @@ export default function PrinterCard({
         </div>
     );
 }
+
+
+
+

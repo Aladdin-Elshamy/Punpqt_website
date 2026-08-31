@@ -1,9 +1,10 @@
-"use client";
+﻿"use client";
 
-import { useState } from "react";
 import Settings from "@/shared/icons/Settings";
 import Star2 from "@/shared/icons/Star2";
 import { useTranslations } from "next-intl";
+import { useCallback } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export interface FilterOptions {
   startingPrices?: string[];
@@ -18,10 +19,13 @@ export interface FilterProps {
   selectedRating?: number;
   onPriceSelect?: (price: string) => void;
   onLocationSelect?: (location: string) => void;
-  onRatingSelect?: (rating: number) => void;
+  onRatingSelect?: (rating: number | undefined) => void;
   showTitle?: boolean;
   className?: string;
 }
+
+const priceOptions = ["any", "under-200"] as const;
+const locationOptions = ["cairo", "alexandria"] as const;
 
 export default function Filter({
   options,
@@ -35,46 +39,57 @@ export default function Filter({
   className = "",
 }: FilterProps) {
   const t = useTranslations("SpecificProduct.filter");
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const prices = options?.startingPrices || [
+    t("options.anyPrice"),
+    t("options.underEgp200"),
+  ];
+  const locations = options?.locations || [
+    t("options.cairo"),
+    t("options.alexandria"),
+  ];
+  const ratings = options?.ratings || [5, 4, 3, 2];
+  const activePrice = propPrice ?? searchParams.get("price") ?? "";
+  const activeLocation = propLocation ?? searchParams.get("location") ?? "";
+  const ratingParam = Number(searchParams.get("rating"));
+  const activeRating = propRating ?? (ratings.includes(ratingParam) ? ratingParam : undefined);
 
-  const DEFAULT_PRICES = [t("options.anyPrice"), t("options.underEgp200")];
-  const DEFAULT_LOCATIONS = [t("options.cairo"), t("options.alexandria")];
-  const DEFAULT_RATINGS = [5, 4, 3, 2];
+  const updateParam = useCallback(
+    (name: string, value: string | undefined) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (value) params.set(name, value);
+      else params.delete(name);
+      router.replace(`${pathname}${params.size ? `?${params}` : ""}`, {
+        scroll: false,
+      });
+    },
+    [pathname, router, searchParams],
+  );
 
-  const [internalPrice, setInternalPrice] = useState<string>("");
-  const [internalLocation, setInternalLocation] = useState<string>("");
-  const [internalRating, setInternalRating] = useState<number | undefined>();
-
-  const activePrice = propPrice !== undefined ? propPrice : internalPrice;
-  const activeLocation =
-    propLocation !== undefined ? propLocation : internalLocation;
-  const activeRating = propRating !== undefined ? propRating : internalRating;
-
-  const prices = options?.startingPrices || DEFAULT_PRICES;
-  const locations = options?.locations || DEFAULT_LOCATIONS;
-  const ratings = options?.ratings || DEFAULT_RATINGS;
-
-  const handlePriceClick = (price: string) => {
-    const nextPrice = activePrice === price ? "" : price;
-    setInternalPrice(nextPrice);
+  const handlePriceClick = (index: number, price: string) => {
+    const value = options?.startingPrices ? price : priceOptions[index];
+    const nextPrice = activePrice === value ? "" : value;
+    updateParam("price", nextPrice);
     onPriceSelect?.(nextPrice);
   };
 
-  const handleLocationClick = (loc: string) => {
-    const nextLoc = activeLocation === loc ? "" : loc;
-    setInternalLocation(nextLoc);
-    onLocationSelect?.(nextLoc);
+  const handleLocationClick = (index: number, location: string) => {
+    const value = options?.locations ? location : locationOptions[index];
+    const nextLocation = activeLocation === value ? "" : value;
+    updateParam("location", nextLocation);
+    onLocationSelect?.(nextLocation);
   };
 
-  const handleRatingClick = (r: number) => {
-    const nextR = activeRating === r ? undefined : r;
-    setInternalRating(nextR);
-    onRatingSelect?.(r);
+  const handleRatingClick = (rating: number) => {
+    const nextRating = activeRating === rating ? undefined : rating;
+    updateParam("rating", nextRating?.toString());
+    onRatingSelect?.(nextRating);
   };
 
   return (
-    <div
-      className={`p-0 lg:p-4 bg-white font-semibold rounded-2xl border min-w-64 ${className}`}
-    >
+    <div className={`p-0 lg:p-4 bg-white font-semibold rounded-2xl border min-w-64 ${className}`}>
       {showTitle && (
         <h2 className="text-xl flex items-center gap-2">
           <Settings className="mt-1" />
@@ -84,32 +99,34 @@ export default function Filter({
 
       <h3 className="pt-0 xl:pt-4">{t("startingPrice")}</h3>
       <ul className="ps-5 pt-4 flex flex-col gap-2">
-        {prices.map((price) => (
-          <li
-            key={price}
-            onClick={() => handlePriceClick(price)}
-            className={`hover:underline cursor-pointer transition-colors ${
-              activePrice === price ? "text-primary font-bold underline" : ""
-            }`}
-          >
-            {price}
-          </li>
-        ))}
+        {prices.map((price, index) => {
+          const value = options?.startingPrices ? price : priceOptions[index];
+          return (
+            <li
+              key={value}
+              onClick={() => handlePriceClick(index, price)}
+              className={`hover:underline cursor-pointer transition-colors ${activePrice === value ? "text-primary font-bold underline" : ""}`}
+            >
+              {price}
+            </li>
+          );
+        })}
       </ul>
 
       <h3 className="pt-4">{t("location")}</h3>
       <ul className="ps-5 pt-4 flex flex-col gap-2">
-        {locations.map((loc) => (
-          <li
-            key={loc}
-            onClick={() => handleLocationClick(loc)}
-            className={`hover:underline cursor-pointer transition-colors ${
-              activeLocation === loc ? "text-primary font-bold underline" : ""
-            }`}
-          >
-            {loc}
-          </li>
-        ))}
+        {locations.map((location, index) => {
+          const value = options?.locations ? location : locationOptions[index];
+          return (
+            <li
+              key={value}
+              onClick={() => handleLocationClick(index, location)}
+              className={`hover:underline cursor-pointer transition-colors ${activeLocation === value ? "text-primary font-bold underline" : ""}`}
+            >
+              {location}
+            </li>
+          );
+        })}
       </ul>
 
       <h3 className="pt-4">{t("rating")}</h3>
@@ -118,20 +135,14 @@ export default function Filter({
           <li
             key={stars}
             onClick={() => handleRatingClick(stars)}
-            className={`w-fit cursor-pointer flex items-center gap-2 ${
-              activeRating === stars
-                ? "border-b-2 border-primary font-bold"
-                : "hover:border-b-2 border-black"
-            }`}
+            className={`w-fit cursor-pointer flex items-center gap-2 ${activeRating === stars ? "border-b-2 border-primary font-bold" : "hover:border-b-2 border-black"}`}
           >
             <div className="flex items-center gap-0.5">
-              {Array.from({ length: stars }).map((_, i) => (
-                <Star2 key={i} className="text-[#FBBF24]" />
+              {Array.from({ length: stars }).map((_, index) => (
+                <Star2 key={index} className="text-[#FBBF24]" />
               ))}
             </div>
-            <span
-              className={`${activeRating === stars ? "text-primary" : "text-muted-foreground"}`}
-            >
+            <span className={activeRating === stars ? "text-primary" : "text-muted-foreground"}>
               {t("andUp")}
             </span>
           </li>

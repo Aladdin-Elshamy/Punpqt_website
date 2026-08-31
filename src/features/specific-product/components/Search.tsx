@@ -1,31 +1,41 @@
-"use client";
-
-import SearchIcon from "@/shared/icons/Search";
+﻿import SearchIcon from "@/shared/icons/Search";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
 import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { CatalogState } from "../models/types";
 
-export default function SearchSpecs() {
-  const t = useTranslations("SpecificProduct.catalog");
+interface SearchSpecsProps {
+  catalogState: CatalogState;
+}
+
+export default async function SearchSpecs({ catalogState }: SearchSpecsProps) {
+  const t = await getTranslations("SpecificProduct.catalog");
 
   return (
-    <InputGroup className="xl:flex-2 border border-[#0B646854] bg-white py-7.5 rounded-xl ">
-      <InputGroupInput
-        className="sm:text-lg! text-xs placeholder:text-base"
-        placeholder={t("searchPlaceholder")}
-      />
-      <InputGroupAddon className="ps-3 py-0!">
-        <SearchIcon className="me-2" />
-      </InputGroupAddon>
-      <InputGroupAddon align="inline-end" className="pe-1.5 py-0!">
-        <Button size="sm" className="h-14 px-4 text-sm rounded-xl font-medium">
-          {t("searchSubmit")}
-        </Button>
-      </InputGroupAddon>
-    </InputGroup>
+    <form className="xl:flex-2" action="">
+      <input type="hidden" name="tab" value={catalogState.tab} />
+      <input type="hidden" name="view" value={catalogState.view} />
+      <input type="hidden" name="category" value={catalogState.category} />
+      <InputGroup className="border border-[#0B646854] bg-white py-7.5 rounded-xl">
+        <InputGroupInput
+          name="q"
+          defaultValue={catalogState.query}
+          className="sm:text-lg! text-xs placeholder:text-base"
+          placeholder={t("searchPlaceholder")}
+        />
+        <InputGroupAddon className="ps-3 py-0!">
+          <SearchIcon className="me-2" />
+        </InputGroupAddon>
+        <InputGroupAddon align="inline-end" className="pe-1.5 py-0!">
+          <Button type="submit" size="sm" className="h-14 w-20! text-sm rounded-xl font-medium">
+            {t("searchSubmit")}
+          </Button>
+        </InputGroupAddon>
+      </InputGroup>
+    </form>
   );
 }

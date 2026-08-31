@@ -1,12 +1,9 @@
-"use client";
-
-import { Badge } from "@/components/ui/badge";
+﻿import { Badge } from "@/components/ui/badge";
 import Star2 from "@/shared/icons/Star2";
 import { BoxIcon } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 
 export interface ProductGridCardProps {
   title?: string;
@@ -19,9 +16,10 @@ export interface ProductGridCardProps {
   badge?: string;
   imageUrl?: string;
   className?: string;
+  productSlug?: string;
 }
 
-export default function ProductGridCard({
+export default async function ProductGridCard({
   title,
   vendor,
   rating = 4.9,
@@ -32,20 +30,23 @@ export default function ProductGridCard({
   badge,
   imageUrl,
   className = "",
+  productSlug,
 }: ProductGridCardProps) {
-  const t = useTranslations("SpecificProduct.card");
-  const { product } = useParams()
+  const t = await getTranslations("SpecificProduct.card");
   const cardTitle = title || t("defaultTitleGrid");
   const cardVendor = vendor || t("defaultVendor");
   const cardDelivery = deliveryTime || t("defaultDelivery");
   const cardCurrency = currency || t("currency");
   const cardBadge = badge || t("topRated");
+  const href = productSlug
+    ? `/products/${productSlug}/${cardTitle}`
+    : cardTitle;
 
   return (
-    <Link href={`${product}/${cardTitle}`}
+    <Link
+      href={href}
       className={`bg-white border hover:scale-103 border-[#E5E7EB] rounded-3xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col w-full ${className}`}
     >
-      {/* Image / Icon Container */}
       <div className="relative w-full h-48 sm:h-52 bg-[#F4F4F6] flex items-center justify-center p-4">
         {cardBadge && (
           <Badge className="absolute top-3.5 left-3.5 text-xs font-semibold px-3 py-1 rounded-full z-10">
@@ -65,7 +66,6 @@ export default function ProductGridCard({
         )}
       </div>
 
-      {/* Details Container */}
       <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 gap-2">
         <div>
           <h3 className="font-semibold text-black text-base leading-snug line-clamp-1">
