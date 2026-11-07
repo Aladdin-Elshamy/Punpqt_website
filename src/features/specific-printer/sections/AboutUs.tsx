@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import PrinterDetailCard from "@/features/specific-printer/components/PrinterDetailCard";
 import Check from "@/shared/icons/Check";
-import { Award, CircleCheck } from "lucide-react";
+import { Award } from "lucide-react";
 
 const capabilities = [
   "Digital Printing",
@@ -114,7 +114,7 @@ export default function AboutUs() {
             </h2>
 
             <div className="mt-4 grid max-w-2xl gap-3 sm:grid-cols-2">
-              {certifications.map((certification, index) => (
+              {certifications.map((certification) => (
                 <PrinterDetailCard
                   key={certification.title}
                   {...certification}

@@ -24,7 +24,9 @@
       "before": "Everything ",
       "highlight": "you need to print"
     },
-    "allProducts": "All products"
+    "allProducts": "All products",
+    "currency": "EGP",
+    "empty": "No products available currently"
   },
   "ChooseUs": {
     "title": "Why thousands choose PUNQT",
@@ -100,7 +102,9 @@
       "line1": "Print anything.",
       "line2": "Compare every quote."
     },
-    "description": "Connect with 500+ verified Egyptian printing houses. Get competitive quotes, approve samples digitally, and track production in real time."
+    "description": "Connect with 500+ verified Egyptian printing houses. Get competitive quotes, approve samples digitally, and track production in real time.",
+    "adBadge": "Sponsored",
+    "adAlt": "Promotional Banner"
   },
   "ProductsHero": {
     "breadcrumb": {
@@ -127,6 +131,13 @@
     },
     "productSection": {
       "badge": "Popular Products"
+    },
+    "currency": "EGP",
+    "empty": "No popular products available currently",
+    "adAlt": "Promotional Offer",
+    "pricingType": {
+      "fixed": "Fixed Price",
+      "calculated": "Custom Quote"
     }
   },
   "PrintingHouse": {
@@ -148,9 +159,10 @@
     }
   },
   "TopPrinters": {
-    "title": "Browse by Products",
+    "title": "Top Printers",
     "description": "Trusted printing houses",
-    "allProducts": "All products"
+    "allPrinters": "All printers",
+    "empty": "No printers available currently"
   },
   "WhyPunpqt": {
     "title": "Why PUNQT",
@@ -179,12 +191,15 @@
     "stats": {
       "rating": "Rating",
       "response": "Response",
-      "onTime": "On-Time"
+      "onTime": "On-Time",
+      "reviews": "Reviews",
+      "orders": "Orders"
     },
     "buttons": {
       "viewProfile": "View Profile",
       "getQuote": "Get Quote"
-    }
+    },
+    "noCity": "Unspecified"
   },
   "Footer": {
     "brand": {
@@ -596,5 +611,16 @@
     },
     "addToCart": "Add to Cart",
     "needCustomSpecs": "Need Custom Specs? Submit RFQ"
+  },
+  "Decide": {
+    "title": "Can't Decide",
+    "subtitle": "Let printers compete for your job",
+    "description": "Submit one RFQ and receive offers from multiple verified printers within 24 hours.",
+    "button": "Submit RFQ"
+  },
+  "Error": {
+    "title": "Something went wrong loading data",
+    "description": "We could not load the page content. Please try again or contact support if the issue persists.",
+    "retry": "Try again"
   }
 }

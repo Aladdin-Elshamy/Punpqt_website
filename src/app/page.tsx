@@ -11,8 +11,13 @@ import WhyPunpqt from "@/features/home/sections/WhyPunpqt";
 import PrintingHouse from "@/features/home/sections/PrintingHouse";
 import FindYourPrinter from "@/features/home/sections/FindYourPrinter";
 import CirclePattern from "@/shared/sections/CirclePattern";
+import { getHomeData } from "@/features/home/services/home.service";
+import { getLocale } from "next-intl/server";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const locale = await getLocale();
+  const homeData = await getHomeData(locale);
+
   return (
     <main className="relative overflow-hidden">
       <div className="relative 2xl:container">
@@ -24,18 +29,21 @@ export default function HomePage() {
              blur-[140px]"
         />
         <CirclePattern />
-        <HeroSection />
+        <HeroSection ads={homeData?.ads} />
       </div>
       <SearchSection />
       <FeaturesStatistics />
       <div className="px-4 sm:px-8 md:px-6 xl:px-8 container">
-        <ChooseUs />
+        <ChooseUs features={homeData?.features} />
       </div>
-      <PopularProducts />
+      <PopularProducts
+        products={homeData?.popular_products}
+        ad={homeData?.ads.large?.[0] ?? null}
+      />
       <div className="bg-[#FAFAFA] py-20">
-        <BrowseByProducts />
+        <BrowseByProducts products={homeData?.products} />
       </div>
-      <TopPrinters />
+      <TopPrinters printers={homeData?.trusted_printers} />
       <div className="bg-[#FAFAFA]">
         <div className="sm:px-8 md:px-6 xl:px-8 container">
           <CoreFeature />

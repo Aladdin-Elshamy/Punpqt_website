@@ -1,5 +1,3 @@
-import Decide from "@/features/printers/sections/Decide";
-import PrintersGrid from "@/features/printers/sections/PrintersGrid";
 import AboutUs from "@/features/specific-printer/sections/AboutUs";
 import CustomerReviews from "@/features/specific-printer/sections/CustomerReviews";
 import PortfolioGallery from "@/features/specific-printer/sections/PortfolioGallery";

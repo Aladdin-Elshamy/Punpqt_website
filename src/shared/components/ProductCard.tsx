@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import Image, { type StaticImageData } from "next/image";
-import Link from "next/link";
 
 type ProductCardProps = {
   image: StaticImageData;

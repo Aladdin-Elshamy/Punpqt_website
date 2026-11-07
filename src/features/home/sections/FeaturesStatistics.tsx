@@ -4,7 +4,7 @@ import FeatureStatistics from "../components/FeatureStatistics";
 export default function FeaturesStatistics() {
   const t = useTranslations("FeaturesStatistics.features");
 
-  const features = [
+  const defaultStats = [
     {
       title: t("verifiedPrinters"),
       number: "500+",
@@ -26,11 +26,11 @@ export default function FeaturesStatistics() {
   return (
     <section className="container pb-20 mt-16 mx-auto px-6 md:px-8 lg:px-6">
       <div className="flex items-baseline pt-9 border-t gap-8 flex-wrap justify-center lg:justify-start max-w-2xl">
-        {features.map((feature) => (
+        {defaultStats.map((stat) => (
           <FeatureStatistics
-            key={feature.title}
-            title={feature.title}
-            number={feature.number}
+            key={stat.title}
+            title={stat.title}
+            number={stat.number}
           />
         ))}
       </div>

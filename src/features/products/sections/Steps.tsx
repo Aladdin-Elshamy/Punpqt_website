@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import File from "@/shared/icons/File";
 import People from "@/shared/icons/People";
 import { Lock, Star } from "lucide-react";
