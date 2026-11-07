@@ -28,10 +28,15 @@ The **Home Page** (`src/features/home/`) is fully connected to the live backend 
 - [x] **Customer Stories & Why Punpqt:** High-converting testimonials and value grids.
 - [x] **Global Footer:** Multilingual navigation links, newsletter signup UI, social links, and copyright notices.
 
-### Products & Catalog (`/products`, `src/features/products/`, `src/features/specific-product/`)
-- [x] **Product Listing:** Filterable catalog of print products (business cards, packaging, flyers, stickers, etc.).
-- [x] **URL-Driven Catalog State:** Tab switching (Products vs. Printers), view toggling (Grid vs. List), and category selection preserved via URL search params (`catalog-state.ts`).
-- [x] **Filters & Search:** Visual category filters and search inputs.
+### Products & Catalog (`/products`, `src/features/products/`) — *Live API Integrated*
+- [x] **Backend API Integration (`getProducts` & `getPopularProducts`):** Feature service layer in `src/features/products/services/products.service.ts` querying `https://api-punqt.plana.company/api/v1/products` with query params (`category`, `popular`, `sort`, `search`, `page`), ISR caching, and language headers.
+- [x] **Strict TypeScript Models:** Typed data contracts in `src/features/products/models/products.model.ts` and `types/model.ts` (`Product`, `ProductsPaginationMeta`, `ProductsApiResponse`, `ProductsFilterParams`).
+- [x] **Interactive Filter & Search Controls (`ProductFilters`):** URL-synced search input, category selection pills, sort dropdown (`price_asc`, `price_desc`, `latest`), and popular-only toggle.
+- [x] **Dynamic Catalog Grid (`AllProducts` & `ProductCatalogCard`):** Bound to `data` with price indicators, printer counts, pricing type indicators, and direct navigation to `/products/[slug]`.
+- [x] **Top Popular Showcase (`PopularProducts` & `PopularProduct`):** Displays top trending products when no restrictive filters are active.
+- [x] **Pagination Controls:** URL-driven page navigation (`Page {current} of {total}`) handling `meta.has_more` and `meta.last_page`.
+- [x] **Structured Loading Skeletons:** `PopularProductSkeleton`, `ProductCardSkeleton`, `ProductsLoadingSkeleton`, and `src/app/products/loading.tsx`.
+- [x] **Bilingual Localizations:** Added complete English and Arabic dictionaries for search placeholders, sorting options, category tags, empty state with filter clearing, and pagination.
 
 ### Product Configurator & Specifications (`/products/[product]/[specification]`, `src/features/specification/`)
 - [x] **Interactive Configurator:** Option pickers for sizing, paper stock/weight, print color (single/double sided), finishing options, and quantity tiers.

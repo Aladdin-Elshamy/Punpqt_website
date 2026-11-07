@@ -10,9 +10,9 @@ import CustomerStories from "@/features/home/sections/CustomerStories";
 import WhyPunpqt from "@/features/home/sections/WhyPunpqt";
 import PrintingHouse from "@/features/home/sections/PrintingHouse";
 import FindYourPrinter from "@/features/home/sections/FindYourPrinter";
-import CirclePattern from "@/shared/sections/CirclePattern";
 import { getHomeData } from "@/features/home/services/home.service";
 import { getLocale } from "next-intl/server";
+import { EnhancedCirclePattern } from "@/shared/sections/withCirclePattern";
 
 export default async function HomePage() {
   const locale = await getLocale();
@@ -28,7 +28,7 @@ export default async function HomePage() {
              bg-[#0D7377]/20
              blur-[140px]"
         />
-        <CirclePattern />
+        <EnhancedCirclePattern />
         <HeroSection ads={homeData?.ads} />
       </div>
       <SearchSection />

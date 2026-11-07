@@ -115,7 +115,41 @@
     "description": "Browse all available printing products and choose the one that best fits your needs."
   },
   "AllProducts": {
-    "badge": "All Products"
+    "badge": "All Products",
+    "totalCount": "{total} Products",
+    "printersCount": "{count} Printers",
+    "availableNow": "Available Now",
+    "filters": {
+      "searchPlaceholder": "Search products...",
+      "sortPlaceholder": "Sort by",
+      "popularOnly": "Popular Only",
+      "sortOptions": {
+        "default": "Default",
+        "priceAsc": "Price: Low to High",
+        "priceDesc": "Price: High to Low",
+        "latest": "Newest"
+      },
+      "categories": {
+        "all": "All",
+        "businessCards": "Business Cards",
+        "flyers": "Flyers",
+        "brochures": "Brochures",
+        "packaging": "Packaging",
+        "envelopes": "Envelopes",
+        "invitations": "Invitations",
+        "documents": "Documents"
+      }
+    },
+    "empty": {
+      "title": "No products found",
+      "description": "Try adjusting your search or filters to find what you are looking for.",
+      "clearFilters": "Clear all filters"
+    },
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next",
+      "pageOf": "Page {current} of {total}"
+    }
   },
   "PopularProducts": {
     "title": "Popular Products",

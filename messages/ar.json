@@ -115,7 +115,41 @@
     "description": "استعرض كل المنتجات واختر المنتج الذي يلائم احتياجتك."
   },
   "AllProducts": {
-    "badge": "كل المنتجات"
+    "badge": "كل المنتجات",
+    "totalCount": "{total} منتج",
+    "printersCount": "{count} مطابع",
+    "availableNow": "متوفر الآن",
+    "filters": {
+      "searchPlaceholder": "ابحث عن منتج...",
+      "sortPlaceholder": "ترتيب حسب",
+      "popularOnly": "الأكثر طلباً فقط",
+      "sortOptions": {
+        "default": "الافتراضي",
+        "priceAsc": "السعر: من الأقل للأعلى",
+        "priceDesc": "السعر: من الأعلى للأقل",
+        "latest": "الأحدث"
+      },
+      "categories": {
+        "all": "الكل",
+        "businessCards": "كروت شخصية",
+        "flyers": "فلايرات",
+        "brochures": "بروشورات",
+        "packaging": "تعبئة وتغليف",
+        "envelopes": "أظرف",
+        "invitations": "دعوات",
+        "documents": "أوراق ومستندات"
+      }
+    },
+    "empty": {
+      "title": "لم يتم العثور على منتجات",
+      "description": "جرب تغيير كلمات البحث أو خيارات التصفية للعثور على ما تبحث عنه.",
+      "clearFilters": "إعادة تعيين الفلاتر"
+    },
+    "pagination": {
+      "prev": "السابق",
+      "next": "التالي",
+      "pageOf": "صفحة {current} من {total}"
+    }
   },
   "PopularProducts": {
     "title": "المنتجات الشائعة",

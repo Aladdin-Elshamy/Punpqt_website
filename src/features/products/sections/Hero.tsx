@@ -5,8 +5,8 @@ export default function ProductsHero() {
   const t = useTranslations("ProductsHero");
 
   return (
-    <div className="container 2xl:px-0 2xl:w-full mt-36 mx-auto md:px-8 lg:px-6 pb-16 sm:pb-52">
-      <div className="flex items-center gap-2.5">
+    <div className="container 2xl:px-0 2xl:w-full mt-36 md:px-8 lg:px-6 pb-16 sm:pb-52">
+      <div className="flex items-center gap-2.5 relative z-10 w-fit">
         <Breadcrumb
           links={[
             {
@@ -20,8 +20,10 @@ export default function ProductsHero() {
           ]}
         />
       </div>
-      <h1 className="font-bold text-3xl sm:text-4xl mt-6">{t("title")}</h1>
-      <p className="text-[#6B6B80] font-semibold max-w-lg mt-5">
+      <h1 className="font-bold text-3xl sm:text-4xl mt-6 relative z-10 w-fit">
+        {t("title")}
+      </h1>
+      <p className="text-[#6B6B80] font-semibold max-w-lg mt-5 relative z-10">
         {t("description")}
       </p>
     </div>
