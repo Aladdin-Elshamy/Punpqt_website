@@ -42,7 +42,7 @@ export default function ProductCatalogCard({ product }: { product: Product }) {
         </div>
 
         {product.image_url && (
-          <div className="hidden @sm/product-card:block sm:block absolute md:bottom-0 md:-end-6 xl:-bottom-4 -end-8 bottom-0 w-36 sm:w-40 xl:w-48 h-32 sm:h-36 pointer-events-none opacity-85 group-hover:scale-105 transition-transform duration-300">
+          <div className="hidden @sm/product-card:block sm:block absolute md:bottom-0 md:-end-2 -end-4 bottom-0 w-36 sm:w-36 xl:w-48 h-32 sm:h-28 pointer-events-none opacity-85 group-hover:scale-105 transition-transform duration-300">
             <Image
               src={product.image_url}
               alt={product.name}

@@ -11,7 +11,7 @@ export default function ProductCategory({ product }: { product: Product }) {
       href={`/products/${product.slug}`}
       className="group flex items-center gap-4 rounded-2xl border border-black/8 bg-white p-4 shadow-xs transition-all hover:border-primary/40 hover:shadow-md"
     >
-      <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-[#FAFAFA] flex items-center justify-center">
+      <div className="relative h-20 w-30 shrink-0 overflow-hidden rounded-xl flex items-center justify-center">
         {product.image_url ? (
           <Image
             src={product.image_url}

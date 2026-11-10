@@ -9,15 +9,15 @@ export default function PopularProduct({ product }: { product: Product }) {
   return (
     <Link href={`/products/${product.slug}`} className="group block h-full">
       <article className="overflow-hidden h-full flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 rounded-2xl border border-black/8 bg-white shadow-xs hover:shadow-md relative @container/popular-product">
-        <div className="h-28 bg-[linear-gradient(90deg,#F4F4F6_0%,#00645D_100%)] relative flex items-center justify-center overflow-hidden">
+        <div className="h-28 bg-[linear-gradient(90deg,#F4F4F6_0%,#00645D_100%)] relative flex items-center justify-center">
           {product.image_url ? (
-            <div className="relative w-3/4 h-3/4">
+            <div className="absolute w-2/4 h-3/4 -bottom-4 left-0">
               <Image
                 src={product.image_url}
                 alt={product.name}
                 fill
                 sizes="(max-width: 640px) 100vw, 25vw"
-                className="object-contain transition-transform duration-300 group-hover:scale-105"
+                className="object-contain transition-transform duration-300 group-hover:scale-105 left-0"
               />
             </div>
           ) : (
